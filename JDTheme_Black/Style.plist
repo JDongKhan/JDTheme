@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>button</key>
+	<dict>
+		<key>title</key>
+		<string>黑色</string>
+		<key>textColor</key>
+		<string>#ffffff</string>
+		<key>backgroundColor</key>
+		<string>#999999</string>
+	</dict>
+	<key>view</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#000000</string>
+	</dict>
+	<key>image</key>
+	<dict>
+		<key>image</key>
+		<string>global_back</string>
+	</dict>
+</dict>
+</plist>
