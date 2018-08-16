@@ -15,29 +15,27 @@
 
 @implementation NSObject (JDTheme)
 
-- (void)setJd_theme_key:(NSString *)jd_theme_key {
-    objc_setAssociatedObject(self, @selector(jd_theme_key), jd_theme_key, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [[JDStyleable sharedInstance] register:self.jd_weakExcutor];
+- (void)setJd_themeKey:(NSString *)jd_themeKey {
+    objc_setAssociatedObject(self, @selector(jd_themeKey), jd_themeKey, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [[JDStyleable sharedInstance] registerObject:self.jd_weakExcutor];
     JDWeakExecutor *execuotr = self.jd_weakExcutor;
     [self jd_executeAtDealloc:^{
-        [[JDStyleable sharedInstance] unRegister:execuotr];
+        [[JDStyleable sharedInstance] unRegisterObject:execuotr];
     }];
     
     __weak NSObject *weakSelf = self;
-    [[JDStyleable sharedInstance] ruleSetForKeyPath:self.jd_theme_key compeletion:^(JDRuleSet *ruleSet) {
+    [[JDStyleable sharedInstance] ruleSetForKeyPath:self.jd_themeKey compeletion:^(JDRuleSet *ruleSet) {
         [weakSelf jd_applyThemeWithRuleSet:ruleSet];
     }];
 }
 
-- (NSString *)jd_theme_key {
+- (NSString *)jd_themeKey {
     return objc_getAssociatedObject(self, _cmd);
 }
-
 
 - (void)jd_applyThemeWithRuleSet:(JDRuleSet *)theme {
 
 }
-
 
 @end
 

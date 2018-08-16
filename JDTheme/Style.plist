@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>navigationBar</key>
+	<dict>
+		<key>barTintColor</key>
+		<string>#123</string>
+		<key>translucent</key>
+		<false/>
+	</dict>
+	<key>tabBar</key>
+	<dict>
+		<key>barTintColor</key>
+		<string>#123</string>
+		<key>translucent</key>
+		<false/>
+	</dict>
+	<key>title</key>
+	<dict>
+		<key>textColor</key>
+		<string>#fff</string>
+		<key>backgroundColor</key>
+		<string>#123</string>
+		<key>fontName</key>
+		<string>Arial-BoldItalicMT</string>
+		<key>fontSize</key>
+		<string>18</string>
+		<key>fontBold</key>
+		<true/>
+	</dict>
+	<key>detail</key>
+	<dict>
+		<key>textColor</key>
+		<string>#fff</string>
+		<key>backgroundColor</key>
+		<string>#321</string>
+		<key>fontSize</key>
+		<string>12</string>
+		<key>numberOfLines</key>
+		<integer>0</integer>
+	</dict>
+	<key>button</key>
+	<dict>
+		<key>text</key>
+		<string>白点</string>
+		<key>textColor</key>
+		<string>#000</string>
+		<key>backgroundImage</key>
+		<string>button</string>
+	</dict>
+	<key>view</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#000</string>
+	</dict>
+	<key>image</key>
+	<dict>
+		<key>image</key>
+		<string>eye</string>
+	</dict>
+</dict>
+</plist>

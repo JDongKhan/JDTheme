@@ -38,6 +38,9 @@
 @property (nonatomic, strong, readonly) UIImage *image;
 
 //button
+@property (nonatomic, assign, readonly) BOOL hasSelectedBackgroundImage;
+@property (nonatomic, strong, readonly) UIImage *selectedBackgroundImage;
+
 @property (nonatomic, assign, readonly) BOOL hasSelectedTextColor;
 @property (nonatomic, strong, readonly) UIColor *selectedTextColor;
 
@@ -51,8 +54,17 @@
 @property (nonatomic, assign, readonly) BOOL hasTextColor;
 @property (nonatomic, strong, readonly) UIColor *textColor;
 
-@property (nonatomic, assign, readonly) BOOL hasFont;
-@property (nonatomic, strong, readonly) UIFont *font;
+@property (nonatomic, assign, readonly) BOOL hasFontName;
+@property (nonatomic, copy, readonly) NSString *fontName;
+
+@property (nonatomic, assign, readonly) BOOL hasFontSize;
+@property (nonatomic, assign, readonly) CGFloat fontSize;
+
+@property (nonatomic, assign, readonly) BOOL hasFontBold;
+@property (nonatomic, assign, readonly) BOOL fontBold;
+
+@property (nonatomic, assign, readonly) BOOL hasFontItalic;
+@property (nonatomic, assign, readonly) BOOL fontItalic;
 
 @property (nonatomic, assign, readonly) BOOL hasTextAlignment;
 @property (nonatomic, assign, readonly) NSTextAlignment textAlignment;

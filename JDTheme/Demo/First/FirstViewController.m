@@ -29,25 +29,36 @@
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.tableView registerNib:[UINib nibWithNibName:@"FirstTableViewCell" bundle:nil] forCellReuseIdentifier:@"cellID"];
 
-    self.view.jd_theme_key = @"Style.view";
+    self.navigationController.navigationBar.jd_themeKey = @"Style.navigationBar";
+    self.view.jd_themeKey = @"Style.view";
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UITableViewStylePlain target:self action:@selector(nextAction)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"切换" style:UIBarButtonItemStylePlain target:self action:@selector(nextAction)];
     
     self.dataSourceArray = [NSMutableArray array];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
-    [self.dataSourceArray addObject:@{}];
+    [self.dataSourceArray addObject:@{
+                                      @"title" : @"高考九年 | 我多希望九年前有人告诉我这些",
+                                      @"detail" : @"清楚地记得高考那两天，经历了这辈子见过的最大的雨。天仿佛漏了个洞，大雨噼里啪啦地砸下来，地上的积水没过了大半个车轱辘。 清楚地记得写完英语作文画..."
+                                      }];
+    [self.dataSourceArray addObject:@{
+                                      @"title" : @"人性，经不起考验【转载】",
+                                      @"detail" : @"一对年轻夫妻感情很好，但妻子仍不放心丈夫的忠诚度，于是就让自己的闺蜜出马，考验丈夫是否花心。 在一个中秋月圆之夜，妻子“出差”在外，闺蜜“偶遇”..."
+                                      }];
+    [self.dataSourceArray addObject:@{
+                                      @"title" : @"当你觉得读书很苦时，看看我们……",
+                                      @"detail" : @"一大早,QC同事拿了一个异常处理单过来，原来是我们所订购的商标产品名称U字母头上多了两个点。我们被吓得双脚直抖，赶紧找回合同从头到尾查原因。仔细..."
+                                      }];
+    [self.dataSourceArray addObject:@{
+                                      @"title" : @"【谈古论今】都是裙子惹的祸",
+                                      @"detail" : @"提起裙子，不得不令人想到玛丽莲·梦露那一幅堪称经典的照片，一阵风莫明其妙地吹过来，身穿连衣裙的梦露赶紧以手捂住裙子，那一份羞怯中更多暧昧性感的神..."
+                                      }];
+    [self.dataSourceArray addObject:@{
+                                      @"title" : @"直男再见，我不要你了",
+                                      @"detail" : @"我跟他吵架了。 反正我觉得是吵架了。 真的是像之前写的，痛到不行。 分手就在嘴边，箭就在弓上，千钧一发。 追我的男生还有点多，为了你我拒绝了不少..."
+                                      }];
+    [self.dataSourceArray addObject:@{
+                                      @"title" : @"还在迷茫？八个步骤让你加速成长！",
+                                      @"detail" : @"01 上一篇文章我写了《如何管理自我，启动并养成自增长的微习惯？》主要讲了两个方面的内容：第一什么是微习惯。第二是为什么微习惯会起作用。然后布置..."
+                                      }];
 //    JDThemeBind(self,_button,@"button");
 
 //    JDThemeBind(self,_imageView,@"image");
@@ -56,7 +67,11 @@
 }
 
 - (void)nextAction {
-    [self.navigationController pushViewController:[[FirstViewController alloc] init] animated:YES];
+    if ([[JDThemeManager sharedInstance].themeName isEqualToString:@"JDTheme_White"]) {
+        [[JDThemeManager sharedInstance] setTheme:@"JDTheme_Black"];
+    } else {
+        [[JDThemeManager sharedInstance] setTheme:@"JDTheme_White"];
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -70,15 +85,11 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return 180;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row % 2 == 0) {
-        [[JDThemeManager sharedInstance] setTheme:@"JDTheme_Black"];
-    } else {
-        [[JDThemeManager sharedInstance] setTheme:@"JDTheme_White"];
-    }
+     [self.navigationController pushViewController:[[FirstViewController alloc] init] animated:YES];
 }
 
 //

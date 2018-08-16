@@ -18,6 +18,10 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    _imageView.jd_themeKey = @"Style.image";
+    _firstLabel.jd_themeKey = @"Style.title";
+    _secondLabel.jd_themeKey = @"Style.detail";
+    _button.jd_themeKey = @"Style.button";
     // Initialization code
 }
 
@@ -28,10 +32,8 @@
 }
 
 - (void)setDataInfo:(NSDictionary *)dataInfo {
-    _imageView.jd_theme_key = @"Style.image";
-    _firstLabel.jd_theme_key = @"Style.button";
-    _secondLabel.jd_theme_key = @"Style.button";
-    _button.jd_theme_key = @"Style.button";
+    _firstLabel.text = dataInfo[@"title"];
+    _secondLabel.text = dataInfo[@"detail"];
 }
 
 @end

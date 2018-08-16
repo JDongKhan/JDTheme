@@ -2,14 +2,52 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>button</key>
+	<key>navigationBar</key>
 	<dict>
-		<key>text</key>
-		<string>白色</string>
+		<key>barTintColor</key>
+		<string>#eee</string>
+		<key>translucent</key>
+		<false/>
+	</dict>
+	<key>tabBar</key>
+	<dict>
+		<key>barTintColor</key>
+		<string>#eee</string>
+		<key>translucent</key>
+		<false/>
+	</dict>
+	<key>title</key>
+	<dict>
 		<key>textColor</key>
 		<string>#000000</string>
 		<key>backgroundColor</key>
-		<string>#555555</string>
+		<string>#eee</string>
+		<key>fontName</key>
+		<string>Arial-BoldItalicMT</string>
+		<key>fontSize</key>
+		<string>18</string>
+		<key>fontBold</key>
+		<true/>
+	</dict>
+	<key>detail</key>
+	<dict>
+		<key>textColor</key>
+		<string>#000000</string>
+		<key>backgroundColor</key>
+		<string>#eee</string>
+		<key>fontSize</key>
+		<string>12</string>
+		<key>numberOfLines</key>
+		<integer>0</integer>
+	</dict>
+	<key>button</key>
+	<dict>
+		<key>text</key>
+		<string>点我</string>
+		<key>textColor</key>
+		<string>#fff</string>
+		<key>backgroundImage</key>
+		<string>button</string>
 	</dict>
 	<key>view</key>
 	<dict>
@@ -19,7 +57,7 @@
 	<key>image</key>
 	<dict>
 		<key>image</key>
-		<string>global_back</string>
+		<string>eye</string>
 	</dict>
 </dict>
 </plist>

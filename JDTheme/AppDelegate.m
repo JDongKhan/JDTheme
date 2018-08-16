@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "JDThemeManager.h"
 #import "JDStyleable.h"
+#import "JDTheme.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +19,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //[JDThemeManager sharedInstance].debug = YES;
     //下面代码属于全局
-    [[JDThemeManager sharedInstance] setTheme:@"JDTheme_Black"];
+    [[JDThemeManager sharedInstance] setTheme:@"JDTheme_White"];
+    
     [[JDStyleable sharedInstance] setDefaultStyleableName:@"Default"];
+    
+    UITabBarController *tabBarVC =  (UITabBarController *)self.window.rootViewController;
+    
+    tabBarVC.tabBar.jd_themeKey = @"Style.tabBar";
     // Override point for customization after application launch.
     return YES;
 }

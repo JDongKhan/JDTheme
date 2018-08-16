@@ -26,13 +26,16 @@ NSString * const JDThemeChangedNotification = @"JDThemeChangedNotification";
 }
 
 - (BOOL)setTheme:(NSString *)themeName {
-    NSURL *url = [[NSBundle mainBundle] URLForResource:themeName withExtension:@"bundle"];
-    if (!url) {
-        return NO;
-    }
-    NSBundle *bundle = [NSBundle bundleWithURL:url];
-    if (!bundle) {
-        return NO;
+    NSBundle *bundle = [NSBundle mainBundle];
+    if (!self.isDebug) {
+        NSURL *url = [[NSBundle mainBundle] URLForResource:themeName withExtension:@"bundle"];
+        if (!url) {
+            return NO;
+        }
+        bundle = [NSBundle bundleWithURL:url];
+        if (!bundle) {
+            return NO;
+        }
     }
     _themeName = themeName;
     _bundle = bundle;

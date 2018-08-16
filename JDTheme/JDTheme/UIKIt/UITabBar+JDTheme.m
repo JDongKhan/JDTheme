@@ -22,6 +22,10 @@
         self.barTintColor = theme.barTintColor;
     }
     
+    if (theme.hasTranslucent) {
+        self.translucent = theme.translucent;
+    }
+    
 }
 
 @end

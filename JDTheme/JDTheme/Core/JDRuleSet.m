@@ -30,7 +30,7 @@
              @"backgroundColor" : @"#000000",
              @"backgroundImage" : @"111",
              @"borderWidth" : @"1",
-             @"frame" : @"{0,0,10,10}}",
+             @"frame" : @"{{0,0},{10,10}}",
              @"text" : @"白色",
              @"font" : @"17",
              @"textColor" : @"#444",
@@ -52,7 +52,7 @@
 }
 
 - (void)_saveValue:(NSString *)obj forKey:(NSString *)key {
-    NSString *type = [JDRuleSet getPropertyType:key];
+    NSString *type = [JDRuleSet _getPropertyType:key];
     id value = obj;
     if ([type isEqualToString:@"UIColor"]) {
         value = [UIColor jd_colorWithHexString:obj];
@@ -66,32 +66,41 @@
         value = @([obj floatValue]);
     } else if ([type isEqualToString:@"UIFont"]) {
         value = [UIFont systemFontOfSize:obj.floatValue];
-    } else if ([type hasPrefix:@"GRect"]) {
-        return;
+    } else if ([type hasPrefix:@"CGRect"]) {
+        value = [NSValue valueWithCGRect:CGRectFromString(value)];
     }
     [self setValue:value forKey:key];
 }
 
-+(NSString *)getPropertyType:(NSString *)property {
++ (NSString *)_getPropertyType:(NSString *)property {
     //获取对象的类型objc_getClass("UserModel")
     objc_property_t p = class_getProperty(self, property.UTF8String);
     // 2.成员类型
     NSString *attrs = @(property_getAttributes(p));
-    NSUInteger dotLoc = [attrs rangeOfString:@","].location;
+    
     NSString *code = nil;
     NSUInteger loc = 3;
+    
+    NSUInteger dotLoc = [attrs rangeOfString:@","].location;
     if (dotLoc == NSNotFound) { // 没有,
         code = [attrs substringFromIndex:loc];
-    } else {
-        CGFloat lenght = dotLoc - loc -1;
-        if (lenght < 0) {
-            lenght = 0;
-        }
+        return code;
+    }
+    NSUInteger atLoc = [attrs rangeOfString:@"@"].location;
+    if (atLoc != NSNotFound) {
+        NSUInteger lenght = dotLoc - loc -1;
         code = [attrs substringWithRange:NSMakeRange(loc, lenght)];
+        return code;
+    }
+    
+    NSString *typeCode = [attrs substringWithRange:NSMakeRange(1, 1)];
+    if ([@"{" isEqualToString:typeCode]) {
+        NSUInteger eqLoc = [attrs rangeOfString:@"="].location;
+        NSUInteger lenght = eqLoc - 2;
+        code =  [attrs substringWithRange:NSMakeRange(2, lenght)];
     }
     return code;
 }
-
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
     NSLog(@"key:%@ not found",key);
@@ -111,20 +120,16 @@
 
 #pragma mark ------用于调试---------
 
-
 - (NSString *)description {
     return [self descriptionPrivate];
 }
-
 
 - (NSString *)debugDescription {
     return [self descriptionPrivate];
 }
 
-
 - (NSString *)descriptionPrivate {
     unsigned int outCount, i;
-    
     objc_property_t *properties = class_copyPropertyList([self class], &outCount);
     NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"{\t\n "];
     for (i = 0; i < outCount; i++) {

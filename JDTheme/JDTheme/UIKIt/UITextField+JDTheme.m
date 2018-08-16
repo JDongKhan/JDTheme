@@ -8,6 +8,7 @@
 
 #import "UITextField+JDTheme.h"
 #import "NSObject+JDTheme.h"
+#import "JDFontUtils.h"
 
 @implementation UITextField (JDTheme)
 
@@ -22,8 +23,9 @@
         self.textColor = theme.textColor;
     }
     
-    if (theme.hasFont) {
-        self.font = theme.font;
+    UIFont *font = [JDFontUtils fontFromRuleSet:theme];
+    if (font) {
+        self.font = font;
     }
     
     if (theme.hasTextAlignment) {

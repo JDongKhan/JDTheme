@@ -81,7 +81,7 @@
         [self reloadStyles];
         for (JDWeakExecutor *obj in self.allViews) {
             NSObject *object = obj.weakObject;
-            JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_theme_key];
+            JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_themeKey];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [object jd_applyThemeWithRuleSet:ruleSet];
             });
@@ -118,11 +118,11 @@
     });
 }
 
-- (void)register:(JDWeakExecutor *)object {
+- (void)registerObject:(JDWeakExecutor *)object {
     [self.allViews addObject:object];
 }
 
-- (void)unRegister:(JDWeakExecutor *)object {
+- (void)unRegisterObject:(JDWeakExecutor *)object {
     [self.allViews removeObject:object];
 }
 

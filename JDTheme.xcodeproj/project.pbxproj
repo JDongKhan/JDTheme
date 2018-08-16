@@ -12,6 +12,8 @@
 		6916DA1121244CCF004CF009 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA0F21244CCF004CF009 /* FirstTableViewCell.m */; };
 		6916DA1221244CCF004CF009 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6916DA1021244CCF004CF009 /* FirstTableViewCell.xib */; };
 		6916DA1821246D60004CF009 /* NSObject+JDDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1621246D5F004CF009 /* NSObject+JDDeallocBlock.m */; };
+		6916DA1A2125B6F9004CF009 /* Style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6916DA192125B6F9004CF009 /* Style.plist */; };
+		6916DA1D2125C17D004CF009 /* JDFontUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1C2125C17D004CF009 /* JDFontUtils.m */; };
 		69F1DF762122858D0035A670 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DF752122858D0035A670 /* AppDelegate.m */; };
 		69F1DF7C2122858D0035A670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7A2122858D0035A670 /* Main.storyboard */; };
 		69F1DF7E2122858F0035A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7D2122858F0035A670 /* Assets.xcassets */; };
@@ -56,6 +58,9 @@
 		6916DA1021244CCF004CF009 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		6916DA1621246D5F004CF009 /* NSObject+JDDeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDDeallocBlock.m"; sourceTree = "<group>"; };
 		6916DA1721246D60004CF009 /* NSObject+JDDeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDDeallocBlock.h"; sourceTree = "<group>"; };
+		6916DA192125B6F9004CF009 /* Style.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Style.plist; sourceTree = "<group>"; };
+		6916DA1B2125C17D004CF009 /* JDFontUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFontUtils.h; sourceTree = "<group>"; };
+		6916DA1C2125C17D004CF009 /* JDFontUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFontUtils.m; sourceTree = "<group>"; };
 		69F1DF712122858D0035A670 /* JDTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F1DF742122858D0035A670 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69F1DF752122858D0035A670 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -197,6 +202,7 @@
 		69F1DF732122858D0035A670 /* JDTheme */ = {
 			isa = PBXGroup;
 			children = (
+				6916DA192125B6F9004CF009 /* Style.plist */,
 				6916DA0221244A47004CF009 /* Demo */,
 				69F1DF8A212285A40035A670 /* JDTheme */,
 				69F1DF742122858D0035A670 /* AppDelegate.h */,
@@ -267,6 +273,8 @@
 				69F1DFB42122B73B0035A670 /* UIColor+JDExtension.m */,
 				69F1DFEE2122C9680035A670 /* UIImage+JDExtension.h */,
 				69F1DFEF2122C9680035A670 /* UIImage+JDExtension.m */,
+				6916DA1B2125C17D004CF009 /* JDFontUtils.h */,
+				6916DA1C2125C17D004CF009 /* JDFontUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -418,6 +426,7 @@
 				69F1E01E2123AF510035A670 /* JDTheme_White.bundle in Resources */,
 				69F1E01F2123AF510035A670 /* JDTheme_Black.bundle in Resources */,
 				69F1DF7E2122858F0035A670 /* Assets.xcassets in Resources */,
+				6916DA1A2125B6F9004CF009 /* Style.plist in Resources */,
 				69F1DF7C2122858D0035A670 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +482,7 @@
 				69F1DF762122858D0035A670 /* AppDelegate.m in Sources */,
 				69F1DFC22122C3540035A670 /* UITabBar+JDTheme.m in Sources */,
 				69F1E01C21230C260035A670 /* UIViewController+JDTheme.m in Sources */,
+				6916DA1D2125C17D004CF009 /* JDFontUtils.m in Sources */,
 				69F1E019212309ED0035A670 /* JDStyleable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

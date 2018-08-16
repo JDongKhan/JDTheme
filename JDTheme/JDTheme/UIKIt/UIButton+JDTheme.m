@@ -8,6 +8,7 @@
 
 #import "UIButton+JDTheme.h"
 #import "NSObject+JDTheme.h"
+#import "JDFontUtils.h"
 
 @implementation UIButton (JDTheme)
 
@@ -34,8 +35,9 @@
         [self setImage:theme.selectedImage forState:UIControlStateSelected];
     }
     
-    if (theme.hasFont) {
-        self.titleLabel.font = theme.font;
+    UIFont *font = [JDFontUtils fontFromRuleSet:theme];
+    if (font) {
+        self.titleLabel.font = font;
     }
     
     if (theme.hasNumberOfLines) {
@@ -44,6 +46,14 @@
     
     if (theme.hasLineBreakMode) {
         self.titleLabel.lineBreakMode = theme.lineBreakMode;
+    }
+    
+    if (theme.hasBackgroundImage) {
+        [self setBackgroundImage:theme.backgroundImage forState:UIControlStateNormal];
+    }
+    
+    if (theme.hasSelectedBackgroundImage) {
+        [self setBackgroundImage:theme.selectedBackgroundImage forState:UIControlStateSelected];
     }
 }
 
