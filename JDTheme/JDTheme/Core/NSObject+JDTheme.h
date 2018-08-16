@@ -16,12 +16,6 @@
  */
 @property (nonatomic, copy) NSString *jd_theme_key;
 
-/*
- key:主题配置表的key
- vc :当前vi
- */
-- (void)jd_registerKey:(NSString *)key viewController:(UIViewController *)vc;
-
 /**
  * 子类重写，收到换肤通知会调用本方法
  */

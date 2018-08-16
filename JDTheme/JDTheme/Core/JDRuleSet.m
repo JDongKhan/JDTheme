@@ -9,143 +9,135 @@
 #import "JDRuleSet.h"
 #import "UIColor+JDExtension.h"
 #import "UIImage+JDExtension.h"
+#import "JDThemeManager.h"
+#import <objc/runtime.h>
 
-@implementation JDRuleSet
+@implementation JDRuleSet {
+    NSDictionary *_allDictionary;
+}
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary bundle:(NSBundle *)bundle {
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
-        NSArray *allKeys = dictionary.allKeys;
-        //view
-        _hasBackgroundColor = [allKeys containsObject:@"backgroundColor"];
-        if (_hasBackgroundColor) {
-            _backgroundColor = [UIColor jd_colorWithHexString:dictionary[@"backgroundColor"]];
-        }
-        
-        _hasBorderColor = [allKeys containsObject:@"borderColor"];
-        if (_hasBorderColor) {
-            _borderColor = [UIColor jd_colorWithHexString:dictionary[@"borderColor"]];
-        }
-        
-        _hasBorderWidth = [allKeys containsObject:@"borderWidth"];
-        if (_hasBorderWidth) {
-            _borderWidth = [dictionary[@"borderWidth"] floatValue];
-        }
-        
-        _hasCornerRadius = [allKeys containsObject:@"cornerRadius"];
-        if (_hasCornerRadius) {
-            _cornerRadius = [dictionary[@"cornerRadius"] floatValue];
-        }
-        
-        _hasBackgroundImage = [allKeys containsObject:@"backgroundImage"];
-        if (_hasBackgroundImage) {
-            _backgroundImage = [UIImage jd_imageWithImage:dictionary[@"backgroundImage"] bundle:bundle];
-        }
-        
-        _hasFrame = [allKeys containsObject:@"frame"];
-        if (_hasFrame) {
-            _frame = CGRectZero;
-        }
-        
-        _hasTintColor = [allKeys containsObject:@"tintColor"];
-        if (_hasTintColor) {
-            _tintColor = [UIColor jd_colorWithHexString:dictionary[@"tintColor"]];
-        }
-        
-        //image
-        _hasImage = [allKeys containsObject:@"image"];
-        if (_hasImage) {
-            _image = [UIImage jd_imageWithImage:dictionary[@"image"] bundle:bundle];
-        }
-        
-        //button
-        _hasSelectedImage = [allKeys containsObject:@"selectedImage"];
-        if (_hasSelectedImage) {
-            _selectedImage = [UIImage jd_imageWithImage:dictionary[@"selectedImage"] bundle:bundle];
-        }
-        
-        _hasSelectedTextColor = [allKeys containsObject:@"selectedTextColor"];
-        if (_hasSelectedTextColor) {
-            _selectedTextColor = [UIColor jd_colorWithHexString:dictionary[@"selectedTextColor"]];
-        }
-        
-        //label
-        _hasFont = [allKeys containsObject:@"font"];
-        if (_hasFont) {
-            CGFloat font = [dictionary[@"font"] floatValue];
-            _font = [UIFont systemFontOfSize:font];
-        }
-        
-        _hasText = [allKeys containsObject:@"text"];
-        if(_hasText) {
-            _text = dictionary[@"text"];
-        }
-        
-        _hasTextColor = [allKeys containsObject:@"textColor"];
-        if (_hasTextColor) {
-            _textColor = [UIColor jd_colorWithHexString:dictionary[@"textColor"]];
-        }
-        
-        _hasTextAlignment = [allKeys containsObject:@"textAlignment"];
-        if (_hasTextAlignment) {
-            _textAlignment = [dictionary[@"textAlignment"] integerValue];
-        }
-        
-        _hasLineBreakMode = [allKeys containsObject:@"lineBreakMode"];
-        if (_hasLineBreakMode) {
-            _lineBreakMode = [dictionary[@"lineBreakMode"] integerValue];
-        }
-        
-        _hasNumberOfLines = [allKeys containsObject:@"numberOfLines"];
-        if (_hasNumberOfLines) {
-            _numberOfLines = [dictionary[@"numberOfLines"] integerValue];
-        }
-        
-        //textView
-        _hasEditable = [allKeys containsObject:@"editable"];
-        if (_hasEditable) {
-            _editable = [dictionary[@"editable"] floatValue];
-        }
-        
-        //textField
-        _hasPlaceholder = [allKeys containsObject:@"placeholder"];
-        if(_hasPlaceholder) {
-            _placeholder = dictionary[@"placeholder"];
-        }
-        
-        //tableView
-        _hasSeparatorColor = [allKeys containsObject:@"separatorColor"];
-        if (_hasSeparatorColor) {
-            _separatorColor = [UIColor jd_colorWithHexString:dictionary[@"separatorColor"]];
-        }
-        
-        //Switch
-        _hasChecked = [allKeys containsObject:@"checked"];
-        if (_hasChecked) {
-            _checked = [dictionary[@"checked"] boolValue];
-        }
-        
-        //navigation
-        _hasTranslucent = [allKeys containsObject:@"translucent"];
-        if (_hasTranslucent) {
-            _translucent = [dictionary[@"translucent"] boolValue];
-        }
-
-        _hasShadowImage = [allKeys containsObject:@"shadowImage"];
-        if (_hasShadowImage) {
-            _shadowImage = [UIImage jd_imageWithImage:dictionary[@"shadowImage"] bundle:bundle];
-        }
-    
-        _hasStatusBarStyle = [allKeys containsObject:@"statusBarStyle"];
-        if (_hasStatusBarStyle) {
-            _statusBarStyle = [dictionary[@"statusBarStyle"] integerValue];
-        }
-        
-        _hasBarTintColor = [allKeys containsObject:@"barTintColor"];
-        if (_hasBarTintColor) {
-            _barTintColor = [UIColor jd_colorWithHexString:dictionary[@"barTintColor"]];
-        }
+        _allDictionary = dictionary;
+        //_allDictionary = [self testDic];
+        [self parseObject];
     }
     return self;
 }
+
+- (NSDictionary *)testDic {
+    return @{
+             @"backgroundColor" : @"#000000",
+             @"backgroundImage" : @"111",
+             @"borderWidth" : @"1",
+             @"frame" : @"{0,0,10,10}}",
+             @"text" : @"白色",
+             @"font" : @"17",
+             @"textColor" : @"#444",
+             @"textAlignment" : @"1",
+             @"lineBreakMode" : @"1",
+             @"numberOfLines" : @"0",
+             @"editable" : @"YES",
+             @"statusBarStyle" : @"1"
+             };
+}
+
+- (void)parseObject {
+    [_allDictionary enumerateKeysAndObjectsUsingBlock:^(NSString  *key, NSString *obj, BOOL * _Nonnull stop) {
+        NSString *hasKey = [@"has" stringByAppendingString:[[key substringToIndex:1] uppercaseString]];
+        hasKey = [hasKey stringByAppendingString:[key substringFromIndex:1]];
+        [self setValue:@(YES) forKey:hasKey];
+        [self _saveValue:obj forKey:key];
+    }];
+}
+
+- (void)_saveValue:(NSString *)obj forKey:(NSString *)key {
+    NSString *type = [JDRuleSet getPropertyType:key];
+    id value = obj;
+    if ([type isEqualToString:@"UIColor"]) {
+        value = [UIColor jd_colorWithHexString:obj];
+    } else if ([type isEqualToString:@"UIImage"]) {
+        value = [UIImage jd_imageWithImage:obj bundle:JDThemeManager.sharedInstance.bundle];
+    } else if ([type isEqualToString:@"BOOL"]) {
+        value = @([obj boolValue]);
+    } else if ([type isEqualToString:@"NSInteger"]) {
+        value = @([obj integerValue]);
+    } else if ([type isEqualToString:@"CGFloat"]) {
+        value = @([obj floatValue]);
+    } else if ([type isEqualToString:@"UIFont"]) {
+        value = [UIFont systemFontOfSize:obj.floatValue];
+    } else if ([type hasPrefix:@"GRect"]) {
+        return;
+    }
+    [self setValue:value forKey:key];
+}
+
++(NSString *)getPropertyType:(NSString *)property {
+    //获取对象的类型objc_getClass("UserModel")
+    objc_property_t p = class_getProperty(self, property.UTF8String);
+    // 2.成员类型
+    NSString *attrs = @(property_getAttributes(p));
+    NSUInteger dotLoc = [attrs rangeOfString:@","].location;
+    NSString *code = nil;
+    NSUInteger loc = 3;
+    if (dotLoc == NSNotFound) { // 没有,
+        code = [attrs substringFromIndex:loc];
+    } else {
+        CGFloat lenght = dotLoc - loc -1;
+        if (lenght < 0) {
+            lenght = 0;
+        }
+        code = [attrs substringWithRange:NSMakeRange(loc, lenght)];
+    }
+    return code;
+}
+
+
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    NSLog(@"key:%@ not found",key);
+}
+
+- (void)addRuleSet:(JDRuleSet *)ruleSet {
+    if (ruleSet == nil) {
+        return;
+    }
+    NSDictionary *ruleSetDic = ruleSet->_allDictionary;
+    [ruleSetDic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        if (![self->_allDictionary.allKeys containsObject:key]) {
+            [self _saveValue:obj forKey:key];
+        }
+    }];
+}
+
+#pragma mark ------用于调试---------
+
+
+- (NSString *)description {
+    return [self descriptionPrivate];
+}
+
+
+- (NSString *)debugDescription {
+    return [self descriptionPrivate];
+}
+
+
+- (NSString *)descriptionPrivate {
+    unsigned int outCount, i;
+    
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"{\t\n "];
+    for (i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        NSString *key = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+        id value= [self valueForKey:key];
+        [str appendFormat:@"\t \"%@\" = %@,\n",key, value];
+    }
+    [str appendString:@"}"];
+    free(properties);
+    return str;
+}
+
+
 
 @end

@@ -9,23 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "JDRuleSet.h"
 
+@class JDWeakExecutor;
+
 @interface JDStyleable : NSObject
 
-@property (nonatomic, copy, readonly) NSDictionary<NSString *, NSDictionary *> *config;
++ (instancetype)sharedInstance;
 
-@property (nonatomic, weak) UIViewController *viewController;
-
-//加载配置文件
-- (instancetype)initWithStyleable:(NSString *)styleName parentStyle:(JDStyleable *)parentStyle;
+- (void)setDefaultStyleableName:(NSString *)name;
 
 //从配置文件读取配置
-- (JDRuleSet *)ruleSetForKey:(NSString *)key;
+- (void)ruleSetForKeyPath:(NSString *)keypath compeletion:(void(^)(JDRuleSet *ruleSet))compeletion;
 
-@end
+- (void)register:(JDWeakExecutor *)object;
 
-
-@interface JDStyleable(Private)
-
-- (void)holdObject:(NSObject *)object;
+- (void)unRegister:(JDWeakExecutor *)object;
 
 @end

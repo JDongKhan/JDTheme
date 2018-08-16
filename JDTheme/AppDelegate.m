@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "JDThemeManager.h"
+#import "JDStyleable.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //下面代码属于全局
+    [[JDThemeManager sharedInstance] setTheme:@"JDTheme_Black"];
+    [[JDStyleable sharedInstance] setDefaultStyleableName:@"Default"];
     // Override point for customization after application launch.
     return YES;
 }

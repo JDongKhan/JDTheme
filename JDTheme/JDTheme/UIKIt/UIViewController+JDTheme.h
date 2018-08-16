@@ -11,9 +11,9 @@
 
 @interface UIViewController (JDTheme)
 
-/*
- JDStyleable 跟 VC绑定便于释放
- */
-@property (nonatomic, strong) JDStyleable *jd_styleable;
+///*
+// JDStyleable 跟 VC绑定便于释放
+// */
+//@property (nonatomic, strong) JDStyleable *jd_styleable;
 
 @end

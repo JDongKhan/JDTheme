@@ -92,6 +92,8 @@
 @property (nonatomic, assign, readonly) BOOL hasBarTintColor;
 @property (nonatomic, strong, readonly) UIColor *barTintColor;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary bundle:(NSBundle *)bundle;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
+- (void)addRuleSet:(JDRuleSet *)ruleSet;
 
 @end

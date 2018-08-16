@@ -11,79 +11,123 @@
 #import <objc/runtime.h>
 #import "UIViewController+JDTheme.h"
 #import "NSObject+JDTheme.h"
-
-static NSString *const kHasRegistChangedThemeNotification;
+#import "NSObject+JDDeallocBlock.h"
 
 @interface JDStyleable()
 
-@property (nonatomic, strong) NSMutableArray *array;
-@property (nonatomic, strong) NSString *styleName;
-@property (nonatomic, strong) JDStyleable *parentStyle;
+@property (nonatomic, strong, readonly) NSMutableArray<JDWeakExecutor *> *allViews;
 
-@property (nonatomic, copy, readonly) NSDictionary<NSString *, JDRuleSet *> *ruleSetConfig;
+@property (nonatomic, strong) NSMutableDictionary *ruleSetConfig;
 
 @end
 
-@implementation JDStyleable
+@implementation JDStyleable {
+    dispatch_queue_t _queue;
+    dispatch_semaphore_t _semaphore;
+    NSString *_defaultStyleName;
+}
 
-- (instancetype)initWithStyleable:(NSString *)styleName parentStyle:(JDStyleable *)parentStyle {
++ (instancetype)sharedInstance {
+    static JDStyleable *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[JDStyleable alloc] init];
+    });
+    return instance;
+}
+
+- (instancetype)init {
     if (self = [super init]) {
-        self.styleName = styleName;
-        self.parentStyle = parentStyle;
-        [self reloadResource];
-        self.array = [NSMutableArray array];
+        _allViews = [NSMutableArray array];
+        _queue = dispatch_queue_create("com.JDTheme", DISPATCH_QUEUE_CONCURRENT);
+        _semaphore = dispatch_semaphore_create(1);
+        self.ruleSetConfig = [NSMutableDictionary dictionary];
         [self registChangedNotification];
     }
     return self;
 }
 
 - (void)registChangedNotification {
-    NSNumber *hasRegist = objc_getAssociatedObject(self, &kHasRegistChangedThemeNotification);
-    if (hasRegist) {
-        return;
-    }
-    objc_setAssociatedObject(self, &kHasRegistChangedThemeNotification, @(YES), OBJC_ASSOCIATION_COPY_NONATOMIC);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeDidChanged) name:JDThemeChangedNotification object:nil];
 }
 
-- (void)reloadResource {
-    NSURL *url = [[JDThemeManager sharedInstance].bundle URLForResource:self.styleName withExtension:@"plist"];
+- (void)loadStyleWithName:(NSString *)name {
+    if ([self.ruleSetConfig.allKeys containsObject:name]) {
+        return;
+    }
+    NSLog(@"JDTheme loadStyleWithName:%@",name);
+    NSURL *url = [[JDThemeManager sharedInstance].bundle URLForResource:name withExtension:@"plist"];
     NSDictionary *config = [NSDictionary dictionaryWithContentsOfURL:url];
-    _config = config;
     NSMutableDictionary *rulesetDic = [NSMutableDictionary dictionary];
     [config enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, NSDictionary *obj, BOOL * _Nonnull stop) {
-        NSDictionary *dic = [self.parentStyle.config objectForKey:key];
         NSMutableDictionary *newDic = [NSMutableDictionary dictionaryWithDictionary:obj];
-        [newDic addEntriesFromDictionary:dic];
-        JDRuleSet *ruleSet = [[JDRuleSet alloc] initWithDictionary:newDic bundle:[JDThemeManager sharedInstance].bundle];
+        JDRuleSet *ruleSet = [[JDRuleSet alloc] initWithDictionary:newDic];
         [rulesetDic setObject:ruleSet forKey:key];
     }];
-    _ruleSetConfig = rulesetDic;
+    [self.ruleSetConfig setObject:rulesetDic forKey:name];
 }
 
-- (void)themeDidChanged {
-    [self reloadResource];
-    for (NSObject *obj in self.array) {
-        JDRuleSet *theme = [self.viewController.jd_styleable ruleSetForKey:obj.jd_theme_key];
-        [obj jd_applyThemeWithRuleSet:theme];
+- (void)reloadStyles {
+    NSArray *allFiles = self.ruleSetConfig.allKeys;
+    [self.ruleSetConfig removeAllObjects];
+    for (NSString *fileName in allFiles) {
+        [self loadStyleWithName:fileName];
     }
 }
 
-- (JDRuleSet *)ruleSetForKey:(NSString *)key {
-    return [self.ruleSetConfig objectForKey:key];
+- (void)themeDidChanged {
+    // 在异步函数中执行
+    dispatch_async(_queue, ^{
+        [self reloadStyles];
+        for (JDWeakExecutor *obj in self.allViews) {
+            NSObject *object = obj.weakObject;
+            JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_theme_key];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [object jd_applyThemeWithRuleSet:ruleSet];
+            });
+        }
+    });
+}
+
+- (JDRuleSet *)ruleSetForKeyPath:(NSString *)keypath {
+    NSString *newKeyPath = [_defaultStyleName stringByAppendingString:[keypath substringFromIndex:[keypath rangeOfString:@"." options:0].location]];
+    JDRuleSet *defaultRuleSet = [self.ruleSetConfig valueForKeyPath:newKeyPath];
+    JDRuleSet *ruleSet = [self.ruleSetConfig valueForKeyPath:keypath];
+    [ruleSet addRuleSet:defaultRuleSet];
+    return ruleSet;
+}
+
+- (void)setDefaultStyleableName:(NSString *)name {
+    _defaultStyleName = name;
+    [self loadStyleWithName:name];
+}
+
+- (void)ruleSetForKeyPath:(NSString *)keypath  compeletion:(void(^)(JDRuleSet *ruleSet))compeletion {
+    dispatch_async(_queue, ^{
+        NSString *fileName = [keypath componentsSeparatedByString:@"."].firstObject;
+        dispatch_semaphore_wait(self->_semaphore, DISPATCH_TIME_FOREVER);
+        [self loadStyleWithName:fileName];
+        dispatch_semaphore_signal(self->_semaphore);
+        
+        JDRuleSet *ruleSet = [self ruleSetForKeyPath:keypath];
+        if (compeletion) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                compeletion(ruleSet);
+            });
+        }
+    });
+}
+
+- (void)register:(JDWeakExecutor *)object {
+    [self.allViews addObject:object];
+}
+
+- (void)unRegister:(JDWeakExecutor *)object {
+    [self.allViews removeObject:object];
 }
 
 - (void)dealloc {
      [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-@end
-
-
-@implementation JDStyleable(Private)
-
-- (void)holdObject:(NSObject *)object {
-    [self.array addObject:object];
 }
 
 @end
