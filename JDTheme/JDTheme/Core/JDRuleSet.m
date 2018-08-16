@@ -75,7 +75,9 @@
 + (NSString *)_getPropertyType:(NSString *)property {
     //获取对象的类型objc_getClass("UserModel")
     objc_property_t p = class_getProperty(self, property.UTF8String);
-    // 2.成员类型
+    if (!p) {
+        return nil;
+    }
     NSString *attrs = @(property_getAttributes(p));
     
     NSString *code = nil;

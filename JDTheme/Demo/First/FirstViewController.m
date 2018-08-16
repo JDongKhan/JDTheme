@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "FirstTableViewCell.h"
+#import "UINavigationBar+JDTheme.h"
 #import "JDTheme.h"
 
 @interface FirstViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -20,8 +21,18 @@
 
 @implementation FirstViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return self.navigationController.navigationBar.statusBarStyle;
+}
+
+- (void)statusBarDidChange {
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarDidChange) name:JDStatusBarChangedNotification object:nil];
+    
     self.tableView.frame = self.view.bounds;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.tableView];

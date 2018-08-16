@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+FOUNDATION_EXPORT NSString *const JDStatusBarChangedNotification;
+
 @interface UINavigationBar (JDTheme)
 
 @property (nonatomic, assign, readonly) UIStatusBarStyle statusBarStyle;

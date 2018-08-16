@@ -8,6 +8,8 @@
 		<string>#eee</string>
 		<key>translucent</key>
 		<false/>
+		<key>statusBarStyle</key>
+		<integer>0</integer>
 	</dict>
 	<key>tabBar</key>
 	<dict>
@@ -15,6 +17,20 @@
 		<string>#eee</string>
 		<key>translucent</key>
 		<false/>
+	</dict>
+	<key>index_0</key>
+	<dict>
+		<key>text</key>
+		<string>首页</string>
+		<key>image</key>
+		<string>index_1</string>
+	</dict>
+	<key>index_1</key>
+	<dict>
+		<key>text</key>
+		<string>设置</string>
+		<key>image</key>
+		<string>index_2</string>
 	</dict>
 	<key>title</key>
 	<dict>

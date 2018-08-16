@@ -29,7 +29,7 @@
         <!--首页-->
         <scene sceneID="rEg-gy-WGy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Uf-dN-1Bp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Uf-dN-1Bp" customClass="JDNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" id="2WA-Ma-BIN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gIE-Af-kQs">
@@ -104,7 +104,7 @@
         <!--设置-->
         <scene sceneID="CbP-1Z-0Qe">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gbz-Kh-1SR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gbz-Kh-1SR" customClass="JDNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="设置" id="P9H-OV-Xgy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CuU-et-a65">

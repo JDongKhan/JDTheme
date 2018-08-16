@@ -20,6 +20,8 @@
 //从配置文件读取配置
 - (void)ruleSetForKeyPath:(NSString *)keypath compeletion:(void(^)(JDRuleSet *ruleSet))compeletion;
 
+- (JDRuleSet *)ruleSetForKeyPath:(NSString *)keypath;
+
 - (void)registerObject:(JDWeakExecutor *)object;
 
 - (void)unRegisterObject:(JDWeakExecutor *)object;

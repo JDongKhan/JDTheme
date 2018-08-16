@@ -14,6 +14,7 @@
 		6916DA1821246D60004CF009 /* NSObject+JDDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1621246D5F004CF009 /* NSObject+JDDeallocBlock.m */; };
 		6916DA1A2125B6F9004CF009 /* Style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6916DA192125B6F9004CF009 /* Style.plist */; };
 		6916DA1D2125C17D004CF009 /* JDFontUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1C2125C17D004CF009 /* JDFontUtils.m */; };
+		6916DA202125CFBA004CF009 /* JDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1F2125CFBA004CF009 /* JDNavigationViewController.m */; };
 		69F1DF762122858D0035A670 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DF752122858D0035A670 /* AppDelegate.m */; };
 		69F1DF7C2122858D0035A670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7A2122858D0035A670 /* Main.storyboard */; };
 		69F1DF7E2122858F0035A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7D2122858F0035A670 /* Assets.xcassets */; };
@@ -61,6 +62,8 @@
 		6916DA192125B6F9004CF009 /* Style.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Style.plist; sourceTree = "<group>"; };
 		6916DA1B2125C17D004CF009 /* JDFontUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFontUtils.h; sourceTree = "<group>"; };
 		6916DA1C2125C17D004CF009 /* JDFontUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFontUtils.m; sourceTree = "<group>"; };
+		6916DA1E2125CFBA004CF009 /* JDNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDNavigationViewController.h; sourceTree = "<group>"; };
+		6916DA1F2125CFBA004CF009 /* JDNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDNavigationViewController.m; sourceTree = "<group>"; };
 		69F1DF712122858D0035A670 /* JDTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F1DF742122858D0035A670 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69F1DF752122858D0035A670 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 			children = (
 				6916DA0A21244C09004CF009 /* Second */,
 				6916DA0621244BAF004CF009 /* First */,
+				6916DA1E2125CFBA004CF009 /* JDNavigationViewController.h */,
+				6916DA1F2125CFBA004CF009 /* JDNavigationViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				69F1DFAD2122B57B0035A670 /* UIButton+JDTheme.m in Sources */,
 				69F1DFD12122C3B80035A670 /* UISwitch+JDTheme.m in Sources */,
 				69F1DF842122858F0035A670 /* main.m in Sources */,
+				6916DA202125CFBA004CF009 /* JDNavigationViewController.m in Sources */,
 				69F1DFF02122C9680035A670 /* UIImage+JDExtension.m in Sources */,
 				69F1DFE02122C4100035A670 /* UIBarItem+JDTheme.m in Sources */,
 				69F1DFC52122C36A0035A670 /* UITextView+JDTheme.m in Sources */,
