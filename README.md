@@ -4,7 +4,10 @@
 先上图，本demo数据模拟，样式和图片全部来自配置文件
 
 下面是demo效果图
+
 ![效果图](https://github.com/JDongKhan/JDTheme/blob/master/demo.gif)
+
+
 
 下面是demo中的配置属性以及使用图
 
