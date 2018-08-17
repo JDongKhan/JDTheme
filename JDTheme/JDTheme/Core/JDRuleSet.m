@@ -7,8 +7,8 @@
 //
 
 #import "JDRuleSet.h"
-#import "UIColor+JDExtension.h"
-#import "UIImage+JDExtension.h"
+#import "JDColorUtils.h"
+#import "JDImageUtils.h"
 #import "JDThemeManager.h"
 #import <objc/runtime.h>
 
@@ -55,9 +55,9 @@
     NSString *type = [JDRuleSet _getPropertyType:key];
     id value = obj;
     if ([type isEqualToString:@"UIColor"]) {
-        value = [UIColor jd_colorWithHexString:obj];
+        value = [JDColorUtils jd_colorWithHexString:obj];
     } else if ([type isEqualToString:@"UIImage"]) {
-        value = [UIImage jd_imageWithImage:obj bundle:JDThemeManager.sharedInstance.bundle];
+        value = [JDImageUtils jd_imageWithImage:obj bundle:JDThemeManager.sharedInstance.bundle];
     } else if ([type isEqualToString:@"UIFont"]) {
         value = [UIFont systemFontOfSize:obj.floatValue];
     } else if ([type hasPrefix:@"CGRect"]) {

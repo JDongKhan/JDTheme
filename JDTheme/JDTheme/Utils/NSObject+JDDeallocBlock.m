@@ -32,7 +32,7 @@
 @end
 
 
-@implementation NSObject (SDDeallocBlock)
+@implementation NSObject (JDDeallocBlock)
 
 - (void)jd_executeAtDealloc:(void (^)(void))block {
     if (block) {

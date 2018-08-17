@@ -1,15 +1,14 @@
 //
-//  UIColor+JDExtension
+//  JDColorUtils.h
 //  JDTheme
 //
-//  Created by JD on 2018/8/14.
+//  Created by JD on 2018/8/17.
 //  Copyright © 2018年 JD. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
 
-@interface UIColor (JDExtension)
+@interface JDColorUtils : NSObject
 
 + (UIColor *)jd_colorWithHexString:(NSString *)hexString;
 

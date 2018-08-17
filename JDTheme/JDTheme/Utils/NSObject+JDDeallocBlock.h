@@ -19,7 +19,7 @@
 
 - (void)jd_executeAtDealloc:(void (^)(void))block;
 
-@property (nonatomic, strong) JDWeakExecutor *jd_weakExcutor;
+@property (nonatomic, strong, readonly) JDWeakExecutor *jd_weakExcutor;
 
 @end
 

@@ -1,21 +1,22 @@
 //
-//  UIColor+JDExtension
+//  JDColorUtils.m
 //  JDTheme
 //
-//  Created by JD on 2018/8/14.
+//  Created by JD on 2018/8/17.
 //  Copyright © 2018年 JD. All rights reserved.
 //
 
-#import "UIColor+JDExtension.h"
+#import "JDColorUtils.h"
 
-@implementation UIColor (JDExtension)
+@implementation JDColorUtils
+
 
 + (UIColor *)jd_colorWithHexString:(NSString *)hexString {
     if (hexString == nil) {
         return nil;
     }
     NSString *colorString = [[hexString stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];
-    CGFloat alpha,red, blue, green;
+    CGFloat alpha = 0,red = 0, blue = 0, green = 0;
     
     if (colorString.length >= 8) { // #AARRGGBB
         alpha = [self colorComponentFrom:colorString start:0 length:2];
@@ -32,7 +33,7 @@
         red   = [self colorComponentFrom:colorString start:1 length:1];
         green = [self colorComponentFrom:colorString start:2 length:1];
         blue  = [self colorComponentFrom:colorString start:3 length:1];
-    } else {// #RGB
+    } else if (colorString.length == 3) {// #RGB
         alpha = 1.0f;
         red   = [self colorComponentFrom:colorString start:0 length:1];
         green = [self colorComponentFrom:colorString start:1 length:1];
@@ -52,5 +53,6 @@
     scanner = nil;
     return hexComponent / 255.0;
 }
+
 
 @end
