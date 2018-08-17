@@ -6,6 +6,13 @@
 ![](https://github.com/JDongKhan/JDTheme/blob/master/demo.gif) ![](https://github.com/JDongKhan/JDTheme/blob/master/demo1.gif)
 
 
+# 使用步骤
+1、集成SDK
+2、在APPDelegate 通过 [[JDThemeManager sharedInstance] setBundle:bundle]; 设置一款包含资源的bundle，当然该bundle来源不管，你可以网络下载也可以是mainBundle。
+3、给你的控件设置jd_themeKey属性（可以代码设置，也可以直接xib设置），jd_themeKey是你的bundle里面的一组配置key
+4、享受吧
+
+如果你想更改样式，需要[[JDThemeManager sharedInstance] changeBundle:bundle];这样做来更改bundle。
 
 ## 配置文件支持属性：
 
