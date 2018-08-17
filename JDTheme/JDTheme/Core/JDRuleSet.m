@@ -58,12 +58,6 @@
         value = [UIColor jd_colorWithHexString:obj];
     } else if ([type isEqualToString:@"UIImage"]) {
         value = [UIImage jd_imageWithImage:obj bundle:JDThemeManager.sharedInstance.bundle];
-    } else if ([type isEqualToString:@"BOOL"]) {
-        value = @([obj boolValue]);
-    } else if ([type isEqualToString:@"NSInteger"]) {
-        value = @([obj integerValue]);
-    } else if ([type isEqualToString:@"CGFloat"]) {
-        value = @([obj floatValue]);
     } else if ([type isEqualToString:@"UIFont"]) {
         value = [UIFont systemFontOfSize:obj.floatValue];
     } else if ([type hasPrefix:@"CGRect"]) {
