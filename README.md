@@ -19,7 +19,7 @@
 
 如果你想更改样式，需要[[JDThemeManager sharedInstance] changeBundle:bundle];这样做来更改bundle。
 
-## 配置文件支持属性：
+## 现有支持的属性：
 
 ```
 // view
@@ -98,9 +98,11 @@
 
 可以看出key的规则是keyPath，它是区分文件的，懒加载模式极大提高大规模使用能力，避免配置文件过大加载很慢。
 
-## 支持默认配置
+## 支持样式重写
 
-支持样式重写
+SDK提供 [[JDStyleable sharedInstance] setDefaultStyleableName:@"Default"]; 方法设置默认样式
+
+如果你的动态样式表有同样的key，会将重复的配置重写掉，方便样式封装及定制。
 
 # CocoaPods
 
