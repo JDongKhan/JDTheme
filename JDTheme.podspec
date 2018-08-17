@@ -3,8 +3,8 @@
 Pod::Spec.new do |s|
 
     s.name         = "JDTheme"
-    s.version      = '0.0.3' 
-    s.summary      = "JDLog"
+    s.version      = '0.0.4'
+    s.summary      = "JDTheme"
 
     s.description  = <<-DESC
 			JDRouter
