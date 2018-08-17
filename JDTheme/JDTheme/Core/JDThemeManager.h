@@ -13,15 +13,11 @@ FOUNDATION_EXPORT NSString *const JDThemeChangedNotification;
 
 @interface JDThemeManager : NSObject
 
-@property (nonatomic, strong, readonly) NSBundle *bundle;           //主题bundle
-
-@property (nonatomic, assign, readonly) NSString *themeName;  //当前主题名称
-
-@property (nonatomic, assign, getter=isDebug) BOOL debug;  //是否是Debug模式
+@property (nonatomic, strong) NSBundle *bundle;           //主题bundle
 
 + (instancetype)sharedInstance;
 
-//修改主题
-- (BOOL)setTheme:(NSString *)themeName;
+//修改主题bundle
+- (void)changeBundle:(NSBundle *)bundle;
 
 @end

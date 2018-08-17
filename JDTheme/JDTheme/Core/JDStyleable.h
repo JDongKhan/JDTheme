@@ -17,10 +17,13 @@
 
 - (void)setDefaultStyleableName:(NSString *)name;
 
+- (void)reloadAllObjectStyles:(void(^)(BOOL compeletion))compeletion;
+
 //从配置文件读取配置
 - (void)ruleSetForKeyPath:(NSString *)keypath compeletion:(void(^)(JDRuleSet *ruleSet))compeletion;
 
 - (JDRuleSet *)ruleSetForKeyPath:(NSString *)keypath;
+
 
 - (void)registerObject:(JDWeakExecutor *)object;
 

@@ -28,7 +28,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0E-bE-iVx">
-                        <rect key="frame" x="84" y="11" width="42" height="28"/>
+                        <rect key="frame" x="84" y="11" width="210" height="28"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="28" id="tv4-EX-0A6"/>
                         </constraints>
@@ -36,8 +36,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMu-vb-PCs">
-                        <rect key="frame" x="84" y="49" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMu-vb-PCs">
+                        <rect key="frame" x="84" y="49" width="210" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -54,9 +54,9 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="uMu-vb-PCs" firstAttribute="leading" secondItem="a0E-bE-iVx" secondAttribute="leading" id="CA4-pG-5hl"/>
-                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="uMu-vb-PCs" secondAttribute="trailing" constant="10" id="GKO-xn-K7q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uMu-vb-PCs" secondAttribute="trailing" constant="10" id="GKO-xn-K7q"/>
                     <constraint firstItem="nkk-8O-kNq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hxm-Xu-cY9"/>
-                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="a0E-bE-iVx" secondAttribute="trailing" constant="10" id="Lwt-H5-p4v"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="a0E-bE-iVx" secondAttribute="trailing" constant="10" id="Lwt-H5-p4v"/>
                     <constraint firstItem="a0E-bE-iVx" firstAttribute="leading" secondItem="nkk-8O-kNq" secondAttribute="trailing" constant="24" id="RB2-V2-X2g"/>
                     <constraint firstItem="a0E-bE-iVx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SWq-E7-T5n"/>
                     <constraint firstItem="ny8-rN-7Uo" firstAttribute="top" secondItem="uMu-vb-PCs" secondAttribute="bottom" constant="10" id="TFy-XV-PBq"/>
@@ -74,7 +74,7 @@
                 <outlet property="_imageView" destination="nkk-8O-kNq" id="p7w-oz-Pjc"/>
                 <outlet property="_secondLabel" destination="uMu-vb-PCs" id="5TH-CM-hWV"/>
             </connections>
-            <point key="canvasLocation" x="34" y="13.5"/>
+            <point key="canvasLocation" x="35" y="174"/>
         </tableViewCell>
     </objects>
 </document>

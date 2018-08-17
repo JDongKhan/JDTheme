@@ -7,6 +7,7 @@
 //
 
 #import "JDThemeManager.h"
+#import "JDStyleable.h"
 
 NSString * const JDThemeChangedNotification = @"JDThemeChangedNotification";
 
@@ -25,22 +26,11 @@ NSString * const JDThemeChangedNotification = @"JDThemeChangedNotification";
     return instance;
 }
 
-- (BOOL)setTheme:(NSString *)themeName {
-    NSBundle *bundle = [NSBundle mainBundle];
-    if (!self.isDebug) {
-        NSURL *url = [[NSBundle mainBundle] URLForResource:themeName withExtension:@"bundle"];
-        if (!url) {
-            return NO;
-        }
-        bundle = [NSBundle bundleWithURL:url];
-        if (!bundle) {
-            return NO;
-        }
-    }
-    _themeName = themeName;
+- (void)changeBundle:(NSBundle *)bundle {
     _bundle = bundle;
-    [self sendChangeThemeNotification];
-    return YES;
+    [[JDStyleable sharedInstance] reloadAllObjectStyles:^(BOOL compeletion) {
+        [self sendChangeThemeNotification];
+    }];
 }
 
 - (void)sendChangeThemeNotification {

@@ -10,8 +10,6 @@
 #import "NSObject+JDTheme.h"
 #import <objc/runtime.h>
 
-NSString * const JDStatusBarChangedNotification = @"JDStatusBarChangedNotification";
-
 @implementation UINavigationBar (JDTheme)
 
 - (void)jd_applyThemeWithRuleSet:(JDRuleSet *)theme {
@@ -36,7 +34,6 @@ NSString * const JDStatusBarChangedNotification = @"JDStatusBarChangedNotificati
     if (theme.hasStatusBarStyle) {
         [[UIApplication sharedApplication] setStatusBarStyle:(UIStatusBarStyle)theme.statusBarStyle animated:YES];
         objc_setAssociatedObject(self, @selector(statusBarStyle), @(theme.statusBarStyle), OBJC_ASSOCIATION_COPY_NONATOMIC);
-        [[NSNotificationCenter defaultCenter] postNotificationName:JDStatusBarChangedNotification object:nil];
     }
 }
 

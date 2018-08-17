@@ -19,9 +19,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //[JDThemeManager sharedInstance].debug = YES;
+    
+    BOOL debug = NO;
+    NSBundle *bundle;
+    if (debug) {
+        bundle = [NSBundle mainBundle];
+    } else {
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"JDTheme_White" withExtension:@"bundle"];
+        bundle = [NSBundle bundleWithURL:url];
+    }
     //下面代码属于全局
-    [[JDThemeManager sharedInstance] setTheme:@"JDTheme_White"];
+    [[JDThemeManager sharedInstance] setBundle:bundle];
+    
+    //[JDThemeManager sharedInstance].debug = YES;
     
     [[JDStyleable sharedInstance] setDefaultStyleableName:@"Default"];
     

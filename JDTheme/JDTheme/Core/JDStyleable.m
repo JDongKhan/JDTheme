@@ -42,13 +42,8 @@
         _queue = dispatch_queue_create("com.JDTheme", DISPATCH_QUEUE_CONCURRENT);
         _semaphore = dispatch_semaphore_create(1);
         self.ruleSetConfig = [NSMutableDictionary dictionary];
-        [self registChangedNotification];
     }
     return self;
-}
-
-- (void)registChangedNotification {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeDidChanged) name:JDThemeChangedNotification object:nil];
 }
 
 - (void)loadStyleWithName:(NSString *)name {
@@ -75,17 +70,20 @@
     }
 }
 
-- (void)themeDidChanged {
+- (void)reloadAllObjectStyles:(void(^)(BOOL compeletion))compeletion {
     // 在异步函数中执行
     dispatch_async(_queue, ^{
         [self reloadStyles];
-        for (JDWeakExecutor *obj in self.allViews) {
-            NSObject *object = obj.weakObject;
-            JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_themeKey];
-            dispatch_async(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            for (JDWeakExecutor *obj in self.allViews) {
+                NSObject *object = obj.weakObject;
+                JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_themeKey];
                 [object jd_applyThemeWithRuleSet:ruleSet];
-            });
-        }
+            }
+            if (compeletion) {
+                compeletion(YES);
+            }
+        });
     });
 }
 
@@ -124,10 +122,6 @@
 
 - (void)unRegisterObject:(JDWeakExecutor *)object {
     [self.allViews removeObject:object];
-}
-
-- (void)dealloc {
-     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

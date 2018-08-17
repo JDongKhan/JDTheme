@@ -17,6 +17,8 @@
 
 @property (nonatomic ,strong) NSMutableArray *dataSourceArray;
 
+@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
+
 @end
 
 @implementation FirstViewController
@@ -25,26 +27,45 @@
     return self.navigationController.navigationBar.statusBarStyle;
 }
 
-- (void)statusBarDidChange {
+- (void)themeDidChange {
     [self setNeedsStatusBarAppearanceUpdate];
+    
+    //暂时放这，UIActivityIndicatorView使用场景不多，就不用category实现了，可以使用通知
+    if ([[JDThemeManager sharedInstance].bundle.resourcePath containsString:@"JDTheme_Black"]) {
+        self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
+    } else {
+        self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarDidChange) name:JDStatusBarChangedNotification object:nil];
+    //状态栏变化通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeDidChange) name:JDThemeChangedNotification object:nil];
     
+    //创建tableView
     self.tableView.frame = self.view.bounds;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.tableView];
+    self.tableView.estimatedRowHeight = 180;  //  随便设个不那么离谱的值
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.tableView registerNib:[UINib nibWithNibName:@"FirstTableViewCell" bundle:nil] forCellReuseIdentifier:@"cellID"];
 
+    //创建加载框
+    self.indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.indicatorView.center = CGPointMake(self.view.bounds.size.width / 2, 20);
+    self.navigationItem.titleView = self.indicatorView;
+    
+    //设置Style
     self.navigationController.navigationBar.jd_themeKey = @"Style.navigationBar";
     self.view.jd_themeKey = @"Style.view";
     
+    //导航右侧按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"切换" style:UIBarButtonItemStylePlain target:self action:@selector(nextAction)];
     
+    //数据源
     self.dataSourceArray = [NSMutableArray array];
     [self.dataSourceArray addObject:@{
                                       @"title" : @"高考九年 | 我多希望九年前有人告诉我这些",
@@ -70,21 +91,58 @@
                                       @"title" : @"还在迷茫？八个步骤让你加速成长！",
                                       @"detail" : @"01 上一篇文章我写了《如何管理自我，启动并养成自增长的微习惯？》主要讲了两个方面的内容：第一什么是微习惯。第二是为什么微习惯会起作用。然后布置..."
                                       }];
-//    JDThemeBind(self,_button,@"button");
-
-//    JDThemeBind(self,_imageView,@"image");
-//    JDThemeBind(self, _label, @"button");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)nextAction {
-    if ([[JDThemeManager sharedInstance].themeName isEqualToString:@"JDTheme_White"]) {
-        [[JDThemeManager sharedInstance] setTheme:@"JDTheme_Black"];
-    } else {
-        [[JDThemeManager sharedInstance] setTheme:@"JDTheme_White"];
+    NSString *themName = @"JDTheme_White";
+    if ([[JDThemeManager sharedInstance].bundle.resourcePath containsString:@"JDTheme_White"]) {
+        themName = @"JDTheme_Black";
+    }
+    
+    [self showProgress];
+    
+    NSLog(@"模拟下载资源中(延迟一秒刷新)....");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self downBundle:themName];
+        [self hiddenProgress];
+        NSLog(@"下载完成....");
+    });
+
+}
+
+- (void)downBundle:(NSString *)themName {
+    //模拟网络下载，把APP内的bundle拷贝到document下
+    NSString *srcpath = [[NSBundle mainBundle] pathForResource:themName ofType:@"bundle"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *toaPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.bundle",themName]];
+    NSError *error = nil;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:toaPath]) {
+        //removing file
+        if (![[NSFileManager defaultManager] removeItemAtPath:toaPath error:&error]) {
+            NSLog(@"Could not remove old files. Error:%@",error);
+        }
+    }
+    BOOL success = [[NSFileManager defaultManager] copyItemAtPath:srcpath toPath:toaPath error:&error];
+    
+    //从document下读取bundle
+    if (success) {
+        NSBundle *bundle = [NSBundle bundleWithPath:toaPath];
+        [[JDThemeManager sharedInstance] changeBundle:bundle];
     }
 }
 
+
+- (void)showProgress {
+    [self.indicatorView startAnimating];
+}
+
+- (void)hiddenProgress {
+    [self.indicatorView stopAnimating];
+}
+
+#pragma mark ---- delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataSourceArray.count;
 }
@@ -93,10 +151,6 @@
     FirstTableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     [tableViewCell setDataInfo:self.dataSourceArray[indexPath.row]];
     return tableViewCell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 180;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
