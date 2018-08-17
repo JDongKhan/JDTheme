@@ -32,7 +32,6 @@
     }
     
     if (theme.hasStatusBarStyle) {
-        [[UIApplication sharedApplication] setStatusBarStyle:(UIStatusBarStyle)theme.statusBarStyle animated:YES];
         objc_setAssociatedObject(self, @selector(statusBarStyle), @(theme.statusBarStyle), OBJC_ASSOCIATION_COPY_NONATOMIC);
     }
 }

@@ -30,7 +30,6 @@
 		69F1DFCB2122C3920035A670 /* UITableView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFCA2122C3920035A670 /* UITableView+JDTheme.m */; };
 		69F1DFCE2122C3A50035A670 /* UITabBarItem+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFCD2122C3A50035A670 /* UITabBarItem+JDTheme.m */; };
 		69F1DFD12122C3B80035A670 /* UISwitch+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFD02122C3B80035A670 /* UISwitch+JDTheme.m */; };
-		69F1DFD42122C3CA0035A670 /* UISegmentedControl+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFD32122C3CA0035A670 /* UISegmentedControl+JDTheme.m */; };
 		69F1DFD72122C3DA0035A670 /* UIPageControl+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFD62122C3DA0035A670 /* UIPageControl+JDTheme.m */; };
 		69F1DFDA2122C3ED0035A670 /* UINavigationBar+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFD92122C3ED0035A670 /* UINavigationBar+JDTheme.m */; };
 		69F1DFDD2122C3FD0035A670 /* UIImageView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFDC2122C3FD0035A670 /* UIImageView+JDTheme.m */; };
@@ -44,7 +43,6 @@
 		69F1E00F2122D4E00035A670 /* Style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E00D2122D4E00035A670 /* Style.plist */; };
 		69F1E0102122D4E00035A670 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E00E2122D4E00035A670 /* Images.xcassets */; };
 		69F1E019212309ED0035A670 /* JDStyleable.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1E018212309ED0035A670 /* JDStyleable.m */; };
-		69F1E01C21230C260035A670 /* UIViewController+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1E01B21230C260035A670 /* UIViewController+JDTheme.m */; };
 		69F1E01E2123AF510035A670 /* JDTheme_White.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DFF92122D47A0035A670 /* JDTheme_White.bundle */; };
 		69F1E01F2123AF510035A670 /* JDTheme_Black.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E0032122D48A0035A670 /* JDTheme_Black.bundle */; };
 /* End PBXBuildFile section */
@@ -92,8 +90,6 @@
 		69F1DFCD2122C3A50035A670 /* UITabBarItem+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+JDTheme.m"; sourceTree = "<group>"; };
 		69F1DFCF2122C3B80035A670 /* UISwitch+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+JDTheme.h"; sourceTree = "<group>"; };
 		69F1DFD02122C3B80035A670 /* UISwitch+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFD22122C3CA0035A670 /* UISegmentedControl+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFD32122C3CA0035A670 /* UISegmentedControl+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+JDTheme.m"; sourceTree = "<group>"; };
 		69F1DFD52122C3DA0035A670 /* UIPageControl+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+JDTheme.h"; sourceTree = "<group>"; };
 		69F1DFD62122C3DA0035A670 /* UIPageControl+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+JDTheme.m"; sourceTree = "<group>"; };
 		69F1DFD82122C3ED0035A670 /* UINavigationBar+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JDTheme.h"; sourceTree = "<group>"; };
@@ -120,8 +116,6 @@
 		69F1E00E2122D4E00035A670 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		69F1E017212309ED0035A670 /* JDStyleable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDStyleable.h; sourceTree = "<group>"; };
 		69F1E018212309ED0035A670 /* JDStyleable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDStyleable.m; sourceTree = "<group>"; };
-		69F1E01A21230C260035A670 /* UIViewController+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JDTheme.h"; sourceTree = "<group>"; };
-		69F1E01B21230C260035A670 /* UIViewController+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JDTheme.m"; sourceTree = "<group>"; };
 		69F1E01D212315E80035A670 /* JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTheme.h; sourceTree = "<group>"; };
 		9C2E8848F34D252962D1E29C /* libPods-JDTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -253,8 +247,6 @@
 				69F1DFCD2122C3A50035A670 /* UITabBarItem+JDTheme.m */,
 				69F1DFCF2122C3B80035A670 /* UISwitch+JDTheme.h */,
 				69F1DFD02122C3B80035A670 /* UISwitch+JDTheme.m */,
-				69F1DFD22122C3CA0035A670 /* UISegmentedControl+JDTheme.h */,
-				69F1DFD32122C3CA0035A670 /* UISegmentedControl+JDTheme.m */,
 				69F1DFD52122C3DA0035A670 /* UIPageControl+JDTheme.h */,
 				69F1DFD62122C3DA0035A670 /* UIPageControl+JDTheme.m */,
 				69F1DFD82122C3ED0035A670 /* UINavigationBar+JDTheme.h */,
@@ -263,8 +255,6 @@
 				69F1DFDC2122C3FD0035A670 /* UIImageView+JDTheme.m */,
 				69F1DFDE2122C4100035A670 /* UIBarItem+JDTheme.h */,
 				69F1DFDF2122C4100035A670 /* UIBarItem+JDTheme.m */,
-				69F1E01A21230C260035A670 /* UIViewController+JDTheme.h */,
-				69F1E01B21230C260035A670 /* UIViewController+JDTheme.m */,
 			);
 			path = UIKIt;
 			sourceTree = "<group>";
@@ -466,7 +456,6 @@
 				69F1DFC82122C37F0035A670 /* UITextField+JDTheme.m in Sources */,
 				69F1DFCE2122C3A50035A670 /* UITabBarItem+JDTheme.m in Sources */,
 				69F1DFB92122BAFA0035A670 /* UIView+JDTheme.m in Sources */,
-				69F1DFD42122C3CA0035A670 /* UISegmentedControl+JDTheme.m in Sources */,
 				69F1DFEB2122C46E0035A670 /* JDThemeManager.m in Sources */,
 				69F1DFED2122C46E0035A670 /* JDRuleSet.m in Sources */,
 				6916DA0921244C05004CF009 /* FirstViewController.m in Sources */,
@@ -487,7 +476,6 @@
 				69F1DFDA2122C3ED0035A670 /* UINavigationBar+JDTheme.m in Sources */,
 				69F1DF762122858D0035A670 /* AppDelegate.m in Sources */,
 				69F1DFC22122C3540035A670 /* UITabBar+JDTheme.m in Sources */,
-				69F1E01C21230C260035A670 /* UIViewController+JDTheme.m in Sources */,
 				6916DA1D2125C17D004CF009 /* JDFontUtils.m in Sources */,
 				69F1E019212309ED0035A670 /* JDStyleable.m in Sources */,
 			);

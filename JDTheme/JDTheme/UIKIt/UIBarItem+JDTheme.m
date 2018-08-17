@@ -7,7 +7,24 @@
 //
 
 #import "UIBarItem+JDTheme.h"
+#import "NSObject+JDTheme.h"
 
 @implementation UIBarItem (JDTheme)
+
+- (void)jd_applyThemeWithRuleSet:(JDRuleSet *)theme {
+    [super jd_applyThemeWithRuleSet:theme];
+    
+    if (theme.hasText) {
+        self.title = theme.text;
+    }
+    
+    if (theme.hasImage) {
+        self.image = theme.image;
+    }
+    
+    if (theme.hasSelectedImage) {
+        self.selectedImage = theme.selectedImage;
+    }
+}
 
 @end
