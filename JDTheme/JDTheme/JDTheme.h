@@ -10,6 +10,3 @@
 #import "JDThemeManager.h"
 #import "JDStyleable.h"
 #import "NSObject+JDTheme.h"
-#import "UIViewController+JDTheme.h"
-
-#define JDThemeBind(_vc, _var, _key) [_var jd_registerKey:_key viewController:_vc];

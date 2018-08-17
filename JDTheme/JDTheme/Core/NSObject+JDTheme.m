@@ -9,7 +9,6 @@
 #import "NSObject+JDTheme.h"
 #import "JDThemeManager.h"
 #import <objc/runtime.h>
-#import "UIViewController+JDTheme.h"
 #import "JDStyleable.h"
 #import "NSObject+JDDeallocBlock.h"
 

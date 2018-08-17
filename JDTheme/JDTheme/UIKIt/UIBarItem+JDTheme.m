@@ -22,9 +22,10 @@
         self.image = theme.image;
     }
     
-    if (theme.hasSelectedImage) {
-        self.selectedImage = theme.selectedImage;
+    if (theme.hasEnabled) {
+        self.enabled = theme.enabled;
     }
+    
 }
 
 @end

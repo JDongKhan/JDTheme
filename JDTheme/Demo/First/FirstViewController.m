@@ -29,12 +29,14 @@
 
 - (void)themeDidChange {
     [self setNeedsStatusBarAppearanceUpdate];
-    
     //暂时放这，UIActivityIndicatorView使用场景不多，就不用category实现了，可以使用通知
-    if ([[JDThemeManager sharedInstance].bundle.resourcePath containsString:@"JDTheme_Black"]) {
-        self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
-    } else {
-        self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    JDRuleSet *ruleSet = [[JDStyleable sharedInstance] ruleSetForKeyPath:@"Style.navigationBar"];
+    if (ruleSet.hasStatusBarStyle) {
+        if (ruleSet.statusBarStyle == 0) {
+            self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        } else {
+            self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
+        }
     }
 }
 
