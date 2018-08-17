@@ -10,4 +10,6 @@
 
 @interface UIView (JDTheme)
 
+@property (nonatomic, copy) IBInspectable NSString *jd_themeKey;
+
 @end

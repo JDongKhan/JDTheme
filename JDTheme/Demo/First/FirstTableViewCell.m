@@ -18,9 +18,10 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    _imageView.jd_themeKey = @"Style.image";
-    _firstLabel.jd_themeKey = @"Style.title";
-    _secondLabel.jd_themeKey = @"Style.detail";
+//    _imageView.jd_themeKey = @"Style.image";
+//    _firstLabel.jd_themeKey = @"Style.title";
+//    _secondLabel.jd_themeKey = @"Style.detail";
+    //上面三个在xib里面指定的哦
     _button.jd_themeKey = @"Style.button";
     // Initialization code
 }
