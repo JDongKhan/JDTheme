@@ -3,7 +3,7 @@
 
 先上图
 
-![](https://github.com/JDongKhan/JDTheme/blob/master/demo.gif)![](https://github.com/JDongKhan/JDTheme/blob/master/p.png)
+![](https://github.com/JDongKhan/JDTheme/blob/master/demo.gif) ![](https://github.com/JDongKhan/JDTheme/blob/master/p.png)
 
 
 
