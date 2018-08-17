@@ -1,7 +1,7 @@
 # JDTheme
 
 
-先上图
+先上图，本demo数据模拟，样式和图片全部来自配置文件
 
 ![](https://github.com/JDongKhan/JDTheme/blob/master/demo.gif) ![](https://github.com/JDongKhan/JDTheme/blob/master/demo1.gif)
 
