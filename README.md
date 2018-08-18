@@ -174,7 +174,7 @@
 
 ## 支持XIB和代码
 
-xib需要在attribute设置Jd themeID即可，代码只需要view.jd_themeID = @"id"即可
+xib需要在attribute栏目设置Jd themeID，代码只需要view.jd_themeID = @"id"即可
 
 
 ## 支持各种格式的样式文件
