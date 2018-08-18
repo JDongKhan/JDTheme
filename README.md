@@ -104,11 +104,16 @@
 
 可以看出key的规则是keyPath，它是区分文件的，懒加载模式极大提高大规模使用能力，避免配置文件过大加载很慢。
 
-## 支持样式重写
+## 支持样式继承
 
-SDK提供 [[JDStyleable sharedInstance] setDefaultStyleableName:@"Default"]; 方法设置默认样式
+你的样式表里面只要增加parent即可达到继承其他文件的样式，当然你也能重写，不过只重写你修改的属性哦。
 
 如果你的动态样式表有同样的key，会将重复的配置重写掉，方便样式封装及定制。
+
+## 支持自定义文件解析
+
+通过 JDStyleable 的 setStyleableParser 方法，可以自定解析器，比如bundle里面带有css文件，只要规则一样，数据格式类型无所谓。
+
 
 # CocoaPods
 
