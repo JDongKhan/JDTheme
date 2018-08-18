@@ -172,9 +172,14 @@
 
 你可以通过  [[JDStyleable sharedInstance] setGlobalStyleableName:@"Global"] 来设置一份全局的样式文件。
 
-## 支持自定义文件解析
+## 支持XIB和代码
 
-默认是解析plist，通过 JDStyleable 的 setStyleableParser 方法，可以自定解析器。
+xib需要在attribute设置Jd themeID即可，代码只需要view.jd_themeID = @"id"即可
+
+
+## 支持各种格式的样式文件
+
+默认是解析plist，通过 JDStyleable 的 setStyleableParser 方法，可以自定解析器，你想解析json格式的，css格式的都随你。
 
 如下：
 
