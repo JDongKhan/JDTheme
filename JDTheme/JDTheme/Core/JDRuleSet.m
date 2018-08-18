@@ -109,6 +109,9 @@
     NSDictionary *ruleSetDic = ruleSet->_allDictionary;
     [ruleSetDic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         if (![self->_allDictionary.allKeys containsObject:key]) {
+            NSString *hasKey = [@"has" stringByAppendingString:[[key substringToIndex:1] uppercaseString]];
+            hasKey = [hasKey stringByAppendingString:[key substringFromIndex:1]];
+            [self setValue:@(YES) forKey:hasKey];
             [self _saveValue:obj forKey:key];
         }
     }];
@@ -131,8 +134,15 @@
     for (i = 0; i < outCount; i++) {
         objc_property_t property = properties[i];
         NSString *key = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
-        id value= [self valueForKey:key];
-        [str appendFormat:@"\t \"%@\" = %@,\n",key, value];
+        if (![key hasPrefix:@"has"]) {
+            NSString *hasKey = [@"has" stringByAppendingString:[[key substringToIndex:1] uppercaseString]];
+            hasKey = [hasKey stringByAppendingString:[key substringFromIndex:1]];
+            BOOL hasValue = [[self valueForKey:hasKey] boolValue];
+            if (hasValue) {
+                id value= [self valueForKey:key];
+                [str appendFormat:@"\t \"%@\" = %@,\n",key, value];
+            }
+        }
     }
     [str appendString:@"}"];
     free(properties);

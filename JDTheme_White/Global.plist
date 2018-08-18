@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>navigationBar</key>
+	<dict>
+		<key>translucent</key>
+		<false/>
+	</dict>
+	<key>tabBar</key>
+	<dict>
+		<key>translucent</key>
+		<false/>
+	</dict>
+	<key>index_0</key>
+	<dict>
+		<key>text</key>
+		<string>首页</string>
+	</dict>
+	<key>index_1</key>
+	<dict>
+		<key>text</key>
+		<string>设置</string>
+	</dict>
+</dict>
+</plist>

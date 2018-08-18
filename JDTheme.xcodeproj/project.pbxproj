@@ -17,6 +17,8 @@
 		6916DA202125CFBA004CF009 /* JDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1F2125CFBA004CF009 /* JDNavigationViewController.m */; };
 		6916DA232126C7D5004CF009 /* JDImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA222126C7D5004CF009 /* JDImageUtils.m */; };
 		6916DA262126C803004CF009 /* JDColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA252126C803004CF009 /* JDColorUtils.m */; };
+		6962B5B32127A8F700811418 /* Global.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6962B5B22127A8F700811418 /* Global.plist */; };
+		6962B5B52127A90100811418 /* Global.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6962B5B42127A90100811418 /* Global.plist */; };
 		69F1DF762122858D0035A670 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DF752122858D0035A670 /* AppDelegate.m */; };
 		69F1DF7C2122858D0035A670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7A2122858D0035A670 /* Main.storyboard */; };
 		69F1DF7E2122858F0035A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7D2122858F0035A670 /* Assets.xcassets */; };
@@ -47,6 +49,23 @@
 		69F1E01F2123AF510035A670 /* JDTheme_Black.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E0032122D48A0035A670 /* JDTheme_Black.bundle */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6962B5B62127A98700811418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69F1DF692122858D0035A670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69F1DFF82122D47A0035A670;
+			remoteInfo = JDTheme_White;
+		};
+		6962B5B82127A98700811418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69F1DF692122858D0035A670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69F1E0022122D48A0035A670;
+			remoteInfo = JDTheme_Black;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6916DA0721244C05004CF009 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		6916DA0821244C05004CF009 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -66,6 +85,8 @@
 		6916DA222126C7D5004CF009 /* JDImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDImageUtils.m; sourceTree = "<group>"; };
 		6916DA242126C803004CF009 /* JDColorUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDColorUtils.h; sourceTree = "<group>"; };
 		6916DA252126C803004CF009 /* JDColorUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDColorUtils.m; sourceTree = "<group>"; };
+		6962B5B22127A8F700811418 /* Global.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Global.plist; sourceTree = "<group>"; };
+		6962B5B42127A90100811418 /* Global.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Global.plist; sourceTree = "<group>"; };
 		69F1DF712122858D0035A670 /* JDTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F1DF742122858D0035A670 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69F1DF752122858D0035A670 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -292,6 +313,7 @@
 		69F1DFFA2122D47A0035A670 /* JDTheme_White */ = {
 			isa = PBXGroup;
 			children = (
+				6962B5B22127A8F700811418 /* Global.plist */,
 				69F1E00A2122D4D80035A670 /* Images.xcassets */,
 				69F1E0092122D4D80035A670 /* Style.plist */,
 				69F1DFFB2122D47A0035A670 /* Info.plist */,
@@ -302,6 +324,7 @@
 		69F1E0042122D48A0035A670 /* JDTheme_Black */ = {
 			isa = PBXGroup;
 			children = (
+				6962B5B42127A90100811418 /* Global.plist */,
 				69F1E00E2122D4E00035A670 /* Images.xcassets */,
 				69F1E00D2122D4E00035A670 /* Style.plist */,
 				69F1E0052122D48B0035A670 /* Info.plist */,
@@ -331,6 +354,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				6962B5B72127A98700811418 /* PBXTargetDependency */,
+				6962B5B92127A98700811418 /* PBXTargetDependency */,
 			);
 			name = JDTheme;
 			productName = JDTheme;
@@ -431,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F1E00B2122D4D80035A670 /* Style.plist in Resources */,
+				6962B5B32127A8F700811418 /* Global.plist in Resources */,
 				69F1E00C2122D4D80035A670 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F1E00F2122D4E00035A670 /* Style.plist in Resources */,
+				6962B5B52127A90100811418 /* Global.plist in Resources */,
 				69F1E0102122D4E00035A670 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +523,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6962B5B72127A98700811418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69F1DFF82122D47A0035A670 /* JDTheme_White */;
+			targetProxy = 6962B5B62127A98700811418 /* PBXContainerItemProxy */;
+		};
+		6962B5B92127A98700811418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69F1E0022122D48A0035A670 /* JDTheme_Black */;
+			targetProxy = 6962B5B82127A98700811418 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		69F1DF7A2122858D0035A670 /* Main.storyboard */ = {

@@ -31,7 +31,7 @@
     //下面代码属于全局
     [[JDThemeManager sharedInstance] setBundle:bundle];
     
-    [[JDStyleable sharedInstance] setDefaultStyleableName:@"Default"];
+    [[JDStyleable sharedInstance] setGlobalStyleableName:@"Global"];
     
     UITabBarController *tabBarVC =  (UITabBarController *)self.window.rootViewController;
     

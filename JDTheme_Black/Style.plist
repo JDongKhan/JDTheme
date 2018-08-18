@@ -6,8 +6,6 @@
 	<dict>
 		<key>barTintColor</key>
 		<string>#123</string>
-		<key>translucent</key>
-		<false/>
 		<key>statusBarStyle</key>
 		<integer>1</integer>
 	</dict>
@@ -15,20 +13,14 @@
 	<dict>
 		<key>barTintColor</key>
 		<string>#123</string>
-		<key>translucent</key>
-		<false/>
 	</dict>
 	<key>index_0</key>
 	<dict>
-		<key>text</key>
-		<string>首页2</string>
 		<key>image</key>
 		<string>index_1</string>
 	</dict>
 	<key>index_1</key>
 	<dict>
-		<key>text</key>
-		<string>设置2</string>
 		<key>image</key>
 		<string>index_2</string>
 	</dict>

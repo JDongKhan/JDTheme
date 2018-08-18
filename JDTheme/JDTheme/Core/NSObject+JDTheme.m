@@ -32,6 +32,12 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
+
+/**
+ 应用样式
+
+ @param theme 样式表
+ */
 - (void)jd_applyThemeWithRuleSet:(JDRuleSet *)theme {
 
 }

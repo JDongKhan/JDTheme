@@ -11,22 +11,62 @@
 
 @class JDWeakExecutor;
 
+typedef NSDictionary *(^JDStyleableParserBlock)(NSString *fileName);
+
 @interface JDStyleable : NSObject
 
 + (instancetype)sharedInstance;
 
-- (void)setDefaultStyleableName:(NSString *)name;
 
+/**
+ 设置样式解析器，默认是解析plist文件
+
+ @param parserBlock 解析器
+ */
+- (void)setStyleableParser:(JDStyleableParserBlock)parserBlock;
+
+/**
+ 设置bundle全局的样式文件
+
+ @param name 样式文件名称
+ */
+- (void)setGlobalStyleableName:(NSString *)name;
+
+/**
+ 重新加载所有已经加载过的样式文件，并刷新所有使用样式的对象
+ 
+ @param compeletion 完成block
+ */
 - (void)reloadAllObjectStyles:(void(^)(BOOL compeletion))compeletion;
 
-//从配置文件读取配置
-- (void)ruleSetForKeyPath:(NSString *)keypath compeletion:(void(^)(JDRuleSet *ruleSet))compeletion;
+/**
+ 根据keyPath获取ruleSet
+ 
+ @param keyPath keyPath
+ @param compeletion 完成block
+ */
+- (void)ruleSetForKeyPath:(NSString *)keyPath compeletion:(void(^)(JDRuleSet *ruleSet))compeletion;
 
-- (JDRuleSet *)ruleSetForKeyPath:(NSString *)keypath;
+/**
+ 通过keyPath获取RuleSet
+ 
+ @param keyPath keyPath
+ 
+ */
+- (JDRuleSet *)ruleSetForKeyPath:(NSString *)keyPath;
 
-
+/**
+ 注册使用样式的对象
+ 
+ @param object 对象
+ */
 - (void)registerObject:(JDWeakExecutor *)object;
 
+/**
+ 取消使用样式的对象
+ 
+ @param object 对象
+ */
 - (void)unRegisterObject:(JDWeakExecutor *)object;
 
 @end
