@@ -8,6 +8,7 @@
 
 #import "NSObject+JDDeallocBlock.h"
 #import <objc/runtime.h>
+#import "JDThemeManager.h"
 
 @interface JDDeallocExecutor : NSObject
 
@@ -67,7 +68,9 @@
 @implementation JDWeakExecutor
 
 - (void)dealloc {
-    NSLog(@"JDWeakExecutor:%@",self.weakObject);
+    if ([JDThemeManager sharedInstance].debug) {
+        NSLog(@"JDWeakExecutor:%@",self.weakObject);
+    }
 }
 
 @end
