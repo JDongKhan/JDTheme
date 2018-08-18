@@ -162,7 +162,7 @@
 
 ## 支持自定义控件 
 
-当然这些是系统的控件和属性，还可以支持自定义控件和属性，只需要你的类重现jd_applyThemeWithRuleSet即可，拿到JDRuleSet你想怎么渲染就怎么渲染
+当然这些是系统的控件和属性，还可以支持自定义控件和属性，只需要你的类重写jd_applyThemeWithRuleSet即可，拿到JDRuleSet你想怎么渲染就怎么渲染
 
 ## 支持多文件
 
