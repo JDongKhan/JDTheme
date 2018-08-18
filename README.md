@@ -158,7 +158,7 @@
 
 ## 支持常规属性
 
-支持设置控件的常规属性，如 label的 numberOfLines、lineBreakMode等。
+支持设置控件的常规属性，如 label 的 numberOfLines、lineBreakMode等。
 
 ## 支持自定义控件 
 
