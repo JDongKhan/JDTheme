@@ -1,0 +1,16 @@
+PODS:
+  - JDAutoLayout (1.3.0)
+
+DEPENDENCIES:
+  - JDAutoLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JDAutoLayout
+
+SPEC CHECKSUMS:
+  JDAutoLayout: 6e53d121fa01471d84c5f18735c767de7c3013ae
+
+PODFILE CHECKSUM: 77c0e7be683a5784ca4064e1230f44b1aa3b8cb7
+
+COCOAPODS: 1.5.3

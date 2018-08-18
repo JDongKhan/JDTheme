@@ -12,6 +12,7 @@
 #import "JDFontUtils.h"
 #import "JDThemeManager.h"
 #import <objc/runtime.h>
+#import "JDStyleable.h"
 
 @implementation JDRuleSet {
     NSDictionary *_allDictionary;
@@ -32,6 +33,8 @@
              @"backgroundImage" : @"111",
              @"borderWidth" : @"1",
              @"frame" : @"{{0,0},{10,10}}",
+             @"textShadowOffset" : @"{100,100}",
+             @"center" : @"{100,100}",
              @"text" : @"白色",
              @"font" : @"17",
              @"textColor" : @"#444",
@@ -60,9 +63,17 @@
     } else if ([type isEqualToString:@"UIImage"]) {
         value = [JDImageUtils imageWithImage:obj bundle:JDThemeManager.sharedInstance.bundle];
     } else if ([type isEqualToString:@"UIFont"]) {
-        value = [JDFontUtils fontFromDictionary:(NSDictionary *)obj];
+        value = [JDFontUtils fontFromDictionary:obj];
+    } else if ([type isEqualToString:@"UIView"]) {
+        if ([@"relativeToView" isEqualToString:key]) {
+            value = [[JDStyleable sharedInstance] objectById:value];
+        }
     } else if ([type hasPrefix:@"CGRect"]) {
         value = [NSValue valueWithCGRect:CGRectFromString(value)];
+    } else if ([type hasPrefix:@"CGSize"]) {
+        value = [NSValue valueWithCGSize:CGSizeFromString(value)];
+    } else if ([type hasPrefix:@"CGPoint"]) {
+        value = [NSValue valueWithCGPoint:CGPointFromString(value)];
     }
     [self setValue:value forKey:key];
 }

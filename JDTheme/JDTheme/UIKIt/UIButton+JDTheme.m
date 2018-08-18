@@ -54,6 +54,14 @@
     if (theme.hasSelectedBackgroundImage) {
         [self setBackgroundImage:theme.selectedBackgroundImage forState:UIControlStateSelected];
     }
+    
+    if (theme.hasTextShadowColor) {
+        [self setTitleShadowColor:theme.textShadowColor forState:UIControlStateNormal];
+    }
+    
+    if (theme.hasTextShadowOffset) {
+        self.titleLabel.shadowOffset = theme.textShadowOffset;
+    }
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58C348EE3BF3CD66BC974EC9 /* libPods-JDTheme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2E8848F34D252962D1E29C /* libPods-JDTheme.a */; };
 		6916DA0921244C05004CF009 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA0721244C05004CF009 /* FirstViewController.m */; };
 		6916DA0D21244C27004CF009 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA0C21244C27004CF009 /* SecondViewController.m */; };
 		6916DA1121244CCF004CF009 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA0F21244CCF004CF009 /* FirstTableViewCell.m */; };
@@ -66,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03DFE86E95C08B71CE2CC461 /* Pods-JDTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDTheme.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDTheme/Pods-JDTheme.release.xcconfig"; sourceTree = "<group>"; };
+		231C98581659E85E74196E05 /* Pods-JDTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDTheme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDTheme/Pods-JDTheme.debug.xcconfig"; sourceTree = "<group>"; };
 		6916DA0721244C05004CF009 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		6916DA0821244C05004CF009 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		6916DA0B21244C27004CF009 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C348EE3BF3CD66BC974EC9 /* libPods-JDTheme.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +208,7 @@
 				69F1E0042122D48A0035A670 /* JDTheme_Black */,
 				69F1DF722122858D0035A670 /* Products */,
 				BF63BF22C40590021D9CF9B4 /* Frameworks */,
+				96B11EE88296F3248F4BA9F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -329,6 +334,15 @@
 			path = JDTheme_Black;
 			sourceTree = "<group>";
 		};
+		96B11EE88296F3248F4BA9F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				231C98581659E85E74196E05 /* Pods-JDTheme.debug.xcconfig */,
+				03DFE86E95C08B71CE2CC461 /* Pods-JDTheme.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF63BF22C40590021D9CF9B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +358,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69F1DF872122858F0035A670 /* Build configuration list for PBXNativeTarget "JDTheme" */;
 			buildPhases = (
+				426F4D27A624CE1887F65CB2 /* [CP] Check Pods Manifest.lock */,
 				69F1DF6D2122858D0035A670 /* Sources */,
 				69F1DF6E2122858D0035A670 /* Frameworks */,
 				69F1DF6F2122858D0035A670 /* Resources */,
@@ -468,6 +483,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		426F4D27A624CE1887F65CB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JDTheme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69F1DF6D2122858D0035A670 /* Sources */ = {
@@ -665,14 +701,12 @@
 		};
 		69F1DF882122858F0035A670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231C98581659E85E74196E05 /* Pods-JDTheme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JDTheme/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jd.JDTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -681,14 +715,12 @@
 		};
 		69F1DF892122858F0035A670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DFE86E95C08B71CE2CC461 /* Pods-JDTheme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JDTheme/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jd.JDTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

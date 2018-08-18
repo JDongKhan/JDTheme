@@ -34,6 +34,10 @@
     if (theme.hasPlaceholder) {
         self.placeholder = theme.placeholder;
     }
+    
+    if (theme.hasAdjustsFontSize) {
+        self.adjustsFontSizeToFitWidth = theme.adjustsFontSize;
+    }
 }
 
 @end

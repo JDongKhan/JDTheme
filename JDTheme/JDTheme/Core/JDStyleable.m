@@ -14,7 +14,7 @@
 
 @interface JDStyleable()
 
-@property (nonatomic, strong, readonly) NSMutableArray<JDWeakExecutor *> *allViews;
+@property (nonatomic, strong, readonly) NSMutableDictionary<NSString *,NSMutableArray<JDWeakExecutor *> *> *allViewsStore;
 
 @property (nonatomic, strong) NSMutableDictionary *ruleSetConfig;
 
@@ -38,7 +38,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        _allViews = [NSMutableArray array];
+        _allViewsStore = [NSMutableDictionary dictionary];
         _queue = dispatch_queue_create("com.JDTheme", DISPATCH_QUEUE_CONCURRENT);
         _semaphore = dispatch_semaphore_create(1);
         self.ruleSetConfig = [NSMutableDictionary dictionary];
@@ -68,6 +68,12 @@
     if ([self.ruleSetConfig.allKeys containsObject:name]) {
         return;
     }
+    //初始化容器
+    NSArray *array = self.allViewsStore[name];
+    if (array == nil) {
+        self.allViewsStore[name] = [NSMutableArray array];
+    }
+    
     NSDictionary *config = _parserBlock(name);
     if ([JDThemeManager sharedInstance].debug) {
         NSLog(@"[JDTheme] loadStyleWithName:%@  content : %@", name , config);
@@ -87,7 +93,7 @@
  */
 - (void)reloadStyles {
     NSArray *allFiles = self.ruleSetConfig.allKeys;
-    [self.ruleSetConfig removeAllObjects];
+    [self.ruleSetConfig removeObjectsForKeys:allFiles];
     for (NSString *fileName in allFiles) {
         [self loadStyleWithName:fileName];
     }
@@ -102,13 +108,16 @@
 - (void)reloadAllObjectStyles:(void(^)(BOOL compeletion))compeletion {
     // 在异步函数中执行
     dispatch_async(_queue, ^{
+        NSMutableDictionary *oldStore = self.allViewsStore.copy;
         [self reloadStyles];
         dispatch_async(dispatch_get_main_queue(), ^{
-            for (JDWeakExecutor *obj in self.allViews) {
-                NSObject *object = obj.weakObject;
-                JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_themeKey];
-                [object jd_applyThemeWithRuleSet:ruleSet];
-            }
+            [oldStore enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSArray<JDWeakExecutor *> * _Nonnull objArray, BOOL * _Nonnull stop) {
+                for (JDWeakExecutor *obj in objArray) {
+                    NSObject *object = obj.weakObject;
+                    JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_themeID];
+                    [object jd_applyThemeWithRuleSet:ruleSet];
+                }
+            }];
             if (compeletion) {
                 compeletion(YES);
             }
@@ -168,8 +177,10 @@
 
  @param object 对象
  */
-- (void)registerObject:(JDWeakExecutor *)object {
-    [self.allViews addObject:object];
+- (void)registerObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath {
+    NSString *fileName = [keyPath componentsSeparatedByString:@"."].firstObject;
+    NSMutableArray<JDWeakExecutor *> *array = [self.allViewsStore objectForKey:fileName];
+    [array addObject:object];
 }
 
 /**
@@ -177,8 +188,28 @@
 
  @param object 对象
  */
-- (void)unRegisterObject:(JDWeakExecutor *)object {
-    [self.allViews removeObject:object];
+- (void)unRegisterObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath {
+    NSString *fileName = [keyPath componentsSeparatedByString:@"."].firstObject;
+    NSMutableArray<JDWeakExecutor *> *array = [self.allViewsStore objectForKey:fileName];
+    [array removeObject:object];
+}
+
+
+/**
+ 根据ID找view
+ 
+ @param keyPath id
+ @return view
+ */
+- (NSObject *)objectById:(NSString *)keyPath {
+    NSString *fileName = [keyPath componentsSeparatedByString:@"."].firstObject;
+    NSMutableArray<JDWeakExecutor *> *array = [self.allViewsStore objectForKey:fileName];
+    for (JDWeakExecutor *weakExecutor in array) {
+        if (weakExecutor.weakObject && [weakExecutor.weakObject.jd_themeID isEqualToString:keyPath]) {
+            return weakExecutor.weakObject;
+        }
+    }
+    return nil;
 }
 
 @end

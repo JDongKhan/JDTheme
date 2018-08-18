@@ -60,13 +60,22 @@ typedef NSDictionary *(^JDStyleableParserBlock)(NSString *fileName);
  
  @param object 对象
  */
-- (void)registerObject:(JDWeakExecutor *)object;
+- (void)registerObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath;
 
 /**
  取消使用样式的对象
  
  @param object 对象
  */
-- (void)unRegisterObject:(JDWeakExecutor *)object;
+- (void)unRegisterObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath;
+
+/**
+ 根据ID找object
+
+ @param objectId id
+ @return object
+ */
+- (NSObject *)objectById:(NSString *)objectId;
+
 
 @end

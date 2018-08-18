@@ -10,7 +10,10 @@
 
 @implementation JDFontUtils
 
-+ (UIFont *)fontFromDictionary:(NSDictionary *)ruleSetDic {
++ (UIFont *)fontFromDictionary:(id)ruleSetDic {
+    if ([ruleSetDic isKindOfClass:[NSString class]]) {
+        return [UIFont systemFontOfSize:[ruleSetDic floatValue]];
+    }
     UIFont *font = nil;
     NSString *fontSize = [ruleSetDic objectForKey:@"size"];
     NSString *fontName = [ruleSetDic objectForKey:@"name"];

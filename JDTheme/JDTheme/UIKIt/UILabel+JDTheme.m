@@ -38,6 +38,27 @@
     if (theme.hasLineBreakMode) {
         self.lineBreakMode = theme.lineBreakMode;
     }
+    
+    if (theme.hasHighlightedTextColor) {
+        self.highlightedTextColor = theme.highlightedTextColor;
+    }
+    
+    if (theme.hasTextShadowColor) {
+        self.shadowColor = theme.textShadowColor;
+        
+    }
+    
+    if (theme.hasTextShadowOffset) {
+        self.shadowOffset = theme.textShadowOffset;
+    }
+    
+    if (theme.hasAdjustsFontSize) {
+        self.adjustsFontSizeToFitWidth = theme.adjustsFontSize;
+    }
+    
+    if (theme.hasBaselineAdjustment) {
+        self.baselineAdjustment = theme.baselineAdjustment;
+    }
 }
 
 @end

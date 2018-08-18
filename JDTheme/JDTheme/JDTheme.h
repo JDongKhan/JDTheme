@@ -9,6 +9,24 @@
 /*
  各控件支持的属性
  
+ UIView {
+ backgroundColor : '#fff',
+ borderColor : '#cecece',
+ borderWidth : 1,
+ cornerRadius : 1,
+ tintColor : '#cececece',
+ frame : { {0,0},{100,100} },
+ visible : 1,
+ opacity : 0.2,
+ center : {100,100},
+ left : 0,
+ top: 0,
+ right : 0,
+ bottom : 0,
+ width : 10,
+ height: 10
+ }
+ 
  UIButton {
  text : 'text',
  textColor : '#fffff',
@@ -24,21 +42,18 @@
  numberOfLines : 0,
  lineBreakMode : 0 ,
  backgroundImage : 'imageName',
- selectedBackgroundImage : 'imageName'
- }
- 
- UIView {
- backgroundColor : '#fff',
- borderColor : '#cecece',
- borderWidth : 1,
- cornerRadius : 1,
- tintColor : '#cececece'
+ selectedBackgroundImage : 'imageName',
+ textShadowColor : '#ccc',
+ textShadowOffset : {100,100}
  }
  
  UILabel {
  text : 'text' ,
  textColor : '#fff',
+ highlightedTextColor : '#ccc',
  font : {},
+ adjustsFontSize : 10,
+ baselineAdjustment : 0,
  textAlignment : 0,
  numberOfLines : 0,
  lineBreakMode : 0

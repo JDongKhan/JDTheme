@@ -61,8 +61,8 @@
     self.navigationItem.titleView = self.indicatorView;
     
     //设置Style
-    self.navigationController.navigationBar.jd_themeKey = @"Style.navigationBar";
-    self.view.jd_themeKey = @"Style.view";
+    self.navigationController.navigationBar.jd_themeID = @"Style.navigationBar";
+    self.view.jd_themeID = @"Style.view";
     
     //导航右侧按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"切换" style:UIBarButtonItemStylePlain target:self action:@selector(nextAction)];

@@ -12,9 +12,9 @@
 @interface NSObject (JDTheme)
 
 /*
- jd_themeKey:主题配置表的key
+ jd_themeID:主题配置表的key
  */
-@property (nonatomic, copy) NSString *jd_themeKey;
+@property (nonatomic, copy) NSString *jd_themeID;
 
 /**
  * 子类重写，收到换肤通知会调用本方法

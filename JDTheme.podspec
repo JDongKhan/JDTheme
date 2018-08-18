@@ -27,5 +27,6 @@ Pod::Spec.new do |s|
     s.source_files = 'JDTheme/JDTheme/**/*.{h,m}'
     s.public_header_files = 'JDTheme/JDTheme/**/*.h'
 
+    s.dependency 'JDAutoLayout'
 
 end

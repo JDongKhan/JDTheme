@@ -37,10 +37,10 @@
     
     UITabBarController *tabBarVC =  (UITabBarController *)self.window.rootViewController;
     
-    tabBarVC.tabBar.jd_themeKey = @"Style.tabBar";
+    tabBarVC.tabBar.jd_themeID = @"Style.tabBar";
     
     [tabBarVC.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        obj.jd_themeKey = [NSString stringWithFormat:@"Style.index_%ld",idx];
+        obj.jd_themeID = [NSString stringWithFormat:@"Style.index_%ld",idx];
     }];
     // Override point for customization after application launch.
     return YES;
