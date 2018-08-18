@@ -176,6 +176,10 @@
 
 默认是解析plist，通过 JDStyleable 的 setStyleableParser 方法，可以自定解析器。
 
+## 支持XIB和代码
+
+xib需要在attribute设置Jd themeID即可，代码只需要view.jd_themeID = @"id"即可
+
 如下：
 
 ```
