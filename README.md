@@ -15,7 +15,7 @@
 
 
 # 使用步骤
-1、集成SDK
+1、集成SDK,支持CocoaPods
 
 2、在APPDelegate 通过 [[JDThemeManager sharedInstance] setBundle:bundle]; 设置一款包含资源的bundle，当然该bundle来源不管，你可以网络下载也可以是mainBundle。
 
