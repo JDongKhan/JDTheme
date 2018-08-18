@@ -174,7 +174,13 @@
 
 ## 支持自定义文件解析
 
-通过 JDStyleable 的 setStyleableParser 方法，可以自定解析器，比如bundle里面带有css文件，只要规则一样，数据格式类型无所谓。
+默认是解析plist，通过 JDStyleable 的 setStyleableParser 方法，可以自定解析器。
+
+如下：
+[[JDStyleable sharedInstance] setStyleableParser:^NSDictionary *(NSString *fileName) {
+        NSURL *url = [[JDThemeManager sharedInstance].bundle URLForResource:fileName withExtension:@"json"];
+        return [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:kNilOptions error:nil];
+    }];
 
 
 # CocoaPods
