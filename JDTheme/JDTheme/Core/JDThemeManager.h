@@ -15,6 +15,8 @@ FOUNDATION_EXPORT NSString *const JDThemeChangedNotification;
 
 @property (nonatomic, strong) NSBundle *bundle;           //主题bundle
 
+@property (nonatomic, assign) BOOL debug;           //是否是debug模式
+
 + (instancetype)sharedInstance;
 
 //修改主题bundle

@@ -30,12 +30,15 @@
 		<string>#fff</string>
 		<key>backgroundColor</key>
 		<string>#cba</string>
-		<key>fontName</key>
-		<string>Arial-BoldItalicMT</string>
-		<key>fontSize</key>
-		<string>18</string>
-		<key>fontBold</key>
-		<true/>
+		<key>font</key>
+		<dict>
+			<key>name</key>
+			<string>Arial-BoldItalicMT</string>
+			<key>size</key>
+			<string>24</string>
+			<key>bold</key>
+			<string>YES</string>
+		</dict>
 	</dict>
 	<key>detail</key>
 	<dict>
@@ -43,8 +46,13 @@
 		<string>#fff</string>
 		<key>backgroundColor</key>
 		<string>#987</string>
-		<key>fontSize</key>
-		<string>12</string>
+		<key>font</key>
+		<dict>
+			<key>size</key>
+			<string>14</string>
+			<key>italic</key>
+			<true/>
+		</dict>
 		<key>numberOfLines</key>
 		<integer>0</integer>
 	</dict>

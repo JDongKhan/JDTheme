@@ -68,8 +68,10 @@
     if ([self.ruleSetConfig.allKeys containsObject:name]) {
         return;
     }
-    NSLog(@"JDTheme loadStyleWithName:%@",name);
     NSDictionary *config = _parserBlock(name);
+    if ([JDThemeManager sharedInstance].debug) {
+        NSLog(@"[JDTheme] loadStyleWithName:%@  content : %@", name , config);
+    }
     NSMutableDictionary *rulesetDic = [NSMutableDictionary dictionary];
     [config enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, NSDictionary *obj, BOOL * _Nonnull stop) {
         NSMutableDictionary *newDic = [NSMutableDictionary dictionaryWithDictionary:obj];

@@ -28,14 +28,17 @@
 	<dict>
 		<key>textColor</key>
 		<string>#000000</string>
+		<key>font</key>
+		<dict>
+			<key>name</key>
+			<string>Arial-BoldItalicMT</string>
+			<key>size</key>
+			<string>18</string>
+			<key>bold</key>
+			<string>YES</string>
+		</dict>
 		<key>backgroundColor</key>
 		<string>#eee</string>
-		<key>fontName</key>
-		<string>Arial-BoldItalicMT</string>
-		<key>fontSize</key>
-		<string>18</string>
-		<key>fontBold</key>
-		<true/>
 	</dict>
 	<key>detail</key>
 	<dict>
@@ -43,8 +46,11 @@
 		<string>#000000</string>
 		<key>backgroundColor</key>
 		<string>#eee</string>
-		<key>fontSize</key>
-		<string>12</string>
+		<key>font</key>
+		<dict>
+			<key>size</key>
+			<string>12</string>
+		</dict>
 		<key>numberOfLines</key>
 		<integer>0</integer>
 	</dict>

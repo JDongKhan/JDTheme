@@ -10,7 +10,7 @@
 
 @implementation JDImageUtils
 
-+ (UIImage *)jd_imageWithImage:(NSString *)imageName bundle:(NSBundle *)bundle {
++ (UIImage *)imageWithImage:(NSString *)imageName bundle:(NSBundle *)bundle {
     if (imageName == nil) {
         return nil;
     }

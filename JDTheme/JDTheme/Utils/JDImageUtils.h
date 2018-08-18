@@ -10,6 +10,6 @@
 
 @interface JDImageUtils : NSObject
 
-+ (UIImage *)jd_imageWithImage:(NSString *)imageName bundle:(NSBundle *)bundle;
++ (UIImage *)imageWithImage:(NSString *)imageName bundle:(NSBundle *)bundle;
 
 @end

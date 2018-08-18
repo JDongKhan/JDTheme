@@ -11,7 +11,7 @@
 @implementation JDColorUtils
 
 
-+ (UIColor *)jd_colorWithHexString:(NSString *)hexString {
++ (UIColor *)colorWithHexString:(NSString *)hexString {
     if (hexString == nil) {
         return nil;
     }

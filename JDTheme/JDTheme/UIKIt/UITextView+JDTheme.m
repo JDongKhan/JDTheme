@@ -23,9 +23,8 @@
         self.textColor = theme.textColor;
     }
     
-    UIFont *font = [JDFontUtils fontFromRuleSet:theme];
-    if (font) {
-        self.font = font;
+    if (theme.hasFont) {
+        self.font = theme.font;
     }
     
     if (theme.hasTextAlignment) {

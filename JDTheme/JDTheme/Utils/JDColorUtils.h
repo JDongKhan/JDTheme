@@ -10,6 +10,6 @@
 
 @interface JDColorUtils : NSObject
 
-+ (UIColor *)jd_colorWithHexString:(NSString *)hexString;
++ (UIColor *)colorWithHexString:(NSString *)hexString;
 
 @end

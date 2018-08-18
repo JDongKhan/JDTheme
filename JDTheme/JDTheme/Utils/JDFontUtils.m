@@ -10,17 +10,22 @@
 
 @implementation JDFontUtils
 
-+ (UIFont *)fontFromRuleSet:(JDRuleSet *)theme {
++ (UIFont *)fontFromDictionary:(NSDictionary *)ruleSetDic {
     UIFont *font = nil;
-    if (theme.hasFontSize) {
-        if (theme.hasFontName) {
-            font = [UIFont fontWithName:theme.fontName size:theme.fontSize];
-        } else if (theme.hasFontBold && theme.fontBold) {
-            font = [UIFont boldSystemFontOfSize:theme.fontSize];
-        } else if (theme.hasFontItalic && theme.fontItalic) {
-            font = [UIFont italicSystemFontOfSize:theme.fontSize];
+    NSString *fontSize = [ruleSetDic objectForKey:@"size"];
+    NSString *fontName = [ruleSetDic objectForKey:@"name"];
+    NSString *fontBold = [ruleSetDic objectForKey:@"bold"];
+    NSString *fontItalic = [ruleSetDic objectForKey:@"italic"];
+    
+    if (fontSize) {
+        if (fontName) {
+            font = [UIFont fontWithName:fontName size:fontSize.floatValue];
+        } else if (fontBold) {
+            font = [UIFont boldSystemFontOfSize:fontSize.floatValue];
+        } else if (fontItalic) {
+            font = [UIFont italicSystemFontOfSize:fontSize.floatValue];
         } else {
-            font = [UIFont systemFontOfSize:theme.fontSize];
+            font = [UIFont systemFontOfSize:fontSize.floatValue];
         }
     }
     return font;

@@ -11,6 +11,6 @@
 
 @interface JDFontUtils : NSObject
 
-+ (UIFont *)fontFromRuleSet:(JDRuleSet *)ruleSet;
++ (UIFont *)fontFromDictionary:(NSDictionary *)ruleSetDic;
 
 @end

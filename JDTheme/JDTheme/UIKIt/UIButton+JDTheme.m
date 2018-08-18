@@ -35,9 +35,8 @@
         [self setImage:theme.selectedImage forState:UIControlStateSelected];
     }
     
-    UIFont *font = [JDFontUtils fontFromRuleSet:theme];
-    if (font) {
-        self.titleLabel.font = font;
+    if (theme.hasFont) {
+        self.titleLabel.font = theme.font;
     }
     
     if (theme.hasNumberOfLines) {
