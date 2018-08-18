@@ -177,14 +177,16 @@
 默认是解析plist，通过 JDStyleable 的 setStyleableParser 方法，可以自定解析器。
 
 如下：
-[[JDStyleable sharedInstance] setStyleableParser:^NSDictionary *(NSString *fileName) {
+
+```
+    [[JDStyleable sharedInstance] setStyleableParser:^NSDictionary *(NSString *fileName) {
         NSURL *url = [[JDThemeManager sharedInstance].bundle URLForResource:fileName withExtension:@"json"];
         return [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:kNilOptions error:nil];
     }];
-
+```
 
 # CocoaPods
-
+ 
 1、在 Podfile 中添加 `pod 'JDTheme'`。
 
 2、执行 `pod install` 或 `pod update`。
