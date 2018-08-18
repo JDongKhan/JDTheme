@@ -1,0 +1,17 @@
+{
+    "navigationBar" : {
+        "translucent" : false
+    },
+    
+    "translucent" : {
+        "translucent" : false
+    },
+    
+    "index_0" : {
+        "text" : "首页2"
+    },
+    
+    "index_1" : {
+        "text" : "设置2"
+    },
+}

@@ -47,6 +47,10 @@
 		69F1E019212309ED0035A670 /* JDStyleable.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1E018212309ED0035A670 /* JDStyleable.m */; };
 		69F1E01E2123AF510035A670 /* JDTheme_White.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DFF92122D47A0035A670 /* JDTheme_White.bundle */; };
 		69F1E01F2123AF510035A670 /* JDTheme_Black.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E0032122D48A0035A670 /* JDTheme_Black.bundle */; };
+		69F4A5AE21284128002E5104 /* Global.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4A5AD21284128002E5104 /* Global.json */; };
+		69F4A5B121284949002E5104 /* Global.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4A5AF21284948002E5104 /* Global.json */; };
+		69F4A5B221284949002E5104 /* Style.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4A5B021284948002E5104 /* Style.json */; };
+		69F4A5B321284A72002E5104 /* Style.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4A5AC212840D9002E5104 /* Style.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +143,10 @@
 		69F1E017212309ED0035A670 /* JDStyleable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDStyleable.h; sourceTree = "<group>"; };
 		69F1E018212309ED0035A670 /* JDStyleable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDStyleable.m; sourceTree = "<group>"; };
 		69F1E01D212315E80035A670 /* JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTheme.h; sourceTree = "<group>"; };
+		69F4A5AC212840D9002E5104 /* Style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Style.json; sourceTree = "<group>"; };
+		69F4A5AD21284128002E5104 /* Global.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Global.json; sourceTree = "<group>"; };
+		69F4A5AF21284948002E5104 /* Global.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Global.json; sourceTree = "<group>"; };
+		69F4A5B021284948002E5104 /* Style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Style.json; sourceTree = "<group>"; };
 		9C2E8848F34D252962D1E29C /* libPods-JDTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -315,6 +323,8 @@
 		69F1DFFA2122D47A0035A670 /* JDTheme_White */ = {
 			isa = PBXGroup;
 			children = (
+				69F4A5AD21284128002E5104 /* Global.json */,
+				69F4A5AC212840D9002E5104 /* Style.json */,
 				6962B5B22127A8F700811418 /* Global.plist */,
 				69F1E00A2122D4D80035A670 /* Images.xcassets */,
 				69F1E0092122D4D80035A670 /* Style.plist */,
@@ -326,6 +336,8 @@
 		69F1E0042122D48A0035A670 /* JDTheme_Black */ = {
 			isa = PBXGroup;
 			children = (
+				69F4A5AF21284948002E5104 /* Global.json */,
+				69F4A5B021284948002E5104 /* Style.json */,
 				6962B5B42127A90100811418 /* Global.plist */,
 				69F1E00E2122D4E00035A670 /* Images.xcassets */,
 				69F1E00D2122D4E00035A670 /* Style.plist */,
@@ -466,6 +478,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F4A5AE21284128002E5104 /* Global.json in Resources */,
+				69F4A5B321284A72002E5104 /* Style.json in Resources */,
 				69F1E00B2122D4D80035A670 /* Style.plist in Resources */,
 				6962B5B32127A8F700811418 /* Global.plist in Resources */,
 				69F1E00C2122D4D80035A670 /* Images.xcassets in Resources */,
@@ -476,6 +490,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F4A5B121284949002E5104 /* Global.json in Resources */,
+				69F4A5B221284949002E5104 /* Style.json in Resources */,
 				69F1E00F2122D4E00035A670 /* Style.plist in Resources */,
 				6962B5B52127A90100811418 /* Global.plist in Resources */,
 				69F1E0102122D4E00035A670 /* Images.xcassets in Resources */,
@@ -706,7 +722,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JDTheme/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jd.JDTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -720,7 +739,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JDTheme/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jd.JDTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

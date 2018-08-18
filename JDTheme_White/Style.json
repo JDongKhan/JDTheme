@@ -1,0 +1,52 @@
+{
+    "navigationBar" : {
+        "barTintColor" : "#eee",
+        "statusBarStyle" : 0
+    },
+    
+    "tabBar" : {
+        "barTintColor" : "#eee"
+    },
+    
+    "index_0" : {
+        "image" : "index_1"
+    },
+    
+    "index_1" : {
+        "image" : "index_2"
+    },
+    
+    "title" : {
+        "textColor" : "#000000",
+        "font" : {
+            "name" : "Arial-BoldItalicMT",
+            "size" : 18,
+            "bold" : true
+        },
+        "backgroundColor" : "#eee"
+    },
+    
+    "detail" : {
+        "textColor" : "#000000",
+        "font" : {
+            "size" : 12
+        },
+        "backgroundColor" : "#eee",
+        "numberOfLines" : 0
+    },
+    
+    "button" : {
+        "right" : 10,
+        "text" : "点我",
+        "textColor" : "#fff",
+        "backgroundImage" : "button"
+    },
+    
+    "view" : {
+        "backgroundColor" : "#ffffff"
+    },
+    
+    "image" : {
+        "image" : "eye"
+    }
+}

@@ -35,6 +35,12 @@
     
     [[JDStyleable sharedInstance] setGlobalStyleableName:@"Global"];
     
+    //自定义文件解析
+    [[JDStyleable sharedInstance] setStyleableParser:^NSDictionary *(NSString *fileName) {
+        NSURL *url = [[JDThemeManager sharedInstance].bundle URLForResource:fileName withExtension:@"json"];
+        return [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:kNilOptions error:nil];
+    }];
+    
     UITabBarController *tabBarVC =  (UITabBarController *)self.window.rootViewController;
     
     tabBarVC.tabBar.jd_themeID = @"Style.tabBar";
