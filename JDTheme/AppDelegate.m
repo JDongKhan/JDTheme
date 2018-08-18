@@ -31,6 +31,7 @@
     //下面代码属于全局
     [[JDThemeManager sharedInstance] setBundle:bundle];
     
+    //是否是debug模式，可以打印额外日志
     [JDThemeManager sharedInstance].debug = YES;
     
     [[JDStyleable sharedInstance] setGlobalStyleableName:@"Global"];
@@ -41,10 +42,10 @@
         return [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:kNilOptions error:nil];
     }];
     
+    
+    //渲染tabbar控件
     UITabBarController *tabBarVC =  (UITabBarController *)self.window.rootViewController;
-    
     tabBarVC.tabBar.jd_themeID = @"Style.tabBar";
-    
     [tabBarVC.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.jd_themeID = [NSString stringWithFormat:@"Style.index_%ld",idx];
     }];
