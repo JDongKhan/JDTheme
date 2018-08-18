@@ -14,6 +14,7 @@
 
 @interface JDStyleable()
 
+//蹩脚的模型，目前暂定用字典来存储
 @property (nonatomic, strong, readonly) NSMutableDictionary<NSString *,NSMutableArray<JDWeakExecutor *> *> *allViewsStore;
 
 @property (nonatomic, strong) NSMutableDictionary *ruleSetConfig;
