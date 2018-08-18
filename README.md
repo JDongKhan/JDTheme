@@ -19,7 +19,7 @@
 
 2、在APPDelegate 通过 [[JDThemeManager sharedInstance] setBundle:bundle]; 设置一款包含资源的bundle，当然该bundle来源不管，你可以网络下载也可以是mainBundle。
 
-3、给你的控件设置jd_themeKey属性（可以代码设置，也可以直接xib设置），jd_themeKey是你的bundle里面的一组配置key
+3、给你的控件设置jd_themeID属性（可以代码设置，也可以直接xib设置），jd_themeID是你的bundle里面的一组配置ID
 
 4、享受吧
 
@@ -28,74 +28,123 @@
 ## 现有支持的属性：
 
 ```
-// view
-@property (nonatomic, strong, readonly) UIColor *backgroundColor;
-
-@property (nonatomic, strong, readonly) UIImage *backgroundImage;
-
-@property (nonatomic, strong, readonly) UIColor *borderColor;
-
-@property (nonatomic, assign, readonly) CGFloat borderWidth;
-
-@property (nonatomic, assign, readonly) CGFloat cornerRadius;
-
-@property (nonatomic, assign, readonly) CGRect frame;
-
-@property (nonatomic, strong, readonly) UIColor *tintColor;
-
-//image
-@property (nonatomic, strong, readonly) UIImage *image;
-
-//button
-@property (nonatomic, strong, readonly) UIImage *selectedBackgroundImage;
-
-@property (nonatomic, strong, readonly) UIColor *selectedTextColor;
-
-@property (nonatomic, strong, readonly) UIImage *selectedImage;
-
-//Label
-@property (nonatomic, copy, readonly) NSString *text;
-
-@property (nonatomic, strong, readonly) UIColor *textColor;
-
-@property (nonatomic, copy, readonly) NSString *fontName;
-
-@property (nonatomic, assign, readonly) CGFloat fontSize;
-
-@property (nonatomic, assign, readonly) BOOL fontBold;
-
-@property (nonatomic, assign, readonly) BOOL fontItalic;
-
-@property (nonatomic, assign, readonly) NSTextAlignment textAlignment;
-
-@property (nonatomic, assign, readonly) NSLineBreakMode lineBreakMode;
-
-@property (nonatomic, assign, readonly) NSInteger numberOfLines;
-
-//textView
-@property (nonatomic, assign, readonly) BOOL editable;
-
-//textField
-@property (nonatomic, copy, readonly) NSString *placeholder;
-
-//tableView
-@property (nonatomic, strong, readonly) UIColor *separatorColor;
-
-//Switch
-@property (nonatomic, assign, readonly) BOOL checked;
-
-//navigation
-@property (nonatomic, assign, readonly) BOOL translucent;
-
-@property (nonatomic, strong, readonly) UIImage *shadowImage;
-
-@property (nonatomic, assign, readonly) UIStatusBarStyle statusBarStyle;
-
-@property (nonatomic, strong, readonly) UIColor *barTintColor;
+各控件支持的属性
+ 
+ UIView {
+   backgroundColor : '#fff',
+   borderColor : '#cecece',
+   borderWidth : 1,
+   cornerRadius : 1,
+   tintColor : '#cececece',
+   frame : { {0,0},{100,100} },
+   visible : 1,
+   opacity : 0.2,
+   center : {100,100},
+   left : 0,
+   top: 0,
+   right : 0,
+   bottom : 0,
+   width : 10,
+   height: 10
+ }
+ 
+ UIButton {
+   text : 'text',
+   textColor : '#fffff',
+   selectedTextColor : '#000',
+   image : 'imageName',
+   selectedImage : 'imageName',
+   font : {
+       size : 14,
+       name : '',
+       bold : YES,
+       italic : YES
+   }
+   numberOfLines : 0,
+   lineBreakMode : 0 ,
+   backgroundImage : 'imageName',
+   selectedBackgroundImage : 'imageName',
+   textShadowColor : '#ccc',
+   textShadowOffset : {100,100}
+ }
+ 
+ UILabel {
+   text : 'text' ,
+   textColor : '#fff',
+   highlightedTextColor : '#ccc',
+   font : {},
+   adjustsFontSize : 10,
+   baselineAdjustment : 0,
+   textAlignment : 0,
+   numberOfLines : 0,
+   lineBreakMode : 0
+ }
+ 
+ UITabBar {
+   backgroundColor : '#fff',
+   barTintColor : ''#fff,
+   translucent : NO,
+ }
+ 
+ UITextView {
+   text : 'text',
+   textColor : '#ccc',
+   font : {},
+   textAlignment : 0,
+   editable : YES
+ }
+ 
+ UITextField {
+   text : 'text',
+   textColor : '#ccc',
+   font : {},
+   textAlignment : 0,
+   placeholder : 'placeholder'
+ }
+ 
+ UITableView {
+  separatorColor : '#fff'
+ }
+ 
+ UITabBarItem {
+   text : 'text',
+   image : 'imageName',
+   selectedImage : 'imageName'
+ }
+ 
+ UISwitch {
+   image : 'imageName'
+   selectedImage : 'imageName'
+   checked : YES
+ }
+ 
+ UIPageControl {
+   textColor : '#ffffff',
+   selectedTextColor : '#cecccc'
+ }
+ 
+ UINavigationBar {
+   barTintColor : '#fff',
+   translucent : NO,
+   backgroundImage : 'imageName',
+   shadowImage : 'imageName',
+   statusBarStyle : 0
+ }
+ 
+ UIImageView {
+  image : 'imageName'
+ }
+ 
+ UIBarItem {
+   text : 'text',
+   image : 'imageName',
+   enabled : NO
+ }
+ 
 
 ```
 
-上面可以看出，不止可以定制image、颜色，连文字、font、边框等都可以定制，甚至后面会增加对约束的支持。(Tips:父类拥有的子类也拥有哦)
+上面可以看出，不止可以定制image、颜色，连文字、font、边框等都可以定制，甚至还支持对约束设置。(Tips:父类拥有的子类也拥有哦)
 
 ## 支持自定义控件 
 当然这些是系统的控件和属性，还可以支持自定义控件和属性，只需要你的类重现jd_applyThemeWithRuleSet即可，拿到JDRuleSet你想怎么渲染就怎么渲染
