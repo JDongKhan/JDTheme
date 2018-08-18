@@ -16,12 +16,15 @@
 
 - (void)setJd_themeID:(NSString *)jd_themeID {
     objc_setAssociatedObject(self, @selector(jd_themeID), jd_themeID, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    
+    //监听dealloc
     JDWeakExecutor *execuotr = self.jd_weakExcutor;
     NSString *jd_themeId  = jd_themeID;
     [self jd_executeAtDealloc:^{
         [[JDStyleable sharedInstance] unRegisterObject:execuotr forKey:jd_themeId];
     }];
     
+    //设置样式
     __weak NSObject *weakSelf = self;
     [[JDStyleable sharedInstance] ruleSetForKeyPath:self.jd_themeID compeletion:^(JDRuleSet *ruleSet) {
         [[JDStyleable sharedInstance] registerObject:weakSelf.jd_weakExcutor forKey:jd_themeID];

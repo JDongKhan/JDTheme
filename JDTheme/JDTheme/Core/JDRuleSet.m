@@ -79,7 +79,7 @@
 }
 
 + (NSString *)_getPropertyType:(NSString *)property {
-    //获取对象的类型objc_getClass("UserModel")
+    //获取类的属性
     objc_property_t p = class_getProperty(self, property.UTF8String);
     if (!p) {
         return nil;

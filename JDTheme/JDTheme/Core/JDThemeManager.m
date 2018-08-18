@@ -28,6 +28,7 @@ NSString * const JDThemeChangedNotification = @"JDThemeChangedNotification";
 
 - (void)changeBundle:(NSBundle *)bundle {
     _bundle = bundle;
+    //刷新所有样式表
     [[JDStyleable sharedInstance] reloadAllObjectStyles:^(BOOL compeletion) {
         [self sendChangeThemeNotification];
     }];
