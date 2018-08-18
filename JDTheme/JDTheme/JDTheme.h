@@ -24,7 +24,9 @@
  right : 0,
  bottom : 0,
  width : 10,
- height: 10
+ height : 10,
+ centerX : 1,
+ centerY : 1
  }
  
  UIButton {

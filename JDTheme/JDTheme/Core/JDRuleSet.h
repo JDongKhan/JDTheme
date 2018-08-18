@@ -63,6 +63,12 @@
 @property (nonatomic, assign, readonly) BOOL hasHeight;
 @property (nonatomic, assign, readonly) CGFloat height;
 
+@property (nonatomic, assign, readonly) BOOL hasCenterX;
+@property (nonatomic, assign, readonly) CGFloat centerX;
+
+@property (nonatomic, assign, readonly) BOOL hasCenterY;
+@property (nonatomic, assign, readonly) CGFloat centerY;
+
 //image
 @property (nonatomic, assign, readonly) BOOL hasImage;
 @property (nonatomic, strong, readonly) UIImage *image;

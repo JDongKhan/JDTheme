@@ -35,14 +35,6 @@
         self.tintColor = theme.tintColor;
     }
     
-    if (theme.hasFrame) {
-        self.frame = theme.frame;
-    }
-    
-    if (theme.hasCenter) {
-        self.center = theme.center;
-    }
-    
     if (theme.hasOpacity) {
         self.alpha = theme.opacity;
     }
@@ -80,6 +72,24 @@
         self.jd_height(relativeToView).jd_equal(theme.height).jd_update();
     }
     
+    if (theme.hasCenterX) {
+        self.jd_centerX(relativeToView).jd_equal(theme.centerX).jd_update();
+    }
+    
+    if (theme.hasCenterY) {
+        self.jd_centerY(relativeToView).jd_equal(theme.centerY).jd_update();
+    }
+    
+    if (theme.hasCenter) {
+        self
+        .jd_centerX(relativeToView).jd_equal(theme.center.x)
+        .jd_centerY(relativeToView).jd_equal(theme.center.y)
+        .jd_update();
+    }
+    
+    if (theme.hasFrame) {
+        self.jd_frame(theme.frame).jd_update();
+    }
 }
 
 @end
