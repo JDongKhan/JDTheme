@@ -158,11 +158,11 @@
 
 ## 支持常规属性
 
-支持设置控件的常规属性，如 label的 numberOfLines、lineBreakMode等。
+支持设置控件的常规属性，如 label 的 numberOfLines、lineBreakMode等。
 
 ## 支持自定义控件 
 
-当然这些是系统的控件和属性，还可以支持自定义控件和属性，只需要你的类重现jd_applyThemeWithRuleSet即可，拿到JDRuleSet你想怎么渲染就怎么渲染
+当然这些是系统的控件和属性，还可以支持自定义控件和属性，只需要你的类重写jd_applyThemeWithRuleSet即可，拿到JDRuleSet你想怎么渲染就怎么渲染
 
 ## 支持多文件
 
@@ -174,7 +174,7 @@
 
 ## 支持XIB和代码
 
-xib需要在attribute设置Jd themeID即可，代码只需要view.jd_themeID = @"id"即可
+xib需要在attribute栏目设置Jd themeID，代码只需要view.jd_themeID = @"id"即可
 
 
 ## 支持各种格式的样式文件
