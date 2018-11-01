@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35852D51701CC1D5264E4DBE517568A4 /* JDAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5436151BB85F771D1F904898AD3EBE8C /* JDAutoLayout-dummy.m */; };
+		0448A4F31A35870EF07AC4886508B7A5 /* NSObject+JDDeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D1246B03D6183F1F00004B554FEFCBB /* NSObject+JDDeallocBlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		178763C433A6CD4AB939C084C35DC13E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		2E7CC54D461279CE29C61900ED041BBF /* NSObject+JDDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 152108242EB988BCC54B04C66B917E3A /* NSObject+JDDeallocBlock.m */; };
+		35852D51701CC1D5264E4DBE517568A4 /* JDAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1EBF760602431AE2CFB056385349D /* JDAutoLayout-dummy.m */; };
+		4521EF84DBDDC35577CA168D62CE58FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		75F6A56E13A53EDDFA4F65322D820646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		75FB347825E115F0A0CC25CE1B2BD42B /* UIView+JDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF20F1CF7B2AB960549B03DF255854 /* UIView+JDAutoLayout.m */; };
-		76DD4CA4485723D2DD662DDA4FD44F1B /* Pods-JDTheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0905A996EE95C1FFBF3BB3B1FCF5CA /* Pods-JDTheme-dummy.m */; };
-		97B552D4E928968850A4CCACF343084A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		A0EEB04CFB7E5B3D3AAFEB5F70822965 /* UIView+JDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9F7F91C72DC01724081E61D7B0502C /* UIView+JDAutoLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75FB347825E115F0A0CC25CE1B2BD42B /* UIView+JDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D11B4C18963D6A1DE65117A35387C /* UIView+JDAutoLayout.m */; };
+		A0EEB04CFB7E5B3D3AAFEB5F70822965 /* UIView+JDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A83527C27D76E3A7FFC6AD5250832D /* UIView+JDAutoLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A236D6805E636923ACCBAFA893A7F90E /* Pods-JDTheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0905A996EE95C1FFBF3BB3B1FCF5CA /* Pods-JDTheme-dummy.m */; };
 		B9FF485E8184986B212AF51A9E8A8A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		D7BA5A61DC7497F1DFC259988D09D3D4 /* JDObjectDealloc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2940F91A5A81849FACDE0B183A623D5 /* JDObjectDealloc-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F9F6D7BC9F9F1D3B1F3EA0BF2D03CB19 /* PBXContainerItemProxy */ = {
+		44C22DFA499F474C9A627C3F65AFF402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB5F572EE81D20BA2151CDFFEAA53C17;
+			remoteInfo = JDObjectDealloc;
+		};
+		C9E982B4D36CD99EDC27296154447716 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -27,31 +38,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CF600F03EB5F5FED40763827E2A5D41 /* libJDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJDAutoLayout.a; path = libJDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		152108242EB988BCC54B04C66B917E3A /* NSObject+JDDeallocBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JDDeallocBlock.m"; path = "JDObjectDealloc/JDObjectDealloc/NSObject+JDDeallocBlock.m"; sourceTree = "<group>"; };
+		175F86663C5005A7EFB54F0323147391 /* JDObjectDealloc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDObjectDealloc.xcconfig; sourceTree = "<group>"; };
 		1B2ACAE465219455849C8277B173B7A7 /* Pods-JDTheme-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JDTheme-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1C0905A996EE95C1FFBF3BB3B1FCF5CA /* Pods-JDTheme-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JDTheme-dummy.m"; sourceTree = "<group>"; };
-		29CEA1E8AA97B71E9780086FB6A2D1E8 /* JDAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDAutoLayout.xcconfig; sourceTree = "<group>"; };
+		2D1246B03D6183F1F00004B554FEFCBB /* NSObject+JDDeallocBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+JDDeallocBlock.h"; path = "JDObjectDealloc/JDObjectDealloc/NSObject+JDDeallocBlock.h"; sourceTree = "<group>"; };
+		317ED024AC7EE664DA361B80089E55A6 /* JDAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDAutoLayout-prefix.pch"; sourceTree = "<group>"; };
 		438DB393B67EF86E427568E5EAA8AA81 /* Pods-JDTheme-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JDTheme-resources.sh"; sourceTree = "<group>"; };
-		5436151BB85F771D1F904898AD3EBE8C /* JDAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDAutoLayout-dummy.m"; sourceTree = "<group>"; };
+		48F1EBF760602431AE2CFB056385349D /* JDAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDAutoLayout-dummy.m"; sourceTree = "<group>"; };
+		4F07A3D2BCE03FA81414396A845B4881 /* libPods-JDTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JDTheme.a"; path = "libPods-JDTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A83527C27D76E3A7FFC6AD5250832D /* UIView+JDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JDAutoLayout.h"; path = "JDAutoLayout/UIView+JDAutoLayout.h"; sourceTree = "<group>"; };
+		5AF15EF1F38B675A5E71CF5A849E8D69 /* JDObjectDealloc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDObjectDealloc-prefix.pch"; sourceTree = "<group>"; };
 		5EEDDF2ADB924697B02478D715BDA222 /* Pods-JDTheme-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JDTheme-frameworks.sh"; sourceTree = "<group>"; };
-		5F9F7F91C72DC01724081E61D7B0502C /* UIView+JDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JDAutoLayout.h"; path = "JDAutoLayout/UIView+JDAutoLayout.h"; sourceTree = "<group>"; };
-		812FE224F2C2CD27C0885888C7ED502E /* JDAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDAutoLayout-prefix.pch"; sourceTree = "<group>"; };
+		64DD70A14118B9A85E351BA26CD4F14E /* libJDObjectDealloc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJDObjectDealloc.a; path = libJDObjectDealloc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C2D11B4C18963D6A1DE65117A35387C /* UIView+JDAutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDAutoLayout.m"; path = "JDAutoLayout/UIView+JDAutoLayout.m"; sourceTree = "<group>"; };
 		8794B280CF7B1BCD335795C7F39303FF /* Pods-JDTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JDTheme.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		984B97A514968EA9CE2ABE0302505645 /* libPods-JDTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JDTheme.a"; path = "libPods-JDTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F32D9313FAA2D37291D52FF087219B7 /* Pods-JDTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JDTheme.release.xcconfig"; sourceTree = "<group>"; };
-		ADCF20F1CF7B2AB960549B03DF255854 /* UIView+JDAutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDAutoLayout.m"; path = "JDAutoLayout/UIView+JDAutoLayout.m"; sourceTree = "<group>"; };
+		AF3CA5A7EC6588C27E16B5651ABBBAE8 /* libJDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJDAutoLayout.a; path = libJDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B267324A975F354A01B34EBEA1EBD322 /* Pods-JDTheme-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JDTheme-acknowledgements.plist"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F2940F91A5A81849FACDE0B183A623D5 /* JDObjectDealloc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDObjectDealloc-dummy.m"; sourceTree = "<group>"; };
+		F8D23D08189683321C5ECC8785F2E7D5 /* JDAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDAutoLayout.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49B8B08925B1EA2131A0866CB861DFCB /* Frameworks */ = {
+		240B7051F1EA3AB88F8873D82F9BC698 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B552D4E928968850A4CCACF343084A /* Foundation.framework in Frameworks */,
+				178763C433A6CD4AB939C084C35DC13E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95AFE844816F15F09A9CAD715FFBD7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4521EF84DBDDC35577CA168D62CE58FC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +92,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012ACA8937FF3A84AC328A8EA5A3332E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8D23D08189683321C5ECC8785F2E7D5 /* JDAutoLayout.xcconfig */,
+				48F1EBF760602431AE2CFB056385349D /* JDAutoLayout-dummy.m */,
+				317ED024AC7EE664DA361B80089E55A6 /* JDAutoLayout-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JDAutoLayout";
+			sourceTree = "<group>";
+		};
+		27F1960D96F708E04E42C0254A498381 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				175F86663C5005A7EFB54F0323147391 /* JDObjectDealloc.xcconfig */,
+				F2940F91A5A81849FACDE0B183A623D5 /* JDObjectDealloc-dummy.m */,
+				5AF15EF1F38B675A5E71CF5A849E8D69 /* JDObjectDealloc-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JDObjectDealloc";
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,14 +131,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4C6713FD806C24BE988C54CA3163F4F7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8BCD72ACCCA634836DA0A818FEF0EA86 /* JDAutoLayout */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		519AAFFC1E84BEA61912482639763EF5 /* Pods-JDTheme */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,15 +146,15 @@
 			path = "Target Support Files/Pods-JDTheme";
 			sourceTree = "<group>";
 		};
-		595493F53A3760CA27DC93BD6A358B54 /* Support Files */ = {
+		674CF8EE66F1A6C332C0CC2205A27C1E /* JDObjectDealloc */ = {
 			isa = PBXGroup;
 			children = (
-				29CEA1E8AA97B71E9780086FB6A2D1E8 /* JDAutoLayout.xcconfig */,
-				5436151BB85F771D1F904898AD3EBE8C /* JDAutoLayout-dummy.m */,
-				812FE224F2C2CD27C0885888C7ED502E /* JDAutoLayout-prefix.pch */,
+				2D1246B03D6183F1F00004B554FEFCBB /* NSObject+JDDeallocBlock.h */,
+				152108242EB988BCC54B04C66B917E3A /* NSObject+JDDeallocBlock.m */,
+				27F1960D96F708E04E42C0254A498381 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/JDAutoLayout";
+			name = JDObjectDealloc;
+			path = JDObjectDealloc;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -123,21 +162,19 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				4C6713FD806C24BE988C54CA3163F4F7 /* Pods */,
-				B6DB146CFE07B1CDA0FA3CC794FE49EF /* Products */,
+				A64C9B87F31E7EE5577C5EA26E00A9C2 /* Pods */,
+				EFCC2B2444598D122F645365B54F8265 /* Products */,
 				AB2E9A0A3359E9CA75F49B9DBA94BA7D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8BCD72ACCCA634836DA0A818FEF0EA86 /* JDAutoLayout */ = {
+		A64C9B87F31E7EE5577C5EA26E00A9C2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F7F91C72DC01724081E61D7B0502C /* UIView+JDAutoLayout.h */,
-				ADCF20F1CF7B2AB960549B03DF255854 /* UIView+JDAutoLayout.m */,
-				595493F53A3760CA27DC93BD6A358B54 /* Support Files */,
+				FFDF4DCCD9437EE25EC017A886516194 /* JDAutoLayout */,
+				674CF8EE66F1A6C332C0CC2205A27C1E /* JDObjectDealloc */,
 			);
-			name = JDAutoLayout;
-			path = JDAutoLayout;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AB2E9A0A3359E9CA75F49B9DBA94BA7D /* Targets Support Files */ = {
@@ -148,13 +185,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B6DB146CFE07B1CDA0FA3CC794FE49EF /* Products */ = {
+		EFCC2B2444598D122F645365B54F8265 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CF600F03EB5F5FED40763827E2A5D41 /* libJDAutoLayout.a */,
-				984B97A514968EA9CE2ABE0302505645 /* libPods-JDTheme.a */,
+				AF3CA5A7EC6588C27E16B5651ABBBAE8 /* libJDAutoLayout.a */,
+				64DD70A14118B9A85E351BA26CD4F14E /* libJDObjectDealloc.a */,
+				4F07A3D2BCE03FA81414396A845B4881 /* libPods-JDTheme.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FFDF4DCCD9437EE25EC017A886516194 /* JDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				53A83527C27D76E3A7FFC6AD5250832D /* UIView+JDAutoLayout.h */,
+				7C2D11B4C18963D6A1DE65117A35387C /* UIView+JDAutoLayout.m */,
+				012ACA8937FF3A84AC328A8EA5A3332E /* Support Files */,
+			);
+			name = JDAutoLayout;
+			path = JDAutoLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,26 +217,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		565C3D74828F45565844F2D794DCEFD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0448A4F31A35870EF07AC4886508B7A5 /* NSObject+JDDeallocBlock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		417173681AEDCEFC6D5205954D940283 /* Pods-JDTheme */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF003A056735CCA2F74A5D2CF778F94E /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */;
-			buildPhases = (
-				6CE493DE7A566E9B3C4A16E69FBCE92B /* Sources */,
-				49B8B08925B1EA2131A0866CB861DFCB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				748AA45D4FD45008A0F6B8F86DCE574B /* PBXTargetDependency */,
-			);
-			name = "Pods-JDTheme";
-			productName = "Pods-JDTheme";
-			productReference = 984B97A514968EA9CE2ABE0302505645 /* libPods-JDTheme.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		4BA2E02AC8FB383ABF65F61404733FF7 /* JDAutoLayout */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 605BAAF95E7CD28ECA9E91A69B2F5E31 /* Build configuration list for PBXNativeTarget "JDAutoLayout" */;
@@ -202,7 +242,42 @@
 			);
 			name = JDAutoLayout;
 			productName = JDAutoLayout;
-			productReference = 0CF600F03EB5F5FED40763827E2A5D41 /* libJDAutoLayout.a */;
+			productReference = AF3CA5A7EC6588C27E16B5651ABBBAE8 /* libJDAutoLayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AD3D1CF7474F57AB4052D3FD0B6A3D9F /* Pods-JDTheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6595157424CC43FC6CAB782839C01B1A /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */;
+			buildPhases = (
+				1E6AF8EEDEF02FA26D762558FCD1E41A /* Sources */,
+				240B7051F1EA3AB88F8873D82F9BC698 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF3EA3F338A890FF2DE633BD3FDDB990 /* PBXTargetDependency */,
+				6666F3D51280575867112398361B6C95 /* PBXTargetDependency */,
+			);
+			name = "Pods-JDTheme";
+			productName = "Pods-JDTheme";
+			productReference = 4F07A3D2BCE03FA81414396A845B4881 /* libPods-JDTheme.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB5F572EE81D20BA2151CDFFEAA53C17 /* JDObjectDealloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E02B7E6BC0BAA6027012FB138856FCD /* Build configuration list for PBXNativeTarget "JDObjectDealloc" */;
+			buildPhases = (
+				BD1932D4C4B648D118F33C9AC4603362 /* Sources */,
+				D95AFE844816F15F09A9CAD715FFBD7A /* Frameworks */,
+				565C3D74828F45565844F2D794DCEFD9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDObjectDealloc;
+			productName = JDObjectDealloc;
+			productReference = 64DD70A14118B9A85E351BA26CD4F14E /* libJDObjectDealloc.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -222,22 +297,23 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B6DB146CFE07B1CDA0FA3CC794FE49EF /* Products */;
+			productRefGroup = EFCC2B2444598D122F645365B54F8265 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4BA2E02AC8FB383ABF65F61404733FF7 /* JDAutoLayout */,
-				417173681AEDCEFC6D5205954D940283 /* Pods-JDTheme */,
+				DB5F572EE81D20BA2151CDFFEAA53C17 /* JDObjectDealloc */,
+				AD3D1CF7474F57AB4052D3FD0B6A3D9F /* Pods-JDTheme */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6CE493DE7A566E9B3C4A16E69FBCE92B /* Sources */ = {
+		1E6AF8EEDEF02FA26D762558FCD1E41A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DD4CA4485723D2DD662DDA4FD44F1B /* Pods-JDTheme-dummy.m in Sources */,
+				A236D6805E636923ACCBAFA893A7F90E /* Pods-JDTheme-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,21 +326,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD1932D4C4B648D118F33C9AC4603362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BA5A61DC7497F1DFC259988D09D3D4 /* JDObjectDealloc-dummy.m in Sources */,
+				2E7CC54D461279CE29C61900ED041BBF /* NSObject+JDDeallocBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		748AA45D4FD45008A0F6B8F86DCE574B /* PBXTargetDependency */ = {
+		6666F3D51280575867112398361B6C95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JDObjectDealloc;
+			target = DB5F572EE81D20BA2151CDFFEAA53C17 /* JDObjectDealloc */;
+			targetProxy = 44C22DFA499F474C9A627C3F65AFF402 /* PBXContainerItemProxy */;
+		};
+		FF3EA3F338A890FF2DE633BD3FDDB990 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JDAutoLayout;
 			target = 4BA2E02AC8FB383ABF65F61404733FF7 /* JDAutoLayout */;
-			targetProxy = F9F6D7BC9F9F1D3B1F3EA0BF2D03CB19 /* PBXContainerItemProxy */;
+			targetProxy = C9E982B4D36CD99EDC27296154447716 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		29E013D93538666A02F84AE5D56D8532 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29CEA1E8AA97B71E9780086FB6A2D1E8 /* JDAutoLayout.xcconfig */;
+			baseConfigurationReference = F8D23D08189683321C5ECC8785F2E7D5 /* JDAutoLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -287,7 +378,7 @@
 		};
 		604F8EB237E42C6F77888EDAB4099C64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29CEA1E8AA97B71E9780086FB6A2D1E8 /* JDAutoLayout.xcconfig */;
+			baseConfigurationReference = F8D23D08189683321C5ECC8785F2E7D5 /* JDAutoLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -430,7 +521,7 @@
 			};
 			name = Release;
 		};
-		DD7CA1A1F8B59CA0C6740E6504E01B66 /* Release */ = {
+		80D4C726080E9013096BA24CFBB15679 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9F32D9313FAA2D37291D52FF087219B7 /* Pods-JDTheme.release.xcconfig */;
 			buildSettings = {
@@ -453,7 +544,31 @@
 			};
 			name = Release;
 		};
-		EA92642F72A116F63FABF4F7A7EDFAE7 /* Debug */ = {
+		9E72778C6EBB72F1541248DBB4F8A066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175F86663C5005A7EFB54F0323147391 /* JDObjectDealloc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JDObjectDealloc/JDObjectDealloc-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JDObjectDealloc;
+				PRODUCT_NAME = JDObjectDealloc;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B79408880A8E893B4B3CD9A8A537C359 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8794B280CF7B1BCD335795C7F39303FF /* Pods-JDTheme.debug.xcconfig */;
 			buildSettings = {
@@ -475,6 +590,29 @@
 			};
 			name = Debug;
 		};
+		BFD962DE9C50392367A81317F9B1C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175F86663C5005A7EFB54F0323147391 /* JDObjectDealloc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JDObjectDealloc/JDObjectDealloc-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JDObjectDealloc;
+				PRODUCT_NAME = JDObjectDealloc;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +621,15 @@
 			buildConfigurations = (
 				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
 				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E02B7E6BC0BAA6027012FB138856FCD /* Build configuration list for PBXNativeTarget "JDObjectDealloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD962DE9C50392367A81317F9B1C8EC /* Debug */,
+				9E72778C6EBB72F1541248DBB4F8A066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -496,11 +643,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF003A056735CCA2F74A5D2CF778F94E /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */ = {
+		6595157424CC43FC6CAB782839C01B1A /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA92642F72A116F63FABF4F7A7EDFAE7 /* Debug */,
-				DD7CA1A1F8B59CA0C6740E6504E01B66 /* Release */,
+				B79408880A8E893B4B3CD9A8A537C359 /* Debug */,
+				80D4C726080E9013096BA24CFBB15679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "JDTheme"
-    s.version      = '0.0.5' 
+    s.version      = '0.0.6' 
     s.summary      = "JDTheme"
 
     s.description  = <<-DESC
@@ -28,5 +28,6 @@ Pod::Spec.new do |s|
     s.public_header_files = 'JDTheme/JDTheme/**/*.h'
 
     s.dependency 'JDAutoLayout'
+    s.dependency 'JDObjectDealloc'
 
 end

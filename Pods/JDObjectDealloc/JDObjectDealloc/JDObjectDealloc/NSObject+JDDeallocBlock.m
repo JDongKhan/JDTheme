@@ -8,7 +8,6 @@
 
 #import "NSObject+JDDeallocBlock.h"
 #import <objc/runtime.h>
-#import "JDThemeManager.h"
 
 @interface JDDeallocExecutor : NSObject
 
@@ -39,38 +38,18 @@
     if (block) {
         JDDeallocExecutor *executor = [[JDDeallocExecutor alloc] initWithBlock:block];
         @synchronized (self) {
-            [[self hs_deallocExecutors] addObject:executor];
+            [[self jd_deallocExecutors] addObject:executor];
         }
     }
 }
 
-- (NSHashTable *)hs_deallocExecutors {
+- (NSHashTable *)jd_deallocExecutors {
     NSHashTable *table = objc_getAssociatedObject(self,_cmd);
     if (!table) {
         table = [NSHashTable hashTableWithOptions:NSPointerFunctionsStrongMemory];
         objc_setAssociatedObject(self, _cmd, table, OBJC_ASSOCIATION_RETAIN);
     }
     return table;
-}
-
-- (JDWeakExecutor *)jd_weakExcutor {
-    JDWeakExecutor *weakExcutor = objc_getAssociatedObject(self,_cmd);
-    if (!weakExcutor) {
-        weakExcutor = [[JDWeakExecutor alloc] init];
-        weakExcutor.weakObject = self;
-        objc_setAssociatedObject(self, _cmd, weakExcutor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    return weakExcutor;
-}
-
-@end
-
-@implementation JDWeakExecutor
-
-- (void)dealloc {
-    if ([JDThemeManager sharedInstance].debug) {
-        NSLog(@"JDWeakExecutor:%@",self.weakObject);
-    }
 }
 
 @end

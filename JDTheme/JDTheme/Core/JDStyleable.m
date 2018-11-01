@@ -10,7 +10,7 @@
 #import "JDThemeManager.h"
 #import <objc/runtime.h>
 #import "NSObject+JDTheme.h"
-#import "NSObject+JDDeallocBlock.h"
+#import "NSObject+JDWeakExcutor.h"
 
 @interface JDStyleable()
 

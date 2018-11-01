@@ -1,5 +1,5 @@
 //
-//  NSObject+JDDeallocBlock.h
+//  NSObject+JDWeakExcutor.h
 //  JDTheme
 //
 //  Created by JD on 2018/8/14.
@@ -15,9 +15,7 @@
 
 @end
 
-@interface NSObject (JDDeallocBlock)
-
-- (void)jd_executeAtDealloc:(void (^)(void))block;
+@interface NSObject (JDWeakExcutor)
 
 @property (nonatomic, strong, readonly) JDWeakExecutor *jd_weakExcutor;
 
