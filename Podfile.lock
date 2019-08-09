@@ -1,7 +1,7 @@
 PODS:
   - JDLayout (1.3.2)
   - JDObjectDealloc (0.0.1)
-  - JDTheme (0.0.6):
+  - JDTheme (0.0.7):
     - JDLayout
     - JDObjectDealloc
 
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   JDLayout: 3c59ad928c0939f3e2af4ac7b63612810534cc4d
   JDObjectDealloc: 0058d846631932ab16679ece8845d71536c26953
-  JDTheme: 2261588d7332d48bb0484fd7d7b9822e4251c139
+  JDTheme: 1b7e961ec5078e3ec8f3d5db03bf772f97d930e9
 
 PODFILE CHECKSUM: 351b1cb099399841413fb104c17cbc650e9efe8a
 

@@ -10,6 +10,9 @@
 
 @interface UIView (JDTheme)
 
+/**
+ 无它，仅仅用于支持在xib设置
+ */
 @property (nonatomic, copy) IBInspectable NSString *jd_themeID;
 
 @end

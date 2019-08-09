@@ -159,10 +159,13 @@
  */
 - (void)ruleSetForKeyPath:(NSString *)keyPath  compeletion:(void(^)(JDRuleSet *ruleSet))compeletion {
     dispatch_async(_queue, ^{
+        
         NSString *fileName = [keyPath componentsSeparatedByString:@"."].firstObject;
-        dispatch_semaphore_wait(self->_semaphore, DISPATCH_TIME_FOREVER);
-        [self loadStyleWithName:fileName];
-        dispatch_semaphore_signal(self->_semaphore);
+        if (![self.ruleSetConfig.allKeys containsObject:fileName]) {
+            dispatch_semaphore_wait(self->_semaphore, DISPATCH_TIME_FOREVER);
+            [self loadStyleWithName:fileName];
+            dispatch_semaphore_signal(self->_semaphore);
+        }
         
         JDRuleSet *ruleSet = [self ruleSetForKeyPath:keyPath];
         if (compeletion) {

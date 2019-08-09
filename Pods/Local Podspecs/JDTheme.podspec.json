@@ -1,6 +1,6 @@
 {
   "name": "JDTheme",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "summary": "JDTheme",
   "description": "JDRouter",
   "homepage": "https://github.com/JDongKhan/JDTheme.git",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/JDongKhan/JDTheme.git",
-    "tag": "0.0.6"
+    "tag": "0.0.7"
   },
   "frameworks": [
     "Foundation",
