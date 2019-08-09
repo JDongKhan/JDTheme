@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
 
-    s.source_files = 'JDTheme/JDTheme/**/*.{h,m}'
-    s.public_header_files = 'JDTheme/JDTheme/**/*.h'
+    s.source_files = 'Sources/**/*.{h,m}'
+    s.public_header_files = 'Sources/**/*.h'
 
-    s.dependency 'JDAutoLayout'
+    s.dependency 'JDLayout'
     s.dependency 'JDObjectDealloc'
 
 end

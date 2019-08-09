@@ -3,7 +3,6 @@
 
 target 'JDTheme' do
 
-pod 'JDAutoLayout' #, :path => '../JDLayout/'
-pod 'JDObjectDealloc'
+pod 'JDTheme' , :path => './'
 
 end

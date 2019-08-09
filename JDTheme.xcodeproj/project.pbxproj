@@ -12,11 +12,7 @@
 		6916DA0D21244C27004CF009 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA0C21244C27004CF009 /* SecondViewController.m */; };
 		6916DA1121244CCF004CF009 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA0F21244CCF004CF009 /* FirstTableViewCell.m */; };
 		6916DA1221244CCF004CF009 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6916DA1021244CCF004CF009 /* FirstTableViewCell.xib */; };
-		6916DA1D2125C17D004CF009 /* JDFontUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1C2125C17D004CF009 /* JDFontUtils.m */; };
 		6916DA202125CFBA004CF009 /* JDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA1F2125CFBA004CF009 /* JDNavigationViewController.m */; };
-		6916DA232126C7D5004CF009 /* JDImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA222126C7D5004CF009 /* JDImageUtils.m */; };
-		6916DA262126C803004CF009 /* JDColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916DA252126C803004CF009 /* JDColorUtils.m */; };
-		6930930C218AF940008AC8F9 /* NSObject+JDWeakExcutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6930930A218AF940008AC8F9 /* NSObject+JDWeakExcutor.m */; };
 		6962B5B32127A8F700811418 /* Global.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6962B5B22127A8F700811418 /* Global.plist */; };
 		6962B5B52127A90100811418 /* Global.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6962B5B42127A90100811418 /* Global.plist */; };
 		69F1DF762122858D0035A670 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DF752122858D0035A670 /* AppDelegate.m */; };
@@ -24,27 +20,10 @@
 		69F1DF7E2122858F0035A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7D2122858F0035A670 /* Assets.xcassets */; };
 		69F1DF812122858F0035A670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DF7F2122858F0035A670 /* LaunchScreen.storyboard */; };
 		69F1DF842122858F0035A670 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DF832122858F0035A670 /* main.m */; };
-		69F1DFAD2122B57B0035A670 /* UIButton+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFAC2122B57B0035A670 /* UIButton+JDTheme.m */; };
-		69F1DFB92122BAFA0035A670 /* UIView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFB82122BAFA0035A670 /* UIView+JDTheme.m */; };
-		69F1DFBF2122C32D0035A670 /* UILabel+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFBE2122C32D0035A670 /* UILabel+JDTheme.m */; };
-		69F1DFC22122C3540035A670 /* UITabBar+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFC12122C3540035A670 /* UITabBar+JDTheme.m */; };
-		69F1DFC52122C36A0035A670 /* UITextView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFC42122C36A0035A670 /* UITextView+JDTheme.m */; };
-		69F1DFC82122C37F0035A670 /* UITextField+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFC72122C37F0035A670 /* UITextField+JDTheme.m */; };
-		69F1DFCB2122C3920035A670 /* UITableView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFCA2122C3920035A670 /* UITableView+JDTheme.m */; };
-		69F1DFCE2122C3A50035A670 /* UITabBarItem+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFCD2122C3A50035A670 /* UITabBarItem+JDTheme.m */; };
-		69F1DFD12122C3B80035A670 /* UISwitch+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFD02122C3B80035A670 /* UISwitch+JDTheme.m */; };
-		69F1DFD72122C3DA0035A670 /* UIPageControl+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFD62122C3DA0035A670 /* UIPageControl+JDTheme.m */; };
-		69F1DFDA2122C3ED0035A670 /* UINavigationBar+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFD92122C3ED0035A670 /* UINavigationBar+JDTheme.m */; };
-		69F1DFDD2122C3FD0035A670 /* UIImageView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFDC2122C3FD0035A670 /* UIImageView+JDTheme.m */; };
-		69F1DFE02122C4100035A670 /* UIBarItem+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFDF2122C4100035A670 /* UIBarItem+JDTheme.m */; };
-		69F1DFEB2122C46E0035A670 /* JDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFE52122C46E0035A670 /* JDThemeManager.m */; };
-		69F1DFEC2122C46E0035A670 /* NSObject+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFE72122C46E0035A670 /* NSObject+JDTheme.m */; };
-		69F1DFED2122C46E0035A670 /* JDRuleSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1DFEA2122C46E0035A670 /* JDRuleSet.m */; };
 		69F1E00B2122D4D80035A670 /* Style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E0092122D4D80035A670 /* Style.plist */; };
 		69F1E00C2122D4D80035A670 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E00A2122D4D80035A670 /* Images.xcassets */; };
 		69F1E00F2122D4E00035A670 /* Style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E00D2122D4E00035A670 /* Style.plist */; };
 		69F1E0102122D4E00035A670 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E00E2122D4E00035A670 /* Images.xcassets */; };
-		69F1E019212309ED0035A670 /* JDStyleable.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F1E018212309ED0035A670 /* JDStyleable.m */; };
 		69F1E01E2123AF510035A670 /* JDTheme_White.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69F1DFF92122D47A0035A670 /* JDTheme_White.bundle */; };
 		69F1E01F2123AF510035A670 /* JDTheme_Black.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69F1E0032122D48A0035A670 /* JDTheme_Black.bundle */; };
 		69F4A5AE21284128002E5104 /* Global.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4A5AD21284128002E5104 /* Global.json */; };
@@ -80,16 +59,8 @@
 		6916DA0E21244CCF004CF009 /* FirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewCell.h; sourceTree = "<group>"; };
 		6916DA0F21244CCF004CF009 /* FirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
 		6916DA1021244CCF004CF009 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
-		6916DA1B2125C17D004CF009 /* JDFontUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFontUtils.h; sourceTree = "<group>"; };
-		6916DA1C2125C17D004CF009 /* JDFontUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFontUtils.m; sourceTree = "<group>"; };
 		6916DA1E2125CFBA004CF009 /* JDNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDNavigationViewController.h; sourceTree = "<group>"; };
 		6916DA1F2125CFBA004CF009 /* JDNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDNavigationViewController.m; sourceTree = "<group>"; };
-		6916DA212126C7D5004CF009 /* JDImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDImageUtils.h; sourceTree = "<group>"; };
-		6916DA222126C7D5004CF009 /* JDImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDImageUtils.m; sourceTree = "<group>"; };
-		6916DA242126C803004CF009 /* JDColorUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDColorUtils.h; sourceTree = "<group>"; };
-		6916DA252126C803004CF009 /* JDColorUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDColorUtils.m; sourceTree = "<group>"; };
-		6930930A218AF940008AC8F9 /* NSObject+JDWeakExcutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDWeakExcutor.m"; sourceTree = "<group>"; };
-		6930930B218AF940008AC8F9 /* NSObject+JDWeakExcutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDWeakExcutor.h"; sourceTree = "<group>"; };
 		6962B5B22127A8F700811418 /* Global.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Global.plist; sourceTree = "<group>"; };
 		6962B5B42127A90100811418 /* Global.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Global.plist; sourceTree = "<group>"; };
 		69F1DF712122858D0035A670 /* JDTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,38 +71,6 @@
 		69F1DF802122858F0035A670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69F1DF822122858F0035A670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69F1DF832122858F0035A670 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		69F1DFAB2122B57B0035A670 /* UIButton+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFAC2122B57B0035A670 /* UIButton+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFB72122BAFA0035A670 /* UIView+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFB82122BAFA0035A670 /* UIView+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFBD2122C32D0035A670 /* UILabel+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFBE2122C32D0035A670 /* UILabel+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFC02122C3540035A670 /* UITabBar+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFC12122C3540035A670 /* UITabBar+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFC32122C36A0035A670 /* UITextView+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFC42122C36A0035A670 /* UITextView+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFC62122C37F0035A670 /* UITextField+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFC72122C37F0035A670 /* UITextField+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFC92122C3920035A670 /* UITableView+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFCA2122C3920035A670 /* UITableView+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFCC2122C3A50035A670 /* UITabBarItem+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFCD2122C3A50035A670 /* UITabBarItem+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFCF2122C3B80035A670 /* UISwitch+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFD02122C3B80035A670 /* UISwitch+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFD52122C3DA0035A670 /* UIPageControl+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFD62122C3DA0035A670 /* UIPageControl+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFD82122C3ED0035A670 /* UINavigationBar+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFD92122C3ED0035A670 /* UINavigationBar+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFDB2122C3FD0035A670 /* UIImageView+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFDC2122C3FD0035A670 /* UIImageView+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFDE2122C4100035A670 /* UIBarItem+JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarItem+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFDF2122C4100035A670 /* UIBarItem+JDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarItem+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFE52122C46E0035A670 /* JDThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDThemeManager.m; sourceTree = "<group>"; };
-		69F1DFE62122C46E0035A670 /* JDThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDThemeManager.h; sourceTree = "<group>"; };
-		69F1DFE72122C46E0035A670 /* NSObject+JDTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDTheme.m"; sourceTree = "<group>"; };
-		69F1DFE82122C46E0035A670 /* JDRuleSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRuleSet.h; sourceTree = "<group>"; };
-		69F1DFE92122C46E0035A670 /* NSObject+JDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDTheme.h"; sourceTree = "<group>"; };
-		69F1DFEA2122C46E0035A670 /* JDRuleSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRuleSet.m; sourceTree = "<group>"; };
 		69F1DFF92122D47A0035A670 /* JDTheme_White.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDTheme_White.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F1DFFB2122D47A0035A670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69F1E0032122D48A0035A670 /* JDTheme_Black.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDTheme_Black.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,9 +79,6 @@
 		69F1E00A2122D4D80035A670 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		69F1E00D2122D4E00035A670 /* Style.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Style.plist; sourceTree = "<group>"; };
 		69F1E00E2122D4E00035A670 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		69F1E017212309ED0035A670 /* JDStyleable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDStyleable.h; sourceTree = "<group>"; };
-		69F1E018212309ED0035A670 /* JDStyleable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDStyleable.m; sourceTree = "<group>"; };
-		69F1E01D212315E80035A670 /* JDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTheme.h; sourceTree = "<group>"; };
 		69F4A5AC212840D9002E5104 /* Style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Style.json; sourceTree = "<group>"; };
 		69F4A5AD21284128002E5104 /* Global.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Global.json; sourceTree = "<group>"; };
 		69F4A5AF21284948002E5104 /* Global.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Global.json; sourceTree = "<group>"; };
@@ -234,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				6916DA0221244A47004CF009 /* Demo */,
-				69F1DF8A212285A40035A670 /* JDTheme */,
 				69F1DF742122858D0035A670 /* AppDelegate.h */,
 				69F1DF752122858D0035A670 /* AppDelegate.m */,
 				69F1DF7A2122858D0035A670 /* Main.storyboard */,
@@ -244,80 +179,6 @@
 				69F1DF832122858F0035A670 /* main.m */,
 			);
 			path = JDTheme;
-			sourceTree = "<group>";
-		};
-		69F1DF8A212285A40035A670 /* JDTheme */ = {
-			isa = PBXGroup;
-			children = (
-				69F1DFE42122C4510035A670 /* Core */,
-				69F1DFB32122B73B0035A670 /* Utils */,
-				69F1DFAA2122B5690035A670 /* UIKIt */,
-				69F1E01D212315E80035A670 /* JDTheme.h */,
-			);
-			path = JDTheme;
-			sourceTree = "<group>";
-		};
-		69F1DFAA2122B5690035A670 /* UIKIt */ = {
-			isa = PBXGroup;
-			children = (
-				69F1DFAB2122B57B0035A670 /* UIButton+JDTheme.h */,
-				69F1DFAC2122B57B0035A670 /* UIButton+JDTheme.m */,
-				69F1DFB72122BAFA0035A670 /* UIView+JDTheme.h */,
-				69F1DFB82122BAFA0035A670 /* UIView+JDTheme.m */,
-				69F1DFBD2122C32D0035A670 /* UILabel+JDTheme.h */,
-				69F1DFBE2122C32D0035A670 /* UILabel+JDTheme.m */,
-				69F1DFC02122C3540035A670 /* UITabBar+JDTheme.h */,
-				69F1DFC12122C3540035A670 /* UITabBar+JDTheme.m */,
-				69F1DFC32122C36A0035A670 /* UITextView+JDTheme.h */,
-				69F1DFC42122C36A0035A670 /* UITextView+JDTheme.m */,
-				69F1DFC62122C37F0035A670 /* UITextField+JDTheme.h */,
-				69F1DFC72122C37F0035A670 /* UITextField+JDTheme.m */,
-				69F1DFC92122C3920035A670 /* UITableView+JDTheme.h */,
-				69F1DFCA2122C3920035A670 /* UITableView+JDTheme.m */,
-				69F1DFCC2122C3A50035A670 /* UITabBarItem+JDTheme.h */,
-				69F1DFCD2122C3A50035A670 /* UITabBarItem+JDTheme.m */,
-				69F1DFCF2122C3B80035A670 /* UISwitch+JDTheme.h */,
-				69F1DFD02122C3B80035A670 /* UISwitch+JDTheme.m */,
-				69F1DFD52122C3DA0035A670 /* UIPageControl+JDTheme.h */,
-				69F1DFD62122C3DA0035A670 /* UIPageControl+JDTheme.m */,
-				69F1DFD82122C3ED0035A670 /* UINavigationBar+JDTheme.h */,
-				69F1DFD92122C3ED0035A670 /* UINavigationBar+JDTheme.m */,
-				69F1DFDB2122C3FD0035A670 /* UIImageView+JDTheme.h */,
-				69F1DFDC2122C3FD0035A670 /* UIImageView+JDTheme.m */,
-				69F1DFDE2122C4100035A670 /* UIBarItem+JDTheme.h */,
-				69F1DFDF2122C4100035A670 /* UIBarItem+JDTheme.m */,
-			);
-			path = UIKIt;
-			sourceTree = "<group>";
-		};
-		69F1DFB32122B73B0035A670 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				6930930B218AF940008AC8F9 /* NSObject+JDWeakExcutor.h */,
-				6930930A218AF940008AC8F9 /* NSObject+JDWeakExcutor.m */,
-				6916DA1B2125C17D004CF009 /* JDFontUtils.h */,
-				6916DA1C2125C17D004CF009 /* JDFontUtils.m */,
-				6916DA212126C7D5004CF009 /* JDImageUtils.h */,
-				6916DA222126C7D5004CF009 /* JDImageUtils.m */,
-				6916DA242126C803004CF009 /* JDColorUtils.h */,
-				6916DA252126C803004CF009 /* JDColorUtils.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		69F1DFE42122C4510035A670 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				69F1DFE82122C46E0035A670 /* JDRuleSet.h */,
-				69F1DFEA2122C46E0035A670 /* JDRuleSet.m */,
-				69F1DFE62122C46E0035A670 /* JDThemeManager.h */,
-				69F1DFE52122C46E0035A670 /* JDThemeManager.m */,
-				69F1DFE92122C46E0035A670 /* NSObject+JDTheme.h */,
-				69F1DFE72122C46E0035A670 /* NSObject+JDTheme.m */,
-				69F1E017212309ED0035A670 /* JDStyleable.h */,
-				69F1E018212309ED0035A670 /* JDStyleable.m */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		69F1DFFA2122D47A0035A670 /* JDTheme_White */ = {
@@ -527,32 +388,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6916DA0D21244C27004CF009 /* SecondViewController.m in Sources */,
-				69F1DFD72122C3DA0035A670 /* UIPageControl+JDTheme.m in Sources */,
-				69F1DFC82122C37F0035A670 /* UITextField+JDTheme.m in Sources */,
-				69F1DFCE2122C3A50035A670 /* UITabBarItem+JDTheme.m in Sources */,
-				69F1DFB92122BAFA0035A670 /* UIView+JDTheme.m in Sources */,
-				69F1DFEB2122C46E0035A670 /* JDThemeManager.m in Sources */,
-				69F1DFED2122C46E0035A670 /* JDRuleSet.m in Sources */,
-				6916DA262126C803004CF009 /* JDColorUtils.m in Sources */,
 				6916DA0921244C05004CF009 /* FirstViewController.m in Sources */,
 				6916DA1121244CCF004CF009 /* FirstTableViewCell.m in Sources */,
-				69F1DFBF2122C32D0035A670 /* UILabel+JDTheme.m in Sources */,
-				69F1DFAD2122B57B0035A670 /* UIButton+JDTheme.m in Sources */,
-				69F1DFD12122C3B80035A670 /* UISwitch+JDTheme.m in Sources */,
 				69F1DF842122858F0035A670 /* main.m in Sources */,
 				6916DA202125CFBA004CF009 /* JDNavigationViewController.m in Sources */,
-				69F1DFE02122C4100035A670 /* UIBarItem+JDTheme.m in Sources */,
-				69F1DFC52122C36A0035A670 /* UITextView+JDTheme.m in Sources */,
-				69F1DFCB2122C3920035A670 /* UITableView+JDTheme.m in Sources */,
-				69F1DFEC2122C46E0035A670 /* NSObject+JDTheme.m in Sources */,
-				69F1DFDD2122C3FD0035A670 /* UIImageView+JDTheme.m in Sources */,
-				69F1DFDA2122C3ED0035A670 /* UINavigationBar+JDTheme.m in Sources */,
-				6916DA232126C7D5004CF009 /* JDImageUtils.m in Sources */,
 				69F1DF762122858D0035A670 /* AppDelegate.m in Sources */,
-				69F1DFC22122C3540035A670 /* UITabBar+JDTheme.m in Sources */,
-				6916DA1D2125C17D004CF009 /* JDFontUtils.m in Sources */,
-				6930930C218AF940008AC8F9 /* NSObject+JDWeakExcutor.m in Sources */,
-				69F1E019212309ED0035A670 /* JDStyleable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
