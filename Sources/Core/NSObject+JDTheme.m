@@ -10,7 +10,6 @@
 #import "JDThemeManager.h"
 #import <objc/runtime.h>
 #import "JDStyleable.h"
-#import <JDObjectDealloc/NSObject+JDDeallocBlock.h>
 
 @implementation NSObject (JDTheme)
 
@@ -28,7 +27,6 @@
 - (NSString *)jd_themeID {
     return objc_getAssociatedObject(self, _cmd);
 }
-
 
 /**
  应用样式

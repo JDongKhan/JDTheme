@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKIt/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface JDRuleSet : NSObject
 
 // view
@@ -156,3 +158,6 @@
 - (void)addRuleSet:(JDRuleSet *)ruleSet;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

@@ -37,8 +37,8 @@
     [[JDStyleable sharedInstance] setGlobalStyleableName:@"Global"];
     
     //自定义文件解析
-    [[JDStyleable sharedInstance] setStyleableParser:^NSDictionary *(NSString *fileName) {
-        NSURL *url = [[JDThemeManager sharedInstance].bundle URLForResource:fileName withExtension:@"json"];
+    [[JDStyleable sharedInstance] setStyleableParser:^NSDictionary *(NSBundle *bundle, NSString *fileName) {
+        NSURL *url = [bundle URLForResource:fileName withExtension:@"json"];
         return [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:kNilOptions error:nil];
     }];
     

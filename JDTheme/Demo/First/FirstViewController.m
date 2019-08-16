@@ -131,7 +131,7 @@
     //从document下读取bundle
     if (success) {
         NSBundle *bundle = [NSBundle bundleWithPath:toaPath];
-        [[JDThemeManager sharedInstance] changeBundle:bundle];
+        [[JDThemeManager sharedInstance] reloadBundle:bundle];
     }
 }
 

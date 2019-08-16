@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "JDRuleSet.h"
 
-typedef NSDictionary *(^JDStyleableParserBlock)(NSString *fileName);
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NSDictionary *_Nullable(^JDStyleableParserBlock)(NSBundle *bundle, NSString *fileName);
 
 @interface JDStyleable : NSObject
 
 + (instancetype)sharedInstance;
 
+@property (nonatomic, strong) NSBundle *bundle;           //主题bundle
 
 /**
  设置样式解析器，默认是解析plist文件
@@ -77,3 +80,5 @@ typedef NSDictionary *(^JDStyleableParserBlock)(NSString *fileName);
 
 
 @end
+
+NS_ASSUME_NONNULL_END

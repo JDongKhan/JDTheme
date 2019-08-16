@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIView (JDTheme)
 
 /**
@@ -16,3 +18,5 @@
 @property (nonatomic, copy) IBInspectable NSString *jd_themeID;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "JDRuleSet.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSObject (JDTheme)
 
 /*
@@ -23,3 +25,5 @@
 
 @end
 
+
+NS_ASSUME_NONNULL_END

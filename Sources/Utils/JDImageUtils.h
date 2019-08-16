@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface JDImageUtils : NSObject
 
 + (UIImage *)imageWithImage:(NSString *)imageName bundle:(NSBundle *)bundle;
 
 @end
+
+NS_ASSUME_NONNULL_END

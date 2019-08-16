@@ -7,7 +7,6 @@
 //
 
 #import "JDStyleable.h"
-#import "JDThemeManager.h"
 #import <objc/runtime.h>
 #import "NSObject+JDTheme.h"
 
@@ -42,8 +41,8 @@
         _queue = dispatch_queue_create("com.JDTheme", DISPATCH_QUEUE_CONCURRENT);
         _semaphore = dispatch_semaphore_create(1);
         self.ruleSetConfig = [NSMutableDictionary dictionary];
-        _parserBlock = ^(NSString *fileName){
-            NSURL *url = [[JDThemeManager sharedInstance].bundle URLForResource:fileName withExtension:@"plist"];
+        _parserBlock = ^(NSBundle *bundle, NSString *fileName){
+            NSURL *url = [bundle URLForResource:fileName withExtension:@"plist"];
             return [NSDictionary dictionaryWithContentsOfURL:url];
         };
     }
@@ -74,10 +73,7 @@
         self.allViewsStore[name] = [NSPointerArray weakObjectsPointerArray];
     }
     
-    NSDictionary *config = _parserBlock(name);
-    if ([JDThemeManager sharedInstance].debug) {
-        NSLog(@"[JDTheme] loadStyleWithName:%@  content : %@", name , config);
-    }
+    NSDictionary *config = _parserBlock(self.bundle,name);
     NSMutableDictionary *rulesetDic = [NSMutableDictionary dictionary];
     [config enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, NSDictionary *obj, BOOL * _Nonnull stop) {
         NSMutableDictionary *newDic = [NSMutableDictionary dictionaryWithDictionary:obj];

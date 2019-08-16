@@ -26,12 +26,20 @@ NSString * const JDThemeChangedNotification = @"JDThemeChangedNotification";
     return instance;
 }
 
-- (void)changeBundle:(NSBundle *)bundle {
-    _bundle = bundle;
+- (void)reloadBundle:(NSBundle *)bundle {
+    [JDStyleable sharedInstance].bundle = bundle;
     //刷新所有样式表
     [[JDStyleable sharedInstance] reloadAllObjectStyles:^(BOOL compeletion) {
         [self sendChangeThemeNotification];
     }];
+}
+
+- (void)setBundle:(NSBundle *)bundle {
+    [JDStyleable sharedInstance].bundle = bundle;
+}
+
+- (NSBundle *)bundle {
+    return [JDStyleable sharedInstance].bundle;
 }
 
 - (void)sendChangeThemeNotification {

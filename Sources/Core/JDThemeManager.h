@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 FOUNDATION_EXPORT NSString *const JDThemeChangedNotification;
 
 @interface JDThemeManager : NSObject
@@ -20,6 +22,8 @@ FOUNDATION_EXPORT NSString *const JDThemeChangedNotification;
 + (instancetype)sharedInstance;
 
 //修改主题bundle
-- (void)changeBundle:(NSBundle *)bundle;
+- (void)reloadBundle:(NSBundle *)bundle;
 
 @end
+
+NS_ASSUME_NONNULL_END
