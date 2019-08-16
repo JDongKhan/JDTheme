@@ -28,9 +28,6 @@
   "dependencies": {
     "JDLayout": [
 
-    ],
-    "JDObjectDealloc": [
-
     ]
   }
 }

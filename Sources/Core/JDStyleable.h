@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "JDRuleSet.h"
 
-@class JDWeakExecutor;
-
 typedef NSDictionary *(^JDStyleableParserBlock)(NSString *fileName);
 
 @interface JDStyleable : NSObject
@@ -60,14 +58,14 @@ typedef NSDictionary *(^JDStyleableParserBlock)(NSString *fileName);
  
  @param object 对象
  */
-- (void)registerObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath;
+- (void)registerObject:(id)object forKey:(NSString *)keyPath;
 
 /**
  取消使用样式的对象
  
- @param object 对象
+ @param keyPath 对象
  */
-- (void)unRegisterObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath;
+- (void)unRegisterForKey:(NSString *)keyPath;
 
 /**
  根据ID找object

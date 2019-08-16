@@ -7,89 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0532F5F93B89C31D38792B8DCB7D963A /* JDStyleable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCF5C29E4C1F1FEEE76DA0D9C383CC3 /* JDStyleable.m */; };
-		091BC09EF81FB0732690E8EE8D4745A3 /* JDRuleSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CE59EA1556007FE7C9902E16662F02 /* JDRuleSet.m */; };
-		0DC5F33510C0556073BECC49EDBFD83B /* JDColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE9DC3F0E73D87AA0CD895B96B9A97F /* JDColorUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1026C688B0A35F33D0C4483FFE722A39 /* JDThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FFB2BC1297D366DCD642E3871787DB /* JDThemeManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		12AA1F32EFC4FDA7233E70C02C4A7E23 /* UITabBar+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A3723717D455D9473A5ED31129A8D0 /* UITabBar+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		23C0EA88D810587621358C263FBACDC5 /* UITabBarItem+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF4A494FD303F4DA7084F91C6289FB /* UITabBarItem+JDTheme.m */; };
-		2E2D14F537ABE42CD9321A5EC3C61313 /* UIBarItem+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = B354C6E565154979C9664956028DD17B /* UIBarItem+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		31F4213F34B2FF6E80949AD460BA4EB1 /* NSObject+JDDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C4BDF75833EFBD7BED4964A439E7D4 /* NSObject+JDDeallocBlock.m */; };
-		34CD8257AB6B8F007D8E62918B364C2D /* UITextField+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 788A674B6C26760E3A3DAC44197DEE59 /* UITextField+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		37C2DEB98F5B829280FE7AB845F9E73C /* UIPageControl+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = BBDF60BA71CD30ED89E361EB544E8F46 /* UIPageControl+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3E1AB41090EB03A10B34F4822ACD01B6 /* JDLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A5E99BC6D48269E526622DC1EC714B /* JDLayout-dummy.m */; };
-		3E45FE8B16B0865F4F46FDD8C9DD1609 /* UINavigationBar+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 99886D4F8BAC76C7A4FD19A2FD6C4089 /* UINavigationBar+JDTheme.m */; };
-		4691846BC1F44FDB2B075F4EE50DB52A /* UILabel+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A05A90671D85A9F8E818D16AB74118 /* UILabel+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		567F607A18F2022E6FD65AF51CC31A21 /* UIBarItem+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE767C31E66358E5A0A5B49B6997264 /* UIBarItem+JDTheme.m */; };
-		57744BDB6FC712EAC06965DA35975230 /* JDRuleSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A46315E88E21D839759E6419C5FD651 /* JDRuleSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5B24E9DA493725D3322B1A8E44C5A0FF /* JDFontUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6640041FEC407831D59E434CFE91DC76 /* JDFontUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5BCD8DF8ABBB3CD52976056CBC7251F0 /* JDColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C35D7013385BC2ACD66553895B6CC103 /* JDColorUtils.m */; };
-		5C30E74DDC90B6119DB79D842807717D /* JDTheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BFD20119D74406403DB307F7D54EB /* JDTheme-dummy.m */; };
-		5D70E402186F2FB6A4CE0068E1FE0D97 /* JDImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDF97B696E6F2165FE14A568399A39C /* JDImageUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		777DF39F46C0E2FB1324B42F6662A007 /* UITextField+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = F24A70A114A8ED2A5C7A601C326BE8AB /* UITextField+JDTheme.m */; };
-		7AAD958FDBB82E76453A51AD57F6AD41 /* UITabBar+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CC69AF6D57CBCDAABC15B2F9A33275 /* UITabBar+JDTheme.m */; };
-		7C497942B5E736E34DC6234912876E5F /* UISwitch+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E8DD430EA06CE8AE7E8AEE50618E5D /* UISwitch+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		82C0B0D3FAA503136552B372C81E7648 /* UISwitch+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 54622A5665190C73A24A360F7250E7D9 /* UISwitch+JDTheme.m */; };
-		859B6EF5A893588F442CB35207F6C034 /* UIPageControl+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 000BDF3B5C60172BFEEDECB016C5B620 /* UIPageControl+JDTheme.m */; };
-		884140461411B90D8C793DE310C46348 /* UIView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B9634CEC4234F0CF859A7539A4D85102 /* UIView+JDTheme.m */; };
-		886D775BC281F0FA440C5FEB4527AADD /* JDObjectDealloc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6474DC1A97B1A5498EF62BD9DB0AC90 /* JDObjectDealloc-dummy.m */; };
-		893C593B83E83BBA0C067C06CD812D0F /* UIImageView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F952A94963671340E2044B934D9BC /* UIImageView+JDTheme.m */; };
-		8B6442587FD4F802E404AE1C9D9CF73F /* NSObject+JDWeakExcutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 517CA851F42B88100A8D5665175D8D79 /* NSObject+JDWeakExcutor.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8FC73D45B026A41F35D680465C2D7FE4 /* JDFontUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BBEF370ACAE2B3871867B62DD5A99E /* JDFontUtils.m */; };
-		91350328256B9DCE65A9B11B162D0685 /* NSObject+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = EF63B2F31ADF8698EE5EB6FC1AF9F67D /* NSObject+JDTheme.m */; };
-		958D5272C151D50C568D85EB3AACBB60 /* UIView+JDLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E871C3ECD90636DB513E6DCB80E09C0 /* UIView+JDLayout.m */; };
-		9772CC03873C6911054D465D83B904A6 /* JDStyleable.h in Headers */ = {isa = PBXBuildFile; fileRef = 04BF4EBBC8B8E68DB9C14DAF5AEE1D9D /* JDStyleable.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9AC6E31D0D4E955E16A6700A8F963B01 /* UITableView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D8957059BFDE7870D487CA4F2DDBB5 /* UITableView+JDTheme.m */; };
-		9F1B78F0EB36D576DF7EBC183A8D6CD5 /* UITextView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ECA1BDCCE232449EE5308B0524A2A95 /* UITextView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A25C7B2B5224C64393575CD6104BD943 /* UITableView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BEF814063D76B549AC66AE533F539F /* UITableView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ABA4DEB97C5BE9BB81E781411C8F773F /* JDImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CDE0EEB1FDD6645BCE7E189988533B /* JDImageUtils.m */; };
-		AC01ED774B15A58910DBA9C32D6D7BDA /* UIImageView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A827A1BA4448BD57545F40381E5805 /* UIImageView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B2D45B7C86697000B2CE89581EBBD1C7 /* UILabel+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D142DE515CEE8EC85659E906A6DD8E5 /* UILabel+JDTheme.m */; };
-		B5039B30913FD0E38D8F2CC2C57B106E /* NSObject+JDDeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A1D4694D82498F7263924A13E0B2BD /* NSObject+JDDeallocBlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B8EDF2476D0A82149D8CB7ADBDC2A103 /* UITabBarItem+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 668894C0D6ACE45BF587941504207F3C /* UITabBarItem+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BA4A47E089B5232B93704E1C1F9A3007 /* JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = E647F979F2A2BFB47D7CB61432167D7D /* JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BC87C4431757FD272C6BF9C2DFD28EB0 /* NSObject+JDWeakExcutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5E26B031325DAE61101EA0223E570 /* NSObject+JDWeakExcutor.m */; };
-		BCD7B3C92867520B611A1C2403DCEA76 /* UINavigationBar+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB4C90DEAC682F7BA840F184665577A /* UINavigationBar+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7E6D5AC3D07C3EE8786B853D72C0CA9 /* UITextView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D05C140C89961C55230E10CB16E5B2 /* UITextView+JDTheme.m */; };
-		CA1508EFA8C1121CA4A23145048ECFC3 /* NSObject+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 2415DC02EF72ABCCAF9A2A2DC5FEDE8C /* NSObject+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D0AB6B7A5E77DEC0625437970AFC0F7A /* UIView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7CE5537EB687D1DB68973DBBA050F6 /* UIView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D743E258FF1E69FA54BC345B1179AFC3 /* UIButton+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EE3AC77C705199CAD911F6132E37DB /* UIButton+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DB7BB487446EBD76F7AC5F14114FAF85 /* UIButton+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B54D0C6064A410DD0F5CB6FC38E3ECE /* UIButton+JDTheme.m */; };
-		F21B068FD4B716DEC7868655E3552B7B /* JDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D685C1A3976D007DFBFA9B2760035E05 /* JDThemeManager.m */; };
-		F67669009FEAF94A4AAEBDD702B2A1E3 /* Pods-JDTheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2971EF67C69447C9DB64CBCAD5D7570 /* Pods-JDTheme-dummy.m */; };
-		F9D06FE7B434D1260FF9F161074E9435 /* UIView+JDLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A347667C8EB6600C49264536A00718 /* UIView+JDLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0FCEA364DFF9385C092336D07E8CA146 /* UITabBar+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8EF89D50D025194E9E6C4E88F69B5B /* UITabBar+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1CBFAC5A3522B4A7336C313CF4756CF9 /* JDImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B08555491A7401DABA17FFB4BF05E687 /* JDImageUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		364295DD5CBCB8CE8715C928D640356E /* JDStyleable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C1E3189A6EBD8509F4C7E0C96F659 /* JDStyleable.m */; };
+		3E1AB41090EB03A10B34F4822ACD01B6 /* JDLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ED020D6A8A1356A9BAEC6E823BC7E4 /* JDLayout-dummy.m */; };
+		45734A00E80F0EC935A2DAF3593E2749 /* UINavigationBar+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A94D670985F85FA351A642426C5BA6 /* UINavigationBar+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4DC909BDDF423B78A63931C1577432E0 /* UIButton+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E78895882950F4198D43274E2E0DD87 /* UIButton+JDTheme.m */; };
+		5B38FAF9DE06A3E524ACB98B62D9FEA1 /* UITextField+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE747730A057AF08DFE7E665C493C5 /* UITextField+JDTheme.m */; };
+		5D7C9C369ADED2454F801E536533C26D /* UITabBarItem+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD60310141256772563561A8F289517 /* UITabBarItem+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68D2A96E1B1B9290D54F0EB4DE0856BF /* UILabel+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E22DFDB3541ECFD93A0620ED63CE88B /* UILabel+JDTheme.m */; };
+		69ACEB350A1D08B2E87ADEF595B7255F /* JDColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BE89C848C236A32AB36D5770D90A35 /* JDColorUtils.m */; };
+		6BF4F074477D4A3D176C59905C18E422 /* JDFontUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D86CA9D7D7398842909EA0AE9731B /* JDFontUtils.m */; };
+		72DF06019A097AD23191E22E42151CB5 /* UITextField+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE7E89DE5ABC2C2D9641F7C686C35C /* UITextField+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79972AAEB63C8E075F1972F2A533DF05 /* UIBarItem+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = B654D2ED0BC070028CE03D04B42037BF /* UIBarItem+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FC06EDA95EA5C82FB1BC84EE5E62289 /* UITableView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 209147899B254B3DD67A194D938659CA /* UITableView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81B1F6E923C2AD686383CD4397D67CC8 /* UILabel+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 268912C5483C1706ABA1E018F414C449 /* UILabel+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81FE78EA6595AFB2C7A3BCB1060BCCC2 /* JDRuleSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1FDEB856287D107DAB6813EB0BDA85 /* JDRuleSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84E67222DE5969B26BB1D2AD986F5FDB /* JDThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 68304A378963B56183352C6787B56078 /* JDThemeManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F1B6ED13C53BAC1D76975B4B320A90C /* UITextView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E77A776DCEE111F499701392A2FF68E /* UITextView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		91572AC3AFBE456811E65E64FA683C95 /* JDImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00BC6A3E2711952DBF7EF9B6F8F293 /* JDImageUtils.m */; };
+		92E91612F0286071E0F7C5B2878C534C /* UITextView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D204B3373A63D9EF906875EE0D3EC /* UITextView+JDTheme.m */; };
+		934F2D1648FA8DDD319BD5151A03BBF6 /* UITabBarItem+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8792B642AA90B5FAEDF2032BA70CC6B3 /* UITabBarItem+JDTheme.m */; };
+		958D5272C151D50C568D85EB3AACBB60 /* UIView+JDLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90531F40BE892149B936F59BF56C4041 /* UIView+JDLayout.m */; };
+		9C10BDB55D422800D473B44F3BAB2736 /* UIView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B4582825D686153CBE18596F95559538 /* UIView+JDTheme.m */; };
+		A563CF186644665890DD5D217CF734F6 /* UIPageControl+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 474866AAA865171F0C6E6750078DFFF1 /* UIPageControl+JDTheme.m */; };
+		A905F649FFA6FCAA6D0E568D5AF0A8B8 /* UIImageView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 06A655840911AC7AB45BA937A2CA8596 /* UIImageView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AEFD01D79E535F9D17CC4542076C4926 /* UIButton+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 463D55ED784DD1BC1D788DD62DFA0A66 /* UIButton+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B45F2D764F9CC6CAC775A7418688DB1F /* JDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1936590316D03CD5EE5EC02946F3F4 /* JDThemeManager.m */; };
+		B86338AF9FCAC19301FE1A6C83210FEB /* JDStyleable.h in Headers */ = {isa = PBXBuildFile; fileRef = 489DA708ACE31B8E08D2695154B1ECED /* JDStyleable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD71551BE124640E8451928F76D8DE28 /* JDColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 454432C586C991B36467FB5141D3F4F6 /* JDColorUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BFFF70CDBEC74F7D953914D689EC8730 /* JDTheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2542BAE36A6B1CC6DAA9F133C3AD8A2 /* JDTheme-dummy.m */; };
+		CAA4BF457EE3C3462486F38FF710046A /* NSObject+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D653EF7D836839DF9AF65F3EE904A2 /* NSObject+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC88E50E0BBD52E91C8D503BBA4A0C77 /* UITabBar+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CB47CA976D56F0FC1F5638194C0E68 /* UITabBar+JDTheme.m */; };
+		CEBF818EE077A6DA717859D52BAB0088 /* JDRuleSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B426F6F987C76F160E545134EB85519 /* JDRuleSet.m */; };
+		D2843C57377C864EC853DB1C46BDC1D8 /* UIImageView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E6935BE621EC4CA838BD1E36E69449 /* UIImageView+JDTheme.m */; };
+		D5EC6B69315FC77037626D8149A94454 /* NSObject+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D93466AC13DE42F8E32B98A7FD54FB /* NSObject+JDTheme.m */; };
+		D6D159A174371B92C930E52E1FCFB703 /* JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C86ACB05E38816EB0145411CDA68165 /* JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D93959C7F20FA2E1023E4A243B342A20 /* UINavigationBar+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186AAE390E2CEA772D6752839BBC4F /* UINavigationBar+JDTheme.m */; };
+		E42F4046425D0E8DEBBC2A58C46B017C /* UITableView+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B05922D99F7431CB0EEB0AB7635F306 /* UITableView+JDTheme.m */; };
+		E62DEA410FF2B6D74F0F8E6D18A1C617 /* UIView+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE66FB34B8C18F155A83CFB1CE50D76 /* UIView+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC8ACD908C51A571E0EA6096AC86EBD6 /* JDFontUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 86052B41C657F8F629E662D108DA5B60 /* JDFontUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F32E050F025A26207944472CC9385556 /* UISwitch+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 270A7D3B79D148AC8EF0F813726834C5 /* UISwitch+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F87A9BB09CAF32A878A4E0A25BAF10C5 /* UIBarItem+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711F369043BB57584BE154FB3B7583F /* UIBarItem+JDTheme.m */; };
+		F9D06FE7B434D1260FF9F161074E9435 /* UIView+JDLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A540F7574B6344AE44ECE5B2629630D /* UIView+JDLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD9364ADEF7BD609E0C237246AF57F55 /* Pods-JDTheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2971EF67C69447C9DB64CBCAD5D7570 /* Pods-JDTheme-dummy.m */; };
+		FF371BBE5A71762783949DC84A87B19D /* UIPageControl+JDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 793005B8545FFFD6AC5F3C89365BBED0 /* UIPageControl+JDTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF6D1F0144C1A8788BA507A3EEC5104B /* UISwitch+JDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAD2EDC01D1DDB6D6BF57C85DA7FEE /* UISwitch+JDTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		58ACCF3104891761AF1E04B5F115CAC9 /* PBXContainerItemProxy */ = {
+		490F6131069E0A269F3D8A396D4AE396 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C90C1F96BB622994761563355C1231D;
 			remoteInfo = JDLayout;
 		};
-		8DAAC98C0518F929397C132F26749474 /* PBXContainerItemProxy */ = {
+		5FDC2E42F8950C5D663FAC8515FFB8AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2089F1D7DA2DCBC8E5E99E5C911DE8A;
 			remoteInfo = JDTheme;
 		};
-		BF90B422D58CDDD620189832FD98D461 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC977A769AC8BD247EABD64E292C0E12;
-			remoteInfo = JDObjectDealloc;
-		};
-		D676139483367C061CEFDB7A0683C7F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC977A769AC8BD247EABD64E292C0E12;
-			remoteInfo = JDObjectDealloc;
-		};
-		FD96F0BEE3B34EF31C6E8298848965D3 /* PBXContainerItemProxy */ = {
+		D842DDEFE92CBC8B9CC639E9F0C08363 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -99,85 +80,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000BDF3B5C60172BFEEDECB016C5B620 /* UIPageControl+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+JDTheme.m"; sourceTree = "<group>"; };
-		04BF4EBBC8B8E68DB9C14DAF5AEE1D9D /* JDStyleable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDStyleable.h; sourceTree = "<group>"; };
-		07E5E26B031325DAE61101EA0223E570 /* NSObject+JDWeakExcutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDWeakExcutor.m"; sourceTree = "<group>"; };
-		0BCF5C29E4C1F1FEEE76DA0D9C383CC3 /* JDStyleable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDStyleable.m; sourceTree = "<group>"; };
-		0ECA1BDCCE232449EE5308B0524A2A95 /* UITextView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+JDTheme.h"; sourceTree = "<group>"; };
-		13FFB2BC1297D366DCD642E3871787DB /* JDThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDThemeManager.h; sourceTree = "<group>"; };
-		14CC69AF6D57CBCDAABC15B2F9A33275 /* UITabBar+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+JDTheme.m"; sourceTree = "<group>"; };
-		17BEF814063D76B549AC66AE533F539F /* UITableView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+JDTheme.h"; sourceTree = "<group>"; };
-		1BE9DC3F0E73D87AA0CD895B96B9A97F /* JDColorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDColorUtils.h; sourceTree = "<group>"; };
-		1EB4C90DEAC682F7BA840F184665577A /* UINavigationBar+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JDTheme.h"; sourceTree = "<group>"; };
-		212F952A94963671340E2044B934D9BC /* UIImageView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JDTheme.m"; sourceTree = "<group>"; };
-		2415DC02EF72ABCCAF9A2A2DC5FEDE8C /* NSObject+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDTheme.h"; sourceTree = "<group>"; };
-		31CDE0EEB1FDD6645BCE7E189988533B /* JDImageUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDImageUtils.m; sourceTree = "<group>"; };
-		320963323A0E30E282E3231BBA4B0161 /* JDObjectDealloc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDObjectDealloc.xcconfig; sourceTree = "<group>"; };
+		06A655840911AC7AB45BA937A2CA8596 /* UIImageView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JDTheme.h"; sourceTree = "<group>"; };
+		08A94D670985F85FA351A642426C5BA6 /* UINavigationBar+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JDTheme.h"; sourceTree = "<group>"; };
+		0B05922D99F7431CB0EEB0AB7635F306 /* UITableView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JDTheme.m"; sourceTree = "<group>"; };
+		0C7C1E3189A6EBD8509F4C7E0C96F659 /* JDStyleable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDStyleable.m; sourceTree = "<group>"; };
+		122E6716401708FB732D8188CCFE0BD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		17D653EF7D836839DF9AF65F3EE904A2 /* NSObject+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDTheme.h"; sourceTree = "<group>"; };
+		1C8EF89D50D025194E9E6C4E88F69B5B /* UITabBar+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITabBar+JDTheme.h"; sourceTree = "<group>"; };
+		209147899B254B3DD67A194D938659CA /* UITableView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+JDTheme.h"; sourceTree = "<group>"; };
+		268912C5483C1706ABA1E018F414C449 /* UILabel+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+JDTheme.h"; sourceTree = "<group>"; };
+		270A7D3B79D148AC8EF0F813726834C5 /* UISwitch+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UISwitch+JDTheme.h"; sourceTree = "<group>"; };
+		2711F369043BB57584BE154FB3B7583F /* UIBarItem+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBarItem+JDTheme.m"; sourceTree = "<group>"; };
+		2C1D86CA9D7D7398842909EA0AE9731B /* JDFontUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFontUtils.m; sourceTree = "<group>"; };
 		37C4F0E61D1D2CB9E401922A2FF38D53 /* libPods-JDTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JDTheme.a"; path = "libPods-JDTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BE767C31E66358E5A0A5B49B6997264 /* UIBarItem+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBarItem+JDTheme.m"; sourceTree = "<group>"; };
-		498BFD20119D74406403DB307F7D54EB /* JDTheme-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDTheme-dummy.m"; sourceTree = "<group>"; };
-		49B85B343E3B69467BBF63A7EC7078B3 /* JDLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDLayout-prefix.pch"; sourceTree = "<group>"; };
-		4B54D0C6064A410DD0F5CB6FC38E3ECE /* UIButton+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDTheme.m"; sourceTree = "<group>"; };
+		37ED020D6A8A1356A9BAEC6E823BC7E4 /* JDLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDLayout-dummy.m"; sourceTree = "<group>"; };
+		3C00BC6A3E2711952DBF7EF9B6F8F293 /* JDImageUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDImageUtils.m; sourceTree = "<group>"; };
+		454432C586C991B36467FB5141D3F4F6 /* JDColorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDColorUtils.h; sourceTree = "<group>"; };
+		463D55ED784DD1BC1D788DD62DFA0A66 /* UIButton+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDTheme.h"; sourceTree = "<group>"; };
+		474866AAA865171F0C6E6750078DFFF1 /* UIPageControl+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+JDTheme.m"; sourceTree = "<group>"; };
+		489DA708ACE31B8E08D2695154B1ECED /* JDStyleable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDStyleable.h; sourceTree = "<group>"; };
+		4AE66FB34B8C18F155A83CFB1CE50D76 /* UIView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+JDTheme.h"; sourceTree = "<group>"; };
 		4D4722B3ABD4B7B521C68624E127D83B /* Pods-JDTheme-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JDTheme-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4DDF97B696E6F2165FE14A568399A39C /* JDImageUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDImageUtils.h; sourceTree = "<group>"; };
-		517CA851F42B88100A8D5665175D8D79 /* NSObject+JDWeakExcutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDWeakExcutor.h"; sourceTree = "<group>"; };
-		54622A5665190C73A24A360F7250E7D9 /* UISwitch+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+JDTheme.m"; sourceTree = "<group>"; };
-		57A0983AC0F885CF0B85D584F6A95F68 /* JDTheme.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JDTheme.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		58EE3AC77C705199CAD911F6132E37DB /* UIButton+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDTheme.h"; sourceTree = "<group>"; };
-		5A46315E88E21D839759E6419C5FD651 /* JDRuleSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDRuleSet.h; sourceTree = "<group>"; };
-		65DF4A494FD303F4DA7084F91C6289FB /* UITabBarItem+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+JDTheme.m"; sourceTree = "<group>"; };
-		6640041FEC407831D59E434CFE91DC76 /* JDFontUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFontUtils.h; sourceTree = "<group>"; };
-		668894C0D6ACE45BF587941504207F3C /* UITabBarItem+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+JDTheme.h"; sourceTree = "<group>"; };
-		66A05A90671D85A9F8E818D16AB74118 /* UILabel+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+JDTheme.h"; sourceTree = "<group>"; };
-		6D142DE515CEE8EC85659E906A6DD8E5 /* UILabel+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JDTheme.m"; sourceTree = "<group>"; };
-		70D05C140C89961C55230E10CB16E5B2 /* UITextView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JDTheme.m"; sourceTree = "<group>"; };
-		788A674B6C26760E3A3DAC44197DEE59 /* UITextField+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+JDTheme.h"; sourceTree = "<group>"; };
-		7D902095866C910265CF22B359D1AE5F /* JDObjectDealloc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDObjectDealloc-prefix.pch"; sourceTree = "<group>"; };
+		4E77A776DCEE111F499701392A2FF68E /* UITextView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+JDTheme.h"; sourceTree = "<group>"; };
+		52AC72C3D615D2A00AFC0D567A3C0779 /* JDLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDLayout-prefix.pch"; sourceTree = "<group>"; };
+		55BE89C848C236A32AB36D5770D90A35 /* JDColorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDColorUtils.m; sourceTree = "<group>"; };
+		5F1FDEB856287D107DAB6813EB0BDA85 /* JDRuleSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDRuleSet.h; sourceTree = "<group>"; };
+		68304A378963B56183352C6787B56078 /* JDThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDThemeManager.h; sourceTree = "<group>"; };
+		793005B8545FFFD6AC5F3C89365BBED0 /* UIPageControl+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+JDTheme.h"; sourceTree = "<group>"; };
+		7A540F7574B6344AE44ECE5B2629630D /* UIView+JDLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JDLayout.h"; path = "JDLayout/UIView+JDLayout.h"; sourceTree = "<group>"; };
+		7A6D204B3373A63D9EF906875EE0D3EC /* UITextView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JDTheme.m"; sourceTree = "<group>"; };
+		7CBAD2EDC01D1DDB6D6BF57C85DA7FEE /* UISwitch+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+JDTheme.m"; sourceTree = "<group>"; };
 		7F82B1D95D8C23F228609355318BC732 /* Pods-JDTheme-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JDTheme-acknowledgements.plist"; sourceTree = "<group>"; };
-		92C4BDF75833EFBD7BED4964A439E7D4 /* NSObject+JDDeallocBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JDDeallocBlock.m"; path = "JDObjectDealloc/JDObjectDealloc/NSObject+JDDeallocBlock.m"; sourceTree = "<group>"; };
-		99886D4F8BAC76C7A4FD19A2FD6C4089 /* UINavigationBar+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JDTheme.m"; sourceTree = "<group>"; };
+		86052B41C657F8F629E662D108DA5B60 /* JDFontUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFontUtils.h; sourceTree = "<group>"; };
+		8792B642AA90B5FAEDF2032BA70CC6B3 /* UITabBarItem+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+JDTheme.m"; sourceTree = "<group>"; };
+		8B426F6F987C76F160E545134EB85519 /* JDRuleSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDRuleSet.m; sourceTree = "<group>"; };
+		8C86ACB05E38816EB0145411CDA68165 /* JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDTheme.h; path = Sources/JDTheme.h; sourceTree = "<group>"; };
+		8E22DFDB3541ECFD93A0620ED63CE88B /* UILabel+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JDTheme.m"; sourceTree = "<group>"; };
+		8E78895882950F4198D43274E2E0DD87 /* UIButton+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDTheme.m"; sourceTree = "<group>"; };
+		90531F40BE892149B936F59BF56C4041 /* UIView+JDLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDLayout.m"; path = "JDLayout/UIView+JDLayout.m"; sourceTree = "<group>"; };
+		9A475B5694910BCDAFA28DE12DC5FFF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E871C3ECD90636DB513E6DCB80E09C0 /* UIView+JDLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDLayout.m"; path = "JDLayout/UIView+JDLayout.m"; sourceTree = "<group>"; };
-		A070EB909756F9F213E0731B03D09FEC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9EEE747730A057AF08DFE7E665C493C5 /* UITextField+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JDTheme.m"; sourceTree = "<group>"; };
+		A2D93466AC13DE42F8E32B98A7FD54FB /* NSObject+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDTheme.m"; sourceTree = "<group>"; };
 		A63003C37D676B31BA0C2B2716C38E69 /* libJDLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJDLayout.a; path = libJDLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A768D3D0F9D01C61A4E7633765D1D5D4 /* JDTheme.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDTheme.xcconfig; sourceTree = "<group>"; };
 		ACC9AA91FBA451306CABF42A92B933DB /* Pods-JDTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JDTheme.debug.xcconfig"; sourceTree = "<group>"; };
-		B1CE59EA1556007FE7C9902E16662F02 /* JDRuleSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDRuleSet.m; sourceTree = "<group>"; };
-		B354C6E565154979C9664956028DD17B /* UIBarItem+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBarItem+JDTheme.h"; sourceTree = "<group>"; };
-		B9634CEC4234F0CF859A7539A4D85102 /* UIView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDTheme.m"; sourceTree = "<group>"; };
-		BBDF60BA71CD30ED89E361EB544E8F46 /* UIPageControl+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+JDTheme.h"; sourceTree = "<group>"; };
-		C35D7013385BC2ACD66553895B6CC103 /* JDColorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDColorUtils.m; sourceTree = "<group>"; };
-		C3A3723717D455D9473A5ED31129A8D0 /* UITabBar+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITabBar+JDTheme.h"; sourceTree = "<group>"; };
-		C4A827A1BA4448BD57545F40381E5805 /* UIImageView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JDTheme.h"; sourceTree = "<group>"; };
-		C5C66105641778B6C884597851762352 /* libJDObjectDealloc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJDObjectDealloc.a; path = libJDObjectDealloc.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6474DC1A97B1A5498EF62BD9DB0AC90 /* JDObjectDealloc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDObjectDealloc-dummy.m"; sourceTree = "<group>"; };
-		C7D8957059BFDE7870D487CA4F2DDBB5 /* UITableView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JDTheme.m"; sourceTree = "<group>"; };
-		D1A347667C8EB6600C49264536A00718 /* UIView+JDLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JDLayout.h"; path = "JDLayout/UIView+JDLayout.h"; sourceTree = "<group>"; };
+		ACEE7E89DE5ABC2C2D9641F7C686C35C /* UITextField+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+JDTheme.h"; sourceTree = "<group>"; };
+		B08555491A7401DABA17FFB4BF05E687 /* JDImageUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDImageUtils.h; sourceTree = "<group>"; };
+		B2542BAE36A6B1CC6DAA9F133C3AD8A2 /* JDTheme-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDTheme-dummy.m"; sourceTree = "<group>"; };
+		B4582825D686153CBE18596F95559538 /* UIView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDTheme.m"; sourceTree = "<group>"; };
+		B654D2ED0BC070028CE03D04B42037BF /* UIBarItem+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBarItem+JDTheme.h"; sourceTree = "<group>"; };
+		B8E6935BE621EC4CA838BD1E36E69449 /* UIImageView+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JDTheme.m"; sourceTree = "<group>"; };
+		BCBB0AFCF6DA3247968077A96D54655E /* JDTheme.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JDTheme.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D2D76A7FD8A35DF80B485188F041AC63 /* libJDTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJDTheme.a; path = libJDTheme.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D685C1A3976D007DFBFA9B2760035E05 /* JDThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDThemeManager.m; sourceTree = "<group>"; };
-		D7A1D4694D82498F7263924A13E0B2BD /* NSObject+JDDeallocBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+JDDeallocBlock.h"; path = "JDObjectDealloc/JDObjectDealloc/NSObject+JDDeallocBlock.h"; sourceTree = "<group>"; };
-		D8A5E99BC6D48269E526622DC1EC714B /* JDLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDLayout-dummy.m"; sourceTree = "<group>"; };
-		DD048C39D2BB13B1A96E835499E9077F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		DE7CE5537EB687D1DB68973DBBA050F6 /* UIView+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+JDTheme.h"; sourceTree = "<group>"; };
-		E1BBEF370ACAE2B3871867B62DD5A99E /* JDFontUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFontUtils.m; sourceTree = "<group>"; };
-		E647F979F2A2BFB47D7CB61432167D7D /* JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDTheme.h; path = Sources/JDTheme.h; sourceTree = "<group>"; };
-		E7E8DD430EA06CE8AE7E8AEE50618E5D /* UISwitch+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UISwitch+JDTheme.h"; sourceTree = "<group>"; };
-		E98B82AEB7A34AD4457B4201FB3DCEA0 /* JDTheme-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDTheme-prefix.pch"; sourceTree = "<group>"; };
-		EF63B2F31ADF8698EE5EB6FC1AF9F67D /* NSObject+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDTheme.m"; sourceTree = "<group>"; };
+		D4707B1B8301861D549C0FB5B014A61A /* JDTheme-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDTheme-prefix.pch"; sourceTree = "<group>"; };
+		DC1936590316D03CD5EE5EC02946F3F4 /* JDThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDThemeManager.m; sourceTree = "<group>"; };
+		E68CB1E9FAB072CA0B70C28E2E3F8296 /* JDLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDLayout.xcconfig; sourceTree = "<group>"; };
+		E7CFAF2CF0DFCC9BD5238A48B7E6BA0F /* JDTheme.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDTheme.xcconfig; sourceTree = "<group>"; };
 		F1888EB1C8307DEE590CC54F68601EAE /* Pods-JDTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JDTheme.release.xcconfig"; sourceTree = "<group>"; };
-		F24A70A114A8ED2A5C7A601C326BE8AB /* UITextField+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JDTheme.m"; sourceTree = "<group>"; };
 		F2971EF67C69447C9DB64CBCAD5D7570 /* Pods-JDTheme-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JDTheme-dummy.m"; sourceTree = "<group>"; };
-		F3057187B9A5A723F52AFCC3A76512CA /* JDLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDLayout.xcconfig; sourceTree = "<group>"; };
+		F5186AAE390E2CEA772D6752839BBC4F /* UINavigationBar+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JDTheme.m"; sourceTree = "<group>"; };
+		F7CB47CA976D56F0FC1F5638194C0E68 /* UITabBar+JDTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+JDTheme.m"; sourceTree = "<group>"; };
+		FFD60310141256772563561A8F289517 /* UITabBarItem+JDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+JDTheme.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06F755AD27B02698143D5DECA5D56DEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		08BA3DFF3FC024DC297F4A9CAE8AA961 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,14 +151,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DDF3395620C6CF683C55E3260FA6C0E /* Frameworks */ = {
+		6FF7025D942C4975FACD9BC789E0E0AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CA8892C9805AEEE600C2B7B15E0B772 /* Frameworks */ = {
+		71B93DF79ABB26D2FA41A92404D532CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,29 +168,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01D54FEC48B4EE2A1300F735C708E8C5 /* JDTheme */ = {
+		0DE39319DA9ED35A4A352119FFFB480D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E647F979F2A2BFB47D7CB61432167D7D /* JDTheme.h */,
-				BD8EC07F7335F7EE489E595AA054CE4B /* Core */,
-				FD1340B2E4A4922D3248502928A09940 /* Pod */,
-				D888D3CE0844B47E14D7019AB8C4D234 /* Support Files */,
-				E98A572FA91754A27CB80B4A22301371 /* UIKIt */,
-				9DD37ECFC884F865E82F7641B73F92EB /* Utils */,
+				A63003C37D676B31BA0C2B2716C38E69 /* libJDLayout.a */,
+				D2D76A7FD8A35DF80B485188F041AC63 /* libJDTheme.a */,
+				37C4F0E61D1D2CB9E401922A2FF38D53 /* libPods-JDTheme.a */,
 			);
-			name = JDTheme;
-			path = ..;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		13D3E0E3CE27BEFAC5DC3BD1789B2B0F /* JDObjectDealloc */ = {
+		124AE7DC0A2BE6B44D0D3C35E7A031BA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D7A1D4694D82498F7263924A13E0B2BD /* NSObject+JDDeallocBlock.h */,
-				92C4BDF75833EFBD7BED4964A439E7D4 /* NSObject+JDDeallocBlock.m */,
-				C930748883BB3729F4B1C9CEB8B1797E /* Support Files */,
+				5F1FDEB856287D107DAB6813EB0BDA85 /* JDRuleSet.h */,
+				8B426F6F987C76F160E545134EB85519 /* JDRuleSet.m */,
+				489DA708ACE31B8E08D2695154B1ECED /* JDStyleable.h */,
+				0C7C1E3189A6EBD8509F4C7E0C96F659 /* JDStyleable.m */,
+				68304A378963B56183352C6787B56078 /* JDThemeManager.h */,
+				DC1936590316D03CD5EE5EC02946F3F4 /* JDThemeManager.m */,
+				17D653EF7D836839DF9AF65F3EE904A2 /* NSObject+JDTheme.h */,
+				A2D93466AC13DE42F8E32B98A7FD54FB /* NSObject+JDTheme.m */,
 			);
-			name = JDObjectDealloc;
-			path = JDObjectDealloc;
+			name = Core;
+			path = Sources/Core;
+			sourceTree = "<group>";
+		};
+		1CAAD6B68B45B489B043830FCEFF0E17 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E68CB1E9FAB072CA0B70C28E2E3F8296 /* JDLayout.xcconfig */,
+				37ED020D6A8A1356A9BAEC6E823BC7E4 /* JDLayout-dummy.m */,
+				52AC72C3D615D2A00AFC0D567A3C0779 /* JDLayout-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JDLayout";
 			sourceTree = "<group>";
 		};
 		25D03168D8C7DB1FCB05F2E97E41C6E1 /* Targets Support Files */ = {
@@ -251,74 +229,97 @@
 		32E408FB8FDAFD7616A4257B269C3E1C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				01D54FEC48B4EE2A1300F735C708E8C5 /* JDTheme */,
+				E0237431D20AA6D331AD2822048A231B /* JDTheme */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		75ACD086B85B5441E9081E37CA0BBF0A /* JDLayout */ = {
+		3D183ECE47F095B2645669113F1678CE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D1A347667C8EB6600C49264536A00718 /* UIView+JDLayout.h */,
-				9E871C3ECD90636DB513E6DCB80E09C0 /* UIView+JDLayout.m */,
-				8F8534174F9206754086E676F77D786E /* Support Files */,
-			);
-			name = JDLayout;
-			path = JDLayout;
-			sourceTree = "<group>";
-		};
-		8F8534174F9206754086E676F77D786E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F3057187B9A5A723F52AFCC3A76512CA /* JDLayout.xcconfig */,
-				D8A5E99BC6D48269E526622DC1EC714B /* JDLayout-dummy.m */,
-				49B85B343E3B69467BBF63A7EC7078B3 /* JDLayout-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JDLayout";
-			sourceTree = "<group>";
-		};
-		9DD37ECFC884F865E82F7641B73F92EB /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				1BE9DC3F0E73D87AA0CD895B96B9A97F /* JDColorUtils.h */,
-				C35D7013385BC2ACD66553895B6CC103 /* JDColorUtils.m */,
-				6640041FEC407831D59E434CFE91DC76 /* JDFontUtils.h */,
-				E1BBEF370ACAE2B3871867B62DD5A99E /* JDFontUtils.m */,
-				4DDF97B696E6F2165FE14A568399A39C /* JDImageUtils.h */,
-				31CDE0EEB1FDD6645BCE7E189988533B /* JDImageUtils.m */,
-				517CA851F42B88100A8D5665175D8D79 /* NSObject+JDWeakExcutor.h */,
-				07E5E26B031325DAE61101EA0223E570 /* NSObject+JDWeakExcutor.m */,
+				454432C586C991B36467FB5141D3F4F6 /* JDColorUtils.h */,
+				55BE89C848C236A32AB36D5770D90A35 /* JDColorUtils.m */,
+				86052B41C657F8F629E662D108DA5B60 /* JDFontUtils.h */,
+				2C1D86CA9D7D7398842909EA0AE9731B /* JDFontUtils.m */,
+				B08555491A7401DABA17FFB4BF05E687 /* JDImageUtils.h */,
+				3C00BC6A3E2711952DBF7EF9B6F8F293 /* JDImageUtils.m */,
 			);
 			name = Utils;
 			path = Sources/Utils;
 			sourceTree = "<group>";
 		};
-		BD8EC07F7335F7EE489E595AA054CE4B /* Core */ = {
+		5712CE3921B1B362F2FEC4FDC93242A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5A46315E88E21D839759E6419C5FD651 /* JDRuleSet.h */,
-				B1CE59EA1556007FE7C9902E16662F02 /* JDRuleSet.m */,
-				04BF4EBBC8B8E68DB9C14DAF5AEE1D9D /* JDStyleable.h */,
-				0BCF5C29E4C1F1FEEE76DA0D9C383CC3 /* JDStyleable.m */,
-				13FFB2BC1297D366DCD642E3871787DB /* JDThemeManager.h */,
-				D685C1A3976D007DFBFA9B2760035E05 /* JDThemeManager.m */,
-				2415DC02EF72ABCCAF9A2A2DC5FEDE8C /* NSObject+JDTheme.h */,
-				EF63B2F31ADF8698EE5EB6FC1AF9F67D /* NSObject+JDTheme.m */,
+				BDD8128BA541C840E6F71C5A0E681361 /* JDLayout */,
 			);
-			name = Core;
-			path = Sources/Core;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		C930748883BB3729F4B1C9CEB8B1797E /* Support Files */ = {
+		A458490FFCF3DC5ACBFEC905FFA86810 /* UIKIt */ = {
 			isa = PBXGroup;
 			children = (
-				320963323A0E30E282E3231BBA4B0161 /* JDObjectDealloc.xcconfig */,
-				C6474DC1A97B1A5498EF62BD9DB0AC90 /* JDObjectDealloc-dummy.m */,
-				7D902095866C910265CF22B359D1AE5F /* JDObjectDealloc-prefix.pch */,
+				B654D2ED0BC070028CE03D04B42037BF /* UIBarItem+JDTheme.h */,
+				2711F369043BB57584BE154FB3B7583F /* UIBarItem+JDTheme.m */,
+				463D55ED784DD1BC1D788DD62DFA0A66 /* UIButton+JDTheme.h */,
+				8E78895882950F4198D43274E2E0DD87 /* UIButton+JDTheme.m */,
+				06A655840911AC7AB45BA937A2CA8596 /* UIImageView+JDTheme.h */,
+				B8E6935BE621EC4CA838BD1E36E69449 /* UIImageView+JDTheme.m */,
+				268912C5483C1706ABA1E018F414C449 /* UILabel+JDTheme.h */,
+				8E22DFDB3541ECFD93A0620ED63CE88B /* UILabel+JDTheme.m */,
+				08A94D670985F85FA351A642426C5BA6 /* UINavigationBar+JDTheme.h */,
+				F5186AAE390E2CEA772D6752839BBC4F /* UINavigationBar+JDTheme.m */,
+				793005B8545FFFD6AC5F3C89365BBED0 /* UIPageControl+JDTheme.h */,
+				474866AAA865171F0C6E6750078DFFF1 /* UIPageControl+JDTheme.m */,
+				270A7D3B79D148AC8EF0F813726834C5 /* UISwitch+JDTheme.h */,
+				7CBAD2EDC01D1DDB6D6BF57C85DA7FEE /* UISwitch+JDTheme.m */,
+				1C8EF89D50D025194E9E6C4E88F69B5B /* UITabBar+JDTheme.h */,
+				F7CB47CA976D56F0FC1F5638194C0E68 /* UITabBar+JDTheme.m */,
+				FFD60310141256772563561A8F289517 /* UITabBarItem+JDTheme.h */,
+				8792B642AA90B5FAEDF2032BA70CC6B3 /* UITabBarItem+JDTheme.m */,
+				209147899B254B3DD67A194D938659CA /* UITableView+JDTheme.h */,
+				0B05922D99F7431CB0EEB0AB7635F306 /* UITableView+JDTheme.m */,
+				ACEE7E89DE5ABC2C2D9641F7C686C35C /* UITextField+JDTheme.h */,
+				9EEE747730A057AF08DFE7E665C493C5 /* UITextField+JDTheme.m */,
+				4E77A776DCEE111F499701392A2FF68E /* UITextView+JDTheme.h */,
+				7A6D204B3373A63D9EF906875EE0D3EC /* UITextView+JDTheme.m */,
+				4AE66FB34B8C18F155A83CFB1CE50D76 /* UIView+JDTheme.h */,
+				B4582825D686153CBE18596F95559538 /* UIView+JDTheme.m */,
+			);
+			name = UIKIt;
+			path = Sources/UIKIt;
+			sourceTree = "<group>";
+		};
+		AC42306A7045E11463715D8302BF1DAE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFAF2CF0DFCC9BD5238A48B7E6BA0F /* JDTheme.xcconfig */,
+				B2542BAE36A6B1CC6DAA9F133C3AD8A2 /* JDTheme-dummy.m */,
+				D4707B1B8301861D549C0FB5B014A61A /* JDTheme-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JDObjectDealloc";
+			path = "Pods/Target Support Files/JDTheme";
+			sourceTree = "<group>";
+		};
+		BDD8128BA541C840E6F71C5A0E681361 /* JDLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7A540F7574B6344AE44ECE5B2629630D /* UIView+JDLayout.h */,
+				90531F40BE892149B936F59BF56C4041 /* UIView+JDLayout.m */,
+				1CAAD6B68B45B489B043830FCEFF0E17 /* Support Files */,
+			);
+			name = JDLayout;
+			path = JDLayout;
+			sourceTree = "<group>";
+		};
+		C2DC114E14B7E1160C424552B21E0AF9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BCBB0AFCF6DA3247968077A96D54655E /* JDTheme.podspec */,
+				122E6716401708FB732D8188CCFE0BD8 /* LICENSE */,
+				9A475B5694910BCDAFA28DE12DC5FFF0 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -327,21 +328,10 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				32E408FB8FDAFD7616A4257B269C3E1C /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				E8A36037283325F78C551E6FE9F9EF78 /* Pods */,
-				DF84ADBAE4072828E5DB7E80C60472CC /* Products */,
+				5712CE3921B1B362F2FEC4FDC93242A4 /* Pods */,
+				0DE39319DA9ED35A4A352119FFFB480D /* Products */,
 				25D03168D8C7DB1FCB05F2E97E41C6E1 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D888D3CE0844B47E14D7019AB8C4D234 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A768D3D0F9D01C61A4E7633765D1D5D4 /* JDTheme.xcconfig */,
-				498BFD20119D74406403DB307F7D54EB /* JDTheme-dummy.m */,
-				E98B82AEB7A34AD4457B4201FB3DCEA0 /* JDTheme-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/JDTheme";
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -351,73 +341,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF84ADBAE4072828E5DB7E80C60472CC /* Products */ = {
+		E0237431D20AA6D331AD2822048A231B /* JDTheme */ = {
 			isa = PBXGroup;
 			children = (
-				A63003C37D676B31BA0C2B2716C38E69 /* libJDLayout.a */,
-				C5C66105641778B6C884597851762352 /* libJDObjectDealloc.a */,
-				D2D76A7FD8A35DF80B485188F041AC63 /* libJDTheme.a */,
-				37C4F0E61D1D2CB9E401922A2FF38D53 /* libPods-JDTheme.a */,
+				8C86ACB05E38816EB0145411CDA68165 /* JDTheme.h */,
+				124AE7DC0A2BE6B44D0D3C35E7A031BA /* Core */,
+				C2DC114E14B7E1160C424552B21E0AF9 /* Pod */,
+				AC42306A7045E11463715D8302BF1DAE /* Support Files */,
+				A458490FFCF3DC5ACBFEC905FFA86810 /* UIKIt */,
+				3D183ECE47F095B2645669113F1678CE /* Utils */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E8A36037283325F78C551E6FE9F9EF78 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				75ACD086B85B5441E9081E37CA0BBF0A /* JDLayout */,
-				13D3E0E3CE27BEFAC5DC3BD1789B2B0F /* JDObjectDealloc */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E98A572FA91754A27CB80B4A22301371 /* UIKIt */ = {
-			isa = PBXGroup;
-			children = (
-				B354C6E565154979C9664956028DD17B /* UIBarItem+JDTheme.h */,
-				3BE767C31E66358E5A0A5B49B6997264 /* UIBarItem+JDTheme.m */,
-				58EE3AC77C705199CAD911F6132E37DB /* UIButton+JDTheme.h */,
-				4B54D0C6064A410DD0F5CB6FC38E3ECE /* UIButton+JDTheme.m */,
-				C4A827A1BA4448BD57545F40381E5805 /* UIImageView+JDTheme.h */,
-				212F952A94963671340E2044B934D9BC /* UIImageView+JDTheme.m */,
-				66A05A90671D85A9F8E818D16AB74118 /* UILabel+JDTheme.h */,
-				6D142DE515CEE8EC85659E906A6DD8E5 /* UILabel+JDTheme.m */,
-				1EB4C90DEAC682F7BA840F184665577A /* UINavigationBar+JDTheme.h */,
-				99886D4F8BAC76C7A4FD19A2FD6C4089 /* UINavigationBar+JDTheme.m */,
-				BBDF60BA71CD30ED89E361EB544E8F46 /* UIPageControl+JDTheme.h */,
-				000BDF3B5C60172BFEEDECB016C5B620 /* UIPageControl+JDTheme.m */,
-				E7E8DD430EA06CE8AE7E8AEE50618E5D /* UISwitch+JDTheme.h */,
-				54622A5665190C73A24A360F7250E7D9 /* UISwitch+JDTheme.m */,
-				C3A3723717D455D9473A5ED31129A8D0 /* UITabBar+JDTheme.h */,
-				14CC69AF6D57CBCDAABC15B2F9A33275 /* UITabBar+JDTheme.m */,
-				668894C0D6ACE45BF587941504207F3C /* UITabBarItem+JDTheme.h */,
-				65DF4A494FD303F4DA7084F91C6289FB /* UITabBarItem+JDTheme.m */,
-				17BEF814063D76B549AC66AE533F539F /* UITableView+JDTheme.h */,
-				C7D8957059BFDE7870D487CA4F2DDBB5 /* UITableView+JDTheme.m */,
-				788A674B6C26760E3A3DAC44197DEE59 /* UITextField+JDTheme.h */,
-				F24A70A114A8ED2A5C7A601C326BE8AB /* UITextField+JDTheme.m */,
-				0ECA1BDCCE232449EE5308B0524A2A95 /* UITextView+JDTheme.h */,
-				70D05C140C89961C55230E10CB16E5B2 /* UITextView+JDTheme.m */,
-				DE7CE5537EB687D1DB68973DBBA050F6 /* UIView+JDTheme.h */,
-				B9634CEC4234F0CF859A7539A4D85102 /* UIView+JDTheme.m */,
-			);
-			name = UIKIt;
-			path = Sources/UIKIt;
-			sourceTree = "<group>";
-		};
-		FD1340B2E4A4922D3248502928A09940 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				57A0983AC0F885CF0B85D584F6A95F68 /* JDTheme.podspec */,
-				A070EB909756F9F213E0731B03D09FEC /* LICENSE */,
-				DD048C39D2BB13B1A96E835499E9077F /* README.md */,
-			);
-			name = Pod;
+			name = JDTheme;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		09E2B2549C05C5F32346C20C5CBD96B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58D69E84FC69D407DBC176DD26ECB34D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,47 +373,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8356F6A04EC6A66300C8B2A2C632B667 /* Headers */ = {
+		6546D67F87246C303F26D73DCFCF88D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8919D1321D75F895217ED178568C980C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DC5F33510C0556073BECC49EDBFD83B /* JDColorUtils.h in Headers */,
-				5B24E9DA493725D3322B1A8E44C5A0FF /* JDFontUtils.h in Headers */,
-				5D70E402186F2FB6A4CE0068E1FE0D97 /* JDImageUtils.h in Headers */,
-				57744BDB6FC712EAC06965DA35975230 /* JDRuleSet.h in Headers */,
-				9772CC03873C6911054D465D83B904A6 /* JDStyleable.h in Headers */,
-				BA4A47E089B5232B93704E1C1F9A3007 /* JDTheme.h in Headers */,
-				1026C688B0A35F33D0C4483FFE722A39 /* JDThemeManager.h in Headers */,
-				CA1508EFA8C1121CA4A23145048ECFC3 /* NSObject+JDTheme.h in Headers */,
-				8B6442587FD4F802E404AE1C9D9CF73F /* NSObject+JDWeakExcutor.h in Headers */,
-				2E2D14F537ABE42CD9321A5EC3C61313 /* UIBarItem+JDTheme.h in Headers */,
-				D743E258FF1E69FA54BC345B1179AFC3 /* UIButton+JDTheme.h in Headers */,
-				AC01ED774B15A58910DBA9C32D6D7BDA /* UIImageView+JDTheme.h in Headers */,
-				4691846BC1F44FDB2B075F4EE50DB52A /* UILabel+JDTheme.h in Headers */,
-				BCD7B3C92867520B611A1C2403DCEA76 /* UINavigationBar+JDTheme.h in Headers */,
-				37C2DEB98F5B829280FE7AB845F9E73C /* UIPageControl+JDTheme.h in Headers */,
-				7C497942B5E736E34DC6234912876E5F /* UISwitch+JDTheme.h in Headers */,
-				12AA1F32EFC4FDA7233E70C02C4A7E23 /* UITabBar+JDTheme.h in Headers */,
-				B8EDF2476D0A82149D8CB7ADBDC2A103 /* UITabBarItem+JDTheme.h in Headers */,
-				A25C7B2B5224C64393575CD6104BD943 /* UITableView+JDTheme.h in Headers */,
-				34CD8257AB6B8F007D8E62918B364C2D /* UITextField+JDTheme.h in Headers */,
-				9F1B78F0EB36D576DF7EBC183A8D6CD5 /* UITextView+JDTheme.h in Headers */,
-				D0AB6B7A5E77DEC0625437970AFC0F7A /* UIView+JDTheme.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C213CDAA021E64C5A072CEA3D24360BA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5039B30913FD0E38D8F2CC2C57B106E /* NSObject+JDDeallocBlock.h in Headers */,
+				BD71551BE124640E8451928F76D8DE28 /* JDColorUtils.h in Headers */,
+				EC8ACD908C51A571E0EA6096AC86EBD6 /* JDFontUtils.h in Headers */,
+				1CBFAC5A3522B4A7336C313CF4756CF9 /* JDImageUtils.h in Headers */,
+				81FE78EA6595AFB2C7A3BCB1060BCCC2 /* JDRuleSet.h in Headers */,
+				B86338AF9FCAC19301FE1A6C83210FEB /* JDStyleable.h in Headers */,
+				D6D159A174371B92C930E52E1FCFB703 /* JDTheme.h in Headers */,
+				84E67222DE5969B26BB1D2AD986F5FDB /* JDThemeManager.h in Headers */,
+				CAA4BF457EE3C3462486F38FF710046A /* NSObject+JDTheme.h in Headers */,
+				79972AAEB63C8E075F1972F2A533DF05 /* UIBarItem+JDTheme.h in Headers */,
+				AEFD01D79E535F9D17CC4542076C4926 /* UIButton+JDTheme.h in Headers */,
+				A905F649FFA6FCAA6D0E568D5AF0A8B8 /* UIImageView+JDTheme.h in Headers */,
+				81B1F6E923C2AD686383CD4397D67CC8 /* UILabel+JDTheme.h in Headers */,
+				45734A00E80F0EC935A2DAF3593E2749 /* UINavigationBar+JDTheme.h in Headers */,
+				FF371BBE5A71762783949DC84A87B19D /* UIPageControl+JDTheme.h in Headers */,
+				F32E050F025A26207944472CC9385556 /* UISwitch+JDTheme.h in Headers */,
+				0FCEA364DFF9385C092336D07E8CA146 /* UITabBar+JDTheme.h in Headers */,
+				5D7C9C369ADED2454F801E536533C26D /* UITabBarItem+JDTheme.h in Headers */,
+				7FC06EDA95EA5C82FB1BC84EE5E62289 /* UITableView+JDTheme.h in Headers */,
+				72DF06019A097AD23191E22E42151CB5 /* UITextField+JDTheme.h in Headers */,
+				8F1B6ED13C53BAC1D76975B4B320A90C /* UITextView+JDTheme.h in Headers */,
+				E62DEA410FF2B6D74F0F8E6D18A1C617 /* UIView+JDTheme.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,18 +423,17 @@
 		};
 		47399591ABE1BCE2D1FF517616812B7B /* Pods-JDTheme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52187808B295483BF3A913818959E43F /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */;
+			buildConfigurationList = FBD1D8E36272B39A8544B462FCC41A72 /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */;
 			buildPhases = (
-				8356F6A04EC6A66300C8B2A2C632B667 /* Headers */,
-				01EC3E18D8636220F402D79A64C7BE9C /* Sources */,
-				5DDF3395620C6CF683C55E3260FA6C0E /* Frameworks */,
+				09E2B2549C05C5F32346C20C5CBD96B2 /* Headers */,
+				266CE264881F891C7DFA04C877C7A531 /* Sources */,
+				71B93DF79ABB26D2FA41A92404D532CA /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9699C6CC6A5FD65DF47BB90CB572D8D9 /* PBXTargetDependency */,
-				D0584C285A4FC719987825F13F04BA4A /* PBXTargetDependency */,
-				A29884598AAC00037B6B8642C0F50D7C /* PBXTargetDependency */,
+				1753510F451A334D7B52D2E3270B727F /* PBXTargetDependency */,
+				BBEBCC63920E9116B2085512221FAC5A /* PBXTargetDependency */,
 			);
 			name = "Pods-JDTheme";
 			productName = "Pods-JDTheme";
@@ -512,38 +442,20 @@
 		};
 		B2089F1D7DA2DCBC8E5E99E5C911DE8A /* JDTheme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBF77D172257BF2CB728D6BCD5701FE4 /* Build configuration list for PBXNativeTarget "JDTheme" */;
+			buildConfigurationList = 3507D58D6B8DDEC737576856F6CDCF07 /* Build configuration list for PBXNativeTarget "JDTheme" */;
 			buildPhases = (
-				8919D1321D75F895217ED178568C980C /* Headers */,
-				5EB5E110F1643D9D6AC7D14CACCD6C07 /* Sources */,
-				7CA8892C9805AEEE600C2B7B15E0B772 /* Frameworks */,
+				6546D67F87246C303F26D73DCFCF88D9 /* Headers */,
+				35DB99E083644C13620DC8CC7530C672 /* Sources */,
+				6FF7025D942C4975FACD9BC789E0E0AF /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA0F8BC3C2F2D2FD8F8EF96E3DC06C0F /* PBXTargetDependency */,
-				CE6C99AAFE9E6CFF20667A5EA946419B /* PBXTargetDependency */,
+				53450F63B1543EB55EE88AFE6BCB4C9F /* PBXTargetDependency */,
 			);
 			name = JDTheme;
 			productName = JDTheme;
 			productReference = D2D76A7FD8A35DF80B485188F041AC63 /* libJDTheme.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		BC977A769AC8BD247EABD64E292C0E12 /* JDObjectDealloc */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D42A46E6723469D84D2E88B6E2DACCEB /* Build configuration list for PBXNativeTarget "JDObjectDealloc" */;
-			buildPhases = (
-				C213CDAA021E64C5A072CEA3D24360BA /* Headers */,
-				8B5EC9287700ABDAC63287A9735B5211 /* Sources */,
-				06F755AD27B02698143D5DECA5D56DEB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JDObjectDealloc;
-			productName = JDObjectDealloc;
-			productReference = C5C66105641778B6C884597851762352 /* libJDObjectDealloc.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -563,12 +475,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DF84ADBAE4072828E5DB7E80C60472CC /* Products */;
+			productRefGroup = 0DE39319DA9ED35A4A352119FFFB480D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0C90C1F96BB622994761563355C1231D /* JDLayout */,
-				BC977A769AC8BD247EABD64E292C0E12 /* JDObjectDealloc */,
 				B2089F1D7DA2DCBC8E5E99E5C911DE8A /* JDTheme */,
 				47399591ABE1BCE2D1FF517616812B7B /* Pods-JDTheme */,
 			);
@@ -576,49 +487,39 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01EC3E18D8636220F402D79A64C7BE9C /* Sources */ = {
+		266CE264881F891C7DFA04C877C7A531 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F67669009FEAF94A4AAEBDD702B2A1E3 /* Pods-JDTheme-dummy.m in Sources */,
+				FD9364ADEF7BD609E0C237246AF57F55 /* Pods-JDTheme-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EB5E110F1643D9D6AC7D14CACCD6C07 /* Sources */ = {
+		35DB99E083644C13620DC8CC7530C672 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BCD8DF8ABBB3CD52976056CBC7251F0 /* JDColorUtils.m in Sources */,
-				8FC73D45B026A41F35D680465C2D7FE4 /* JDFontUtils.m in Sources */,
-				ABA4DEB97C5BE9BB81E781411C8F773F /* JDImageUtils.m in Sources */,
-				091BC09EF81FB0732690E8EE8D4745A3 /* JDRuleSet.m in Sources */,
-				0532F5F93B89C31D38792B8DCB7D963A /* JDStyleable.m in Sources */,
-				5C30E74DDC90B6119DB79D842807717D /* JDTheme-dummy.m in Sources */,
-				F21B068FD4B716DEC7868655E3552B7B /* JDThemeManager.m in Sources */,
-				91350328256B9DCE65A9B11B162D0685 /* NSObject+JDTheme.m in Sources */,
-				BC87C4431757FD272C6BF9C2DFD28EB0 /* NSObject+JDWeakExcutor.m in Sources */,
-				567F607A18F2022E6FD65AF51CC31A21 /* UIBarItem+JDTheme.m in Sources */,
-				DB7BB487446EBD76F7AC5F14114FAF85 /* UIButton+JDTheme.m in Sources */,
-				893C593B83E83BBA0C067C06CD812D0F /* UIImageView+JDTheme.m in Sources */,
-				B2D45B7C86697000B2CE89581EBBD1C7 /* UILabel+JDTheme.m in Sources */,
-				3E45FE8B16B0865F4F46FDD8C9DD1609 /* UINavigationBar+JDTheme.m in Sources */,
-				859B6EF5A893588F442CB35207F6C034 /* UIPageControl+JDTheme.m in Sources */,
-				82C0B0D3FAA503136552B372C81E7648 /* UISwitch+JDTheme.m in Sources */,
-				7AAD958FDBB82E76453A51AD57F6AD41 /* UITabBar+JDTheme.m in Sources */,
-				23C0EA88D810587621358C263FBACDC5 /* UITabBarItem+JDTheme.m in Sources */,
-				9AC6E31D0D4E955E16A6700A8F963B01 /* UITableView+JDTheme.m in Sources */,
-				777DF39F46C0E2FB1324B42F6662A007 /* UITextField+JDTheme.m in Sources */,
-				C7E6D5AC3D07C3EE8786B853D72C0CA9 /* UITextView+JDTheme.m in Sources */,
-				884140461411B90D8C793DE310C46348 /* UIView+JDTheme.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B5EC9287700ABDAC63287A9735B5211 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				886D775BC281F0FA440C5FEB4527AADD /* JDObjectDealloc-dummy.m in Sources */,
-				31F4213F34B2FF6E80949AD460BA4EB1 /* NSObject+JDDeallocBlock.m in Sources */,
+				69ACEB350A1D08B2E87ADEF595B7255F /* JDColorUtils.m in Sources */,
+				6BF4F074477D4A3D176C59905C18E422 /* JDFontUtils.m in Sources */,
+				91572AC3AFBE456811E65E64FA683C95 /* JDImageUtils.m in Sources */,
+				CEBF818EE077A6DA717859D52BAB0088 /* JDRuleSet.m in Sources */,
+				364295DD5CBCB8CE8715C928D640356E /* JDStyleable.m in Sources */,
+				BFFF70CDBEC74F7D953914D689EC8730 /* JDTheme-dummy.m in Sources */,
+				B45F2D764F9CC6CAC775A7418688DB1F /* JDThemeManager.m in Sources */,
+				D5EC6B69315FC77037626D8149A94454 /* NSObject+JDTheme.m in Sources */,
+				F87A9BB09CAF32A878A4E0A25BAF10C5 /* UIBarItem+JDTheme.m in Sources */,
+				4DC909BDDF423B78A63931C1577432E0 /* UIButton+JDTheme.m in Sources */,
+				D2843C57377C864EC853DB1C46BDC1D8 /* UIImageView+JDTheme.m in Sources */,
+				68D2A96E1B1B9290D54F0EB4DE0856BF /* UILabel+JDTheme.m in Sources */,
+				D93959C7F20FA2E1023E4A243B342A20 /* UINavigationBar+JDTheme.m in Sources */,
+				A563CF186644665890DD5D217CF734F6 /* UIPageControl+JDTheme.m in Sources */,
+				FF6D1F0144C1A8788BA507A3EEC5104B /* UISwitch+JDTheme.m in Sources */,
+				CC88E50E0BBD52E91C8D503BBA4A0C77 /* UITabBar+JDTheme.m in Sources */,
+				934F2D1648FA8DDD319BD5151A03BBF6 /* UITabBarItem+JDTheme.m in Sources */,
+				E42F4046425D0E8DEBBC2A58C46B017C /* UITableView+JDTheme.m in Sources */,
+				5B38FAF9DE06A3E524ACB98B62D9FEA1 /* UITextField+JDTheme.m in Sources */,
+				92E91612F0286071E0F7C5B2878C534C /* UITextView+JDTheme.m in Sources */,
+				9C10BDB55D422800D473B44F3BAB2736 /* UIView+JDTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,88 +535,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9699C6CC6A5FD65DF47BB90CB572D8D9 /* PBXTargetDependency */ = {
+		1753510F451A334D7B52D2E3270B727F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JDLayout;
 			target = 0C90C1F96BB622994761563355C1231D /* JDLayout */;
-			targetProxy = 58ACCF3104891761AF1E04B5F115CAC9 /* PBXContainerItemProxy */;
+			targetProxy = D842DDEFE92CBC8B9CC639E9F0C08363 /* PBXContainerItemProxy */;
 		};
-		A29884598AAC00037B6B8642C0F50D7C /* PBXTargetDependency */ = {
+		53450F63B1543EB55EE88AFE6BCB4C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JDLayout;
+			target = 0C90C1F96BB622994761563355C1231D /* JDLayout */;
+			targetProxy = 490F6131069E0A269F3D8A396D4AE396 /* PBXContainerItemProxy */;
+		};
+		BBEBCC63920E9116B2085512221FAC5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JDTheme;
 			target = B2089F1D7DA2DCBC8E5E99E5C911DE8A /* JDTheme */;
-			targetProxy = 8DAAC98C0518F929397C132F26749474 /* PBXContainerItemProxy */;
-		};
-		CE6C99AAFE9E6CFF20667A5EA946419B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JDObjectDealloc;
-			target = BC977A769AC8BD247EABD64E292C0E12 /* JDObjectDealloc */;
-			targetProxy = BF90B422D58CDDD620189832FD98D461 /* PBXContainerItemProxy */;
-		};
-		D0584C285A4FC719987825F13F04BA4A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JDObjectDealloc;
-			target = BC977A769AC8BD247EABD64E292C0E12 /* JDObjectDealloc */;
-			targetProxy = D676139483367C061CEFDB7A0683C7F1 /* PBXContainerItemProxy */;
-		};
-		FA0F8BC3C2F2D2FD8F8EF96E3DC06C0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JDLayout;
-			target = 0C90C1F96BB622994761563355C1231D /* JDLayout */;
-			targetProxy = FD96F0BEE3B34EF31C6E8298848965D3 /* PBXContainerItemProxy */;
+			targetProxy = 5FDC2E42F8950C5D663FAC8515FFB8AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0EC7085BBFA2B4258DBC98F710E983EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A768D3D0F9D01C61A4E7633765D1D5D4 /* JDTheme.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JDTheme/JDTheme-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JDTheme;
-				PRODUCT_NAME = JDTheme;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		25669DD5D3B682A5581545AF0AF4121A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACC9AA91FBA451306CABF42A92B933DB /* Pods-JDTheme.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		3F8CA3C8F2BD21110E80E39CD634983A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3057187B9A5A723F52AFCC3A76512CA /* JDLayout.xcconfig */;
+			baseConfigurationReference = E68CB1E9FAB072CA0B70C28E2E3F8296 /* JDLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -797,6 +640,53 @@
 			};
 			name = Release;
 		};
+		7394CABEF60625F1B42C62D3F9D37C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7CFAF2CF0DFCC9BD5238A48B7E6BA0F /* JDTheme.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JDTheme/JDTheme-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JDTheme;
+				PRODUCT_NAME = JDTheme;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		940A616B53A741B1BCA6A11B15147810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1888EB1C8307DEE590CC54F68601EAE /* Pods-JDTheme.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A8EFA68AC855A5B2B43BF716E27BD98D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -861,32 +751,9 @@
 			};
 			name = Debug;
 		};
-		BBFB81702B3D72A70D0FA247473A67E4 /* Debug */ = {
+		B5B2D2F25E0DDCD880F1656F4935EE63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 320963323A0E30E282E3231BBA4B0161 /* JDObjectDealloc.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JDObjectDealloc/JDObjectDealloc-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JDObjectDealloc;
-				PRODUCT_NAME = JDObjectDealloc;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CD6193C2CC61B1EF4C76369E5C281290 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1888EB1C8307DEE590CC54F68601EAE /* Pods-JDTheme.release.xcconfig */;
+			baseConfigurationReference = ACC9AA91FBA451306CABF42A92B933DB /* Pods-JDTheme.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -903,13 +770,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		DAC0D6DC758E53796F12C882616D56D4 /* Debug */ = {
+		D10FBF390BF40742E99D95293CA5D0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A768D3D0F9D01C61A4E7633765D1D5D4 /* JDTheme.xcconfig */;
+			baseConfigurationReference = E7CFAF2CF0DFCC9BD5238A48B7E6BA0F /* JDTheme.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -932,7 +798,7 @@
 		};
 		E7706C57B080267097F33DC0F1F3436D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3057187B9A5A723F52AFCC3A76512CA /* JDLayout.xcconfig */;
+			baseConfigurationReference = E68CB1E9FAB072CA0B70C28E2E3F8296 /* JDLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -953,30 +819,6 @@
 			};
 			name = Debug;
 		};
-		E9A2B7B10DC9C046F01A516B1DD123B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 320963323A0E30E282E3231BBA4B0161 /* JDObjectDealloc.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JDObjectDealloc/JDObjectDealloc-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JDObjectDealloc;
-				PRODUCT_NAME = JDObjectDealloc;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -985,6 +827,15 @@
 			buildConfigurations = (
 				E7706C57B080267097F33DC0F1F3436D /* Debug */,
 				3F8CA3C8F2BD21110E80E39CD634983A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3507D58D6B8DDEC737576856F6CDCF07 /* Build configuration list for PBXNativeTarget "JDTheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10FBF390BF40742E99D95293CA5D0B7 /* Debug */,
+				7394CABEF60625F1B42C62D3F9D37C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -998,29 +849,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52187808B295483BF3A913818959E43F /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */ = {
+		FBD1D8E36272B39A8544B462FCC41A72 /* Build configuration list for PBXNativeTarget "Pods-JDTheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25669DD5D3B682A5581545AF0AF4121A /* Debug */,
-				CD6193C2CC61B1EF4C76369E5C281290 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CBF77D172257BF2CB728D6BCD5701FE4 /* Build configuration list for PBXNativeTarget "JDTheme" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DAC0D6DC758E53796F12C882616D56D4 /* Debug */,
-				0EC7085BBFA2B4258DBC98F710E983EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D42A46E6723469D84D2E88B6E2DACCEB /* Build configuration list for PBXNativeTarget "JDObjectDealloc" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BBFB81702B3D72A70D0FA247473A67E4 /* Debug */,
-				E9A2B7B10DC9C046F01A516B1DD123B5 /* Release */,
+				B5B2D2F25E0DDCD880F1656F4935EE63 /* Debug */,
+				940A616B53A741B1BCA6A11B15147810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

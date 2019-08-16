@@ -1,2 +1,0 @@
-# JDObjectDealloc
-JDObjectDealloc

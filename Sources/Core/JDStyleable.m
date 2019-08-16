@@ -10,12 +10,11 @@
 #import "JDThemeManager.h"
 #import <objc/runtime.h>
 #import "NSObject+JDTheme.h"
-#import "NSObject+JDWeakExcutor.h"
 
 @interface JDStyleable()
 
 //蹩脚的模型，目前暂定用字典来存储
-@property (nonatomic, strong, readonly) NSMutableDictionary<NSString *,NSMutableArray<JDWeakExecutor *> *> *allViewsStore;
+@property (nonatomic, strong, readonly) NSMutableDictionary<NSString *,NSPointerArray *> *allViewsStore;
 
 @property (nonatomic, strong) NSMutableDictionary *ruleSetConfig;
 
@@ -70,9 +69,9 @@
         return;
     }
     //初始化容器
-    NSArray *array = self.allViewsStore[name];
+    NSPointerArray *array = self.allViewsStore[name];
     if (array == nil) {
-        self.allViewsStore[name] = [NSMutableArray array];
+        self.allViewsStore[name] = [NSPointerArray weakObjectsPointerArray];
     }
     
     NSDictionary *config = _parserBlock(name);
@@ -112,9 +111,9 @@
         NSMutableDictionary *oldStore = self.allViewsStore.copy;
         [self reloadStyles];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [oldStore enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSArray<JDWeakExecutor *> * _Nonnull objArray, BOOL * _Nonnull stop) {
-                for (JDWeakExecutor *obj in objArray) {
-                    NSObject *object = obj.weakObject;
+            [oldStore enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSPointerArray* _Nonnull objArray, BOOL * _Nonnull stop) {
+                NSArray *array = objArray.allObjects;
+                for (NSObject *object in array) {
                     JDRuleSet *ruleSet = [self ruleSetForKeyPath:object.jd_themeID];
                     [object jd_applyThemeWithRuleSet:ruleSet];
                 }
@@ -181,21 +180,20 @@
 
  @param object 对象
  */
-- (void)registerObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath {
+- (void)registerObject:(id)object forKey:(NSString *)keyPath {
     NSString *fileName = [keyPath componentsSeparatedByString:@"."].firstObject;
-    NSMutableArray<JDWeakExecutor *> *array = [self.allViewsStore objectForKey:fileName];
-    [array addObject:object];
+    NSPointerArray *array = [self.allViewsStore objectForKey:fileName];
+    [array addPointer:(__bridge void * _Nullable)(object)];
 }
 
 /**
  取消使用样式的对象
 
- @param object 对象
+ @param keyPath 对象
  */
-- (void)unRegisterObject:(JDWeakExecutor *)object forKey:(NSString *)keyPath {
+- (void)unRegisterForKey:(NSString *)keyPath {
     NSString *fileName = [keyPath componentsSeparatedByString:@"."].firstObject;
-    NSMutableArray<JDWeakExecutor *> *array = [self.allViewsStore objectForKey:fileName];
-    [array removeObject:object];
+    [self.allViewsStore removeObjectForKey:fileName];
 }
 
 
@@ -207,10 +205,11 @@
  */
 - (NSObject *)objectById:(NSString *)keyPath {
     NSString *fileName = [keyPath componentsSeparatedByString:@"."].firstObject;
-    NSMutableArray<JDWeakExecutor *> *array = [self.allViewsStore objectForKey:fileName];
-    for (JDWeakExecutor *weakExecutor in array) {
-        if (weakExecutor.weakObject && [weakExecutor.weakObject.jd_themeID isEqualToString:keyPath]) {
-            return weakExecutor.weakObject;
+    NSPointerArray *weakArray = [self.allViewsStore objectForKey:fileName];
+    NSArray *array = weakArray.allObjects;
+    for (NSObject *object in array) {
+        if (object && [object.jd_themeID isEqualToString:keyPath]) {
+            return object;
         }
     }
     return nil;
